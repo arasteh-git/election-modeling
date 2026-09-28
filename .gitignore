@@ -12,15 +12,14 @@ venv/
 .env
 .env.*
 !.env.example
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+credentials*.json
+secrets*.json
 .DS_Store
-
-# Keep source and derived data local until storage/redistribution is agreed
-/data/raw/*
-!/data/raw/.gitkeep
-!/data/raw/README.md
-/data/processed/*
-!/data/processed/.gitkeep
-!/data/processed/README.md
+.idea/
 
 # Generated run outputs
 /outputs/*

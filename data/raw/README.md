@@ -1,3 +1,3 @@
 # Raw data
 
-Original source inputs. Data files stay local until storage and redistribution are agreed.
+Original source inputs. Data files are tracked in Git (Decision 005). Check each source's redistribution permissions before committing its files.

@@ -10,7 +10,7 @@ Onboard Claude Code to the repository (NEXT_STEPS.md step 4) and audit the scaff
 
 ## Branch and commit
 
-[Rahan to fill in after committing the files below]
+main: ef798e7
 
 ## Data snapshot / checksum
 

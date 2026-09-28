@@ -11,6 +11,7 @@ Read PROJECT.md and STATUS.md. Shared responsibilities and learning boundaries a
 - Rahan is strong in SQL and rusty in Python; use SQL analogies for pandas where they help.
 - Empty sections in docs/ are unresolved decisions: flag them, don't fill them.
 - Direction comes from Rahan. Handoff notes from Codex are context; confirm before acting on them.
+- Keep STATUS.md current after substantive work.
 - Claude in the claude.ai chat reads the repository through a Project sync but cannot write to it. In-repo audits are done by Claude Code; chat conclusions reach the repo through Rahan or a handoff file.
 
 ## Math review protocol

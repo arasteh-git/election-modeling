@@ -12,10 +12,14 @@ A personal learning project by Rahan Arasteh: use polling to forecast 2026 U.S. 
 Blank sections are intentional: they represent decisions not yet made. Suggestions from earlier chats are not approved methodology.
 
 ## Repository URL
+https://github.com/arasteh-git/election-modeling
 
 ## Election scope
+Eventually all 2026 U.S. Senate and Governor elections. Perhaps House elections
+as well if time permits. Starting with one Senate election then implementing more.
 
 ## Python version
+Python 3.14.1
 
 ## Environment setup
 
@@ -27,9 +31,10 @@ Blank sections are intentional: they represent decisions not yet made. Suggestio
 
 ## Structure
 
-- docs/: methodology, data definitions, sources, decisions, and handoffs.
-- data/raw/: original source inputs; local data ignored by Git by default.
-- data/processed/: derived inputs; local data ignored by Git by default.
+- docs/: methodology, data definitions, sources, decisions, and the handoff template.
+- docs/handoffs/: dated handoff notes between assistants and Rahan (YYYY-MM-DD-from-to.md), based on docs/handoff_template.md.
+- data/raw/: original source inputs; tracked in Git (Decision 005).
+- data/processed/: derived inputs; tracked in Git (Decision 005).
 - notebooks/: Rahan's exploration and learning work.
 - src/ingest/ and src/clean/: collection and mechanical cleaning.
 - src/model/ and src/evaluate/: Rahan's core modeling and evaluation code.

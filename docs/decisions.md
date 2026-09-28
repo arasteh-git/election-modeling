@@ -12,7 +12,7 @@ ChatGPT/Codex supports project management, collection, mechanical cleaning, and 
 
 ## Decision 003: Shared context
 
-Use repository files for durable project context. Discuss work in chat interfaces and inspect code with Codex and Claude Code. GitHub connection is pending.
+Use repository files for durable project context. Discuss work in chat interfaces and inspect code with Codex and Claude Code. The GitHub repository is the shared workspace; Claude chat reads it through a read-only Project sync, and Codex's connection is not yet confirmed.
 
 ## Decision 004: Claude tutoring and review workflow
 
@@ -43,6 +43,34 @@ CLAUDE.md
 ### Evidence / review
 
 Agreed in Claude chat on 2026-09-27.
+
+## Decision 005: Data storage in Git
+
+### Decision
+
+All of data/ is tracked in Git. The PROJECT.md rule still applies: check each source's redistribution permissions before committing its files. outputs/ remains ignored.
+
+### Date
+
+2026-09-27
+
+### Context and alternatives
+
+The initial .gitignore kept data/raw and data/processed local until storage and redistribution were agreed, and did not cover other folders under data/. Alternatives: keep all data local, track only processed data, or track all of data/.
+
+### Rahan's choice
+
+Track all of data/.
+
+### Reasoning and tradeoffs
+
+### Affected files
+
+.gitignore, README.md, data/raw/README.md, data/processed/README.md
+
+### Evidence / review
+
+Directed by Rahan in a Claude Code session on 2026-09-27.
 
 ## Future decision template
 
