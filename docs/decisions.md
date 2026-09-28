@@ -12,7 +12,7 @@ ChatGPT/Codex supports project management, collection, mechanical cleaning, and 
 
 ## Decision 003: Shared context
 
-Use repository files for durable project context. Discuss work in chat interfaces and inspect code with Codex and Claude Code. The GitHub repository is the shared workspace; Claude chat reads it through a read-only Project sync, and Codex's connection is not yet confirmed.
+Use repository files for durable project context. Discuss work in chat interfaces and inspect code with Codex and Claude Code. The GitHub repository is the shared workspace; Claude chat reads it through a read-only Project sync, and Codex repository access is now confirmed through the GitHub connector.
 
 ## Decision 004: Claude tutoring and review workflow
 
@@ -71,6 +71,24 @@ Track all of data/.
 ### Evidence / review
 
 Directed by Rahan in a Claude Code session on 2026-09-27.
+
+## Decision 006: Senate focus
+
+### Date
+
+2026-09-27 (America/New_York)
+
+### Rahan's choice
+
+Focus on 2026 U.S. Senate races for now. Defer House modeling because its scope is too broad for the initial project.
+
+### Open choice
+
+Texas and Georgia are candidates for the first race. ChatGPT recommends Texas first, but Rahan has not yet selected a race. Statistical assumptions and the minimum deliverable remain undecided.
+
+### Evidence / review
+
+Directed by Rahan in ChatGPT: "let's make senate races the main focus for now (house is too all over the place)".
 
 ## Future decision template
 

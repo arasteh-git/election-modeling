@@ -38,6 +38,10 @@ Record handoffs using docs/handoff_template.md. Identify the branch, commit, dat
 
 ## Target elections / races
 
+Current focus: 2026 U.S. Senate races, starting with one race before expanding. House modeling is deferred.
+
+First race remains undecided. Texas and Georgia are the candidates Rahan raised; ChatGPT recommends Texas first and Georgia second, pending Rahan's selection.
+
 ## Forecast target and units
 
 ## Minimum viable deliverable
