@@ -15,8 +15,9 @@ Blank sections are intentional: they represent decisions not yet made. Suggestio
 https://github.com/arasteh-git/election-modeling
 
 ## Election scope
-Eventually all 2026 U.S. Senate and Governor elections. Perhaps House elections
-as well if time permits. Starting with one Senate election then implementing more.
+Current focus: 2026 U.S. Senate races, starting with one race before expanding.
+House modeling is deferred. Governor elections remain a possible longer-term extension.
+Texas and Georgia are under consideration; the first race has not been selected.
 
 ## Python version
 Python 3.14.1
