@@ -1,0 +1,28 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Secrets and machine-specific files
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# Keep source and derived data local until storage/redistribution is agreed
+/data/raw/*
+!/data/raw/.gitkeep
+!/data/raw/README.md
+/data/processed/*
+!/data/processed/.gitkeep
+!/data/processed/README.md
+
+# Generated run outputs
+/outputs/*
+!/outputs/.gitkeep
+!/outputs/README.md
