@@ -2,7 +2,7 @@
 
 ## Current milestone
 
-Set up the shared project workspace and agree on the initial scope.
+Collect the first Texas Senate polling inventory and prepare source review.
 
 ## Completed
 
@@ -22,24 +22,28 @@ Set up the shared project workspace and agree on the initial scope.
 - Confirmed Codex repository access through the GitHub connector.
 - Confirmed Senate races as the current focus; House modeling is deferred.
 
+- Selected the Texas Politics Project tracker as the first Texas collection source (Decision 007).
+- Extracted 16 tracker rows into a reproducible timestamped source snapshot and CSVs; recorded a spread discrepancy and primary-review limits.
+
 ## Not yet done
 
 - Local Python environment setup.
-- Selection of the first Senate race and minimum deliverable.
+- Definition of the minimum forecast deliverable.
 - Timeline decision: pre-November 3 forecast vs. backtest-first.
 - Approval of model methodology and data rules.
-- Data acquisition, cleaning, modeling, and evaluation.
+- Complete primary-source verification, analytical data cleaning, modeling, and evaluation.
 
 ## Next action
 
-Choose the first Senate race (Texas or Georgia) and minimum deliverable, then complete the environment details in NEXT_STEPS.md. Texas first and Georgia second is ChatGPT's recommendation, not an approved decision.
+Review docs/texas_tracker_review.md, prioritize the AARP discrepancy and remaining primary releases, and agree on data inclusion rules with Claude. Confirm remaining environment details and the minimum forecast deliverable.
 
 ## Active branch / commit
 
-main
+codex/texas-tracker-ingestion (see pull request for commit)
 
 ## Data snapshot
 
-None. No data has been acquired.
+data/raw/texas_tracker/20260929T222648Z/ — 16 tracker rows; source last updated September 23, 2026. Extraction is complete; primary verification is incomplete.
 
 ## Blockers
+

@@ -17,7 +17,7 @@ https://github.com/arasteh-git/election-modeling
 ## Election scope
 Current focus: 2026 U.S. Senate races, starting with one race before expanding.
 House modeling is deferred. Governor elections remain a possible longer-term extension.
-Texas and Georgia are under consideration; the first race has not been selected.
+Initial collection target: Texas Senate, using the Texas Politics Project tracker.
 
 ## Python version
 Python 3.14.1
@@ -25,6 +25,8 @@ Python 3.14.1
 ## Environment setup
 
 ## Data acquisition command
+
+Run `python src/ingest/texas_tracker.py` from the repository root (standard library only). See docs/data_sources.md for snapshots and docs/texas_tracker_review.md for outstanding verification.
 
 ## Model execution command
 
@@ -41,4 +43,5 @@ Python 3.14.1
 - src/model/ and src/evaluate/: Rahan's core modeling and evaluation code.
 - tests/: future data validation and meaningful checks.
 
-No model, poll records, dependencies, or executable workflow has been implemented.
+The first tracker snapshot and collection script are available. No modeling logic or scheduled automation has been implemented.
+

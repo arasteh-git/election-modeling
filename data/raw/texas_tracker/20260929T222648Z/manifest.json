@@ -1,0 +1,12 @@
+{
+  "source_url": "https://texaspolitics.utexas.edu/blog/texas-2026-u-s-senate-poll-tracker",
+  "title": "Texas 2026 U.S. Senate Poll Tracker",
+  "author": "Texas Politics Project",
+  "publisher": "Texas Politics Project at the University of Texas at Austin",
+  "retrieved_at": "2026-09-29T22:26:48.800104+00:00",
+  "source_last_updated": "September 23, 2026",
+  "sha256": "637b2334c5f83acb7bac115b423ae2fc2a35863fdca1e1eb05e84c1717fe1d0b",
+  "row_count": 16,
+  "normalization": "Whitespace collapsed; relative links resolved; field dates assigned 2026 from tracker context; samples and candidate shares parsed as numbers. No corrections, exclusions, imputation, or weighting.",
+  "verification": "Tracker extraction only; linked primary releases require separate review."
+}

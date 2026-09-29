@@ -90,6 +90,24 @@ Texas and Georgia are candidates for the first race. ChatGPT recommends Texas fi
 
 Directed by Rahan in ChatGPT: "let's make senate races the main focus for now (house is too all over the place)".
 
+## Decision 007: Start Texas collection with UT tracker
+
+### Date
+
+2026-09-29 (America/New_York)
+
+### Rahan's choice
+
+Start with the Texas Politics Project Senate tracker for the initial Texas polling inventory.
+
+### Scope
+
+Collect and mechanically standardize the tracker with provenance and discrepancy flags. Poll inclusion, weighting, uncertainty, and other model rules remain undecided.
+
+### Evidence / review
+
+Rahan in ChatGPT: "sure, let's start from the texas politics project senate tracker".
+
 ## Future decision template
 
 ### Decision
@@ -105,3 +123,4 @@ Directed by Rahan in ChatGPT: "let's make senate races the main focus for now (h
 ### Affected files
 
 ### Evidence / review
+
