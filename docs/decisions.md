@@ -148,6 +148,7 @@ Directed by Rahan in a Claude Code session on 2026-09-29, after Claude review.
 - Keep poll labels as reported; the same firm with a different sponsor is a separate label.
 - Treat repeat polls from the same label as separate observations.
 - Leave undecided and other responses as reported; no allocation and no normalization to 100.
+- Compute each poll's margin as dem_pct minus rep_pct, in percentage points. The tracker's Spread column is not used (added 2026-09-29 after the row 6 AARP review).
 - Date each poll by its fieldwork end date. Publication dates are not used.
 - Weight polls by recency, measured from the fieldwork end date. The decay form and rate are not yet decided.
 

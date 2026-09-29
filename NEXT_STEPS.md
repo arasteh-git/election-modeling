@@ -14,7 +14,7 @@
 1. Review the first Texas tracker snapshot and docs/texas_tracker_review.md. Texas tracker collection is approved; the minimum deliverable is set (Decision 010).
 2. Share your local operating system, editor, environment setup, weekly time commitment, and data budget with ChatGPT. Record confirmed details in the shared documents.
 3. Timeline decided (Decision 008): pre-election forecast goal, backtest-first as fallback.
-4. Complete primary-release verification, beginning with the AARP discrepancy. Review the extraction schema in docs/data_dictionary.md with Claude before choosing model inclusion rules.
+4. Complete primary-release verification (rows 6 and 14 resolved). Review the extraction schema in docs/data_dictionary.md with Claude before choosing model inclusion rules.
 5. Discuss inclusion rules and baseline mathematics with Claude, record approved methodology, and implement your own first model.
 6. Use docs/handoff_template.md when switching assistants. Record decisions in the repository so both tools read the same context.
 

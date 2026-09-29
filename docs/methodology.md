@@ -10,6 +10,8 @@ Texas U.S. Senate first (Decision 006). Georgia and Michigan are tentative later
 
 ## Outcome definition and units
 
+Poll margin is dem_pct minus rep_pct, in percentage points; positive means the Democrat leads. The tracker's Spread column is not used (Decision 009).
+
 ## Poll inclusion and deduplication
 
 Decision 009:

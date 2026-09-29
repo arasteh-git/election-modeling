@@ -27,7 +27,9 @@ Collect the first Texas Senate polling inventory and prepare source review.
 
 - Added a file-by-file guide, expanded relevant folder READMEs, and recorded the standing README-maintenance rule.
 
-- Claude Code reviewed the Codex Texas handoff and snapshot. Counts, checksum, and candidate-to-party mapping check out. It found that row 14 (UT/TPP, June) sums to 95%, alongside the known row 6 AARP spread mismatch; Rahan is checking both.
+- Claude Code reviewed the Codex Texas handoff and snapshot. Counts, checksum, and candidate-to-party mapping check out. It found that row 14 (UT/TPP, June) sums to 95%, alongside the known row 6 AARP spread mismatch.
+- Rahan verified row 14 against its release. Candidate shares are correct; the tracker's Other column understates undecided and other responses. The snapshot is unchanged, and the row is RV, so it is excluded (see docs/texas_tracker_review.md).
+- Rahan accepted the row 6 AARP spread mismatch as rounding. Margins use dem_pct minus rep_pct, not the tracker Spread (Decision 009).
 - Selected Texas as the first race; Georgia and Michigan are tentative next races (Decision 006).
 - Set the forecast target (win probability) and timeline: pre-election goal, backtest fallback (Decision 008).
 - Approved the first Texas poll rules (Decision 009): LV only, labels as reported, repeat polls as separate observations, undecided left as reported, fieldwork end date, recency weighting. Recorded in docs/methodology.md.
@@ -43,7 +45,7 @@ Collect the first Texas Senate polling inventory and prepare source review.
 
 ## Next action
 
-Rahan: check rows 14 and 6 against their original releases, and write the first LV-only, recency-weighted Texas average. Choose the error-model form with Claude, and ask ChatGPT/Codex to propose historical Senate polling sources.
+Rahan: write the first LV-only, recency-weighted Texas average. Choose the error-model form with Claude, and ask ChatGPT/Codex to propose historical Senate polling sources.
 
 ## Active branch / commit
 
