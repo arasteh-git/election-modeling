@@ -11,18 +11,19 @@
 
 ## Next actions
 
-1. Choose the first Senate race and minimum deliverable. Texas and Georgia are under consideration; Texas first and Georgia second is ChatGPT's recommendation, not an approved decision.
+1. Review the first Texas tracker snapshot and docs/texas_tracker_review.md. Texas tracker collection is approved; agree on the minimum forecast deliverable.
 2. Share your local operating system, editor, environment setup, weekly time commitment, and data budget with ChatGPT. Record confirmed details in the shared documents.
 3. Decide the timeline: a forecast before November 3, 2026, or a backtest-first learning project.
-4. Have ChatGPT/Codex verify data sources and propose the input schema for the selected race. Keep candidate sources separate from approved sources; check redistribution permissions before committing data.
+4. Complete primary-release verification, beginning with the AARP discrepancy. Review the extraction schema in docs/data_dictionary.md with Claude before choosing model inclusion rules.
 5. Discuss inclusion rules and baseline mathematics with Claude, record approved methodology, and implement your own first model.
 6. Use docs/handoff_template.md when switching assistants. Record decisions in the repository so both tools read the same context.
 
 ## Proposed tasks
 
-- Select first race and minimum deliverable — Rahan.
+- Define minimum deliverable for Texas — Rahan.
 - Configure a reproducible Python environment — Codex, after environment details are known.
-- Verify poll sources and propose schema — ChatGPT/Codex, after race selection.
+- Complete verification of tracker entries — ChatGPT/Codex.
 - Define baseline and evaluation approach — Rahan with Claude.
 
-No GitHub issues or executable workflows were created by this documentation update.
+A manual collection script is available; no scheduled workflow or GitHub issues have been created.
+

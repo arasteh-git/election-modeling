@@ -40,7 +40,7 @@ Record handoffs using docs/handoff_template.md. Identify the branch, commit, dat
 
 Current focus: 2026 U.S. Senate races, starting with one race before expanding. House modeling is deferred.
 
-First race remains undecided. Texas and Georgia are the candidates Rahan raised; ChatGPT recommends Texas first and Georgia second, pending Rahan's selection.
+First collection target: Texas U.S. Senate, starting with the Texas Politics Project Senate tracker (approved 2026-09-29). Georgia remains a possible later race. Model inclusion rules and the minimum forecast deliverable remain undecided.
 
 ## Forecast target and units
 
@@ -53,3 +53,4 @@ First race remains undecided. Texas and Georgia are the candidates Rahan raised;
 ## Data budget
 
 ## Definition of done
+
