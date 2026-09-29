@@ -27,21 +27,27 @@ Collect the first Texas Senate polling inventory and prepare source review.
 
 - Added a file-by-file guide, expanded relevant folder READMEs, and recorded the standing README-maintenance rule.
 
+- Claude Code reviewed the Codex Texas handoff and snapshot. Counts, checksum, and candidate-to-party mapping check out. It found that row 14 (UT/TPP, June) sums to 95%, alongside the known row 6 AARP spread mismatch; Rahan is checking both.
+- Selected Texas as the first race; Georgia and Michigan are tentative next races (Decision 006).
+- Set the forecast target (win probability) and timeline: pre-election goal, backtest fallback (Decision 008).
+- Approved the first Texas poll rules (Decision 009): LV only, labels as reported, repeat polls as separate observations, undecided left as reported, fieldwork end date, recency weighting. Recorded in docs/methodology.md.
+- Defined the minimum deliverable and tiers (Decision 010): Texas P(Democrat wins) first; fundamentals and house effects next; correlation and P(Democrats win the Senate) last.
+
 ## Not yet done
 
 - Local Python environment setup.
-- Definition of the minimum forecast deliverable.
-- Timeline decision: pre-November 3 forecast vs. backtest-first.
-- Approval of model methodology and data rules.
+- Choice of error-model form and approval of historical Senate polling sources for calibration.
+- Open poll rules: LV numbers from releases where the tracker shows RV; recency decay form and rate.
+- Uncertainty model for win probability, and the baseline.
 - Complete primary-source verification, analytical data cleaning, modeling, and evaluation.
 
 ## Next action
 
-Review docs/texas_tracker_review.md, prioritize the AARP discrepancy and remaining primary releases, and agree on data inclusion rules with Claude. Confirm remaining environment details and the minimum forecast deliverable.
+Rahan: check rows 14 and 6 against their original releases, and write the first LV-only, recency-weighted Texas average. Choose the error-model form with Claude, and ask ChatGPT/Codex to propose historical Senate polling sources.
 
 ## Active branch / commit
 
-The Texas ingestion PR #2 is merged. Current documentation update: codex/file-guide-readmes (see pull request for commit).
+main at 2b9e095 (PR #3 merged), plus uncommitted Claude Code documentation updates from 2026-09-29.
 
 ## Data snapshot
 

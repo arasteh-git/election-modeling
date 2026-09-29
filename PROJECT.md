@@ -40,15 +40,25 @@ Record handoffs using docs/handoff_template.md. Identify the branch, commit, dat
 
 Current focus: 2026 U.S. Senate races, starting with one race before expanding. House modeling is deferred.
 
-First collection target: Texas U.S. Senate, starting with the Texas Politics Project Senate tracker (approved 2026-09-29). Georgia remains a possible later race. Model inclusion rules and the minimum forecast deliverable remain undecided.
+First race: Texas U.S. Senate (selected 2026-09-29), starting with the Texas Politics Project Senate tracker. Georgia and Michigan are tentative next races. First poll rules are in Decision 009; the minimum forecast deliverable remains undecided.
 
 ## Forecast target and units
 
+Each candidate's win probability (Decision 008).
+
 ## Minimum viable deliverable
+
+Decision 010. Tiers build on each other:
+
+1. Minimum: P(Democrat wins) for Texas Senate, from a recency-weighted likely-voter average plus an error model calibrated on past Senate polling error (model form undecided). Run on demand by Rahan.
+2. Next level: add fundamentals and pollster house effects; extend to more races.
+3. Final level: correlation between states; cover the full 2026 Senate landscape and produce P(Democrats win the Senate).
 
 ## Time commitment
 
 ## Timeline
+
+Goal: a Texas Senate forecast before Election Day, November 3, 2026. A backtest-first project is an acceptable fallback (Decision 008).
 
 ## Data budget
 

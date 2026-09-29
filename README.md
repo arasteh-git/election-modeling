@@ -21,7 +21,7 @@ https://github.com/arasteh-git/election-modeling
 ## Election scope
 Current focus: 2026 U.S. Senate races, starting with one race before expanding.
 House modeling is deferred. Governor elections remain a possible longer-term extension.
-Initial collection target: Texas Senate, using the Texas Politics Project tracker.
+First race: Texas Senate, using the Texas Politics Project tracker. Georgia and Michigan are tentative next races.
 
 ## Python version
 Python 3.14.1

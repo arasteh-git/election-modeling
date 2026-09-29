@@ -38,7 +38,7 @@ Every verification status in the generated CSV remains pending. docs/texas_track
 | docs/data_dictionary.md | Meaning, types, units, identifiers, and missing-value conventions of the data fields. |
 | docs/data_sources.md | Approved collection sources, access methods, attribution, and snapshot provenance. |
 | docs/decisions.md | History of decisions Rahan approved; later decisions can supersede earlier open questions. |
-| docs/methodology.md | Home for approved statistical assumptions and formulas. Currently an intentionally blank outline. |
+| docs/methodology.md | Home for approved statistical assumptions and formulas. Forecast target, scope, and first Texas poll rules are filled in (Decisions 008–009); blank sections are still undecided. |
 | docs/texas_tracker_review.md | Human-readable source audit and outstanding issues; broader than the automatic issues.json. |
 | docs/handoff_template.md | Blank structure for transferring a task between Rahan and assistants. |
 | docs/handoffs/2026-09-27-claude-chat-to-claude-code.md | Historical onboarding and scaffold-audit handoff. |

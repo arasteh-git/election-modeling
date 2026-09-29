@@ -64,6 +64,8 @@ Track all of data/.
 
 ### Reasoning and tradeoffs
 
+Tracking data lets every collaborator reading GitHub (Codex, Claude chat's Project sync, Claude Code) see the exact snapshot that code and results refer to, which supports PROJECT.md's rule that versioned code identify its data snapshot. Tradeoffs: every committed source must permit redistribution, and large or frequent snapshots grow the repository.
+
 ### Affected files
 
 .gitignore, README.md, data/raw/README.md, data/processed/README.md
@@ -84,7 +86,7 @@ Focus on 2026 U.S. Senate races for now. Defer House modeling because its scope 
 
 ### Open choice
 
-Texas and Georgia are candidates for the first race. ChatGPT recommends Texas first, but Rahan has not yet selected a race. Statistical assumptions and the minimum deliverable remain undecided.
+Resolved 2026-09-29: Rahan selected Texas as the first race (Claude Code session). Georgia and Michigan are tentative next races, not yet approved. The minimum deliverable remains undecided; first poll rules are in Decision 009.
 
 ### Evidence / review
 
@@ -107,6 +109,107 @@ Collect and mechanically standardize the tracker with provenance and discrepancy
 ### Evidence / review
 
 Rahan in ChatGPT: "sure, let's start from the texas politics project senate tracker".
+
+## Decision 008: Forecast target and timeline
+
+### Decision
+
+The forecast target is each candidate's win probability. The goal is a Texas Senate forecast before Election Day (November 3, 2026); a backtest-first project is an acceptable fallback.
+
+### Date
+
+2026-09-29
+
+### Context and alternatives
+
+Targets considered: vote margin, vote share, or win probability. Timeline options: pre-election forecast or backtest-first (2022/2024 backtest, 2026 scored afterward).
+
+### Rahan's choice
+
+Win probability; pre-election forecast preferred, backtest acceptable.
+
+### Reasoning and tradeoffs
+
+Win probability requires an explicit uncertainty model, not only a poll average, and that uncertainty should be calibrated against past polling error. If the project falls back to a backtest, poll release dates become relevant for leakage prevention even though they are not used in the live forecast.
+
+### Affected files
+
+PROJECT.md, docs/methodology.md, STATUS.md, NEXT_STEPS.md
+
+### Evidence / review
+
+Directed by Rahan in a Claude Code session on 2026-09-29, after Claude review.
+
+## Decision 009: Texas poll rules
+
+### Decision
+
+- Include likely-voter (LV) polls only.
+- Keep poll labels as reported; the same firm with a different sponsor is a separate label.
+- Treat repeat polls from the same label as separate observations.
+- Leave undecided and other responses as reported; no allocation and no normalization to 100.
+- Date each poll by its fieldwork end date. Publication dates are not used.
+- Weight polls by recency, measured from the fieldwork end date. The decay form and rate are not yet decided.
+
+### Date
+
+2026-09-29
+
+### Context and alternatives
+
+Populations in the first snapshot: 11 LV and 5 RV of 16 rows. Alternatives reviewed: all populations, or LV preferred with RV as fallback; a firm-level pollster ID alongside labels; pollster caps or latest-poll-only for repeat polls; proportional or two-party undecided allocation; start date or midpoint dating.
+
+### Rahan's choice
+
+As listed above.
+
+### Reasoning and tradeoffs
+
+LV screens are preferred close to the election. On the first snapshot, an unweighted illustration gives mean D minus R of +1.7 for LV polls versus +3.2 for RV polls, so the rule shifts the picture toward Paxton and drops the most recent poll (NPR/Marist, RV). Treating repeat polls as separate lets a frequent pollster dominate; recency weighting reduces this for old polls but not for several recent polls from one firm. Leaving undecided voters as reported implicitly assumes they split evenly; with a win-probability target, a high undecided share should be reflected in uncertainty.
+
+Open: whether to use a release's LV numbers when the tracker shows only RV; recency decay form and rate.
+
+### Affected files
+
+docs/methodology.md, PROJECT.md, STATUS.md
+
+### Evidence / review
+
+Directed by Rahan in a Claude Code session on 2026-09-29, after Claude review.
+
+## Decision 010: Minimum deliverable and tiers
+
+### Decision
+
+- Output: P(Democrat wins) for each modeled race; ideally also P(Democrats win the Senate).
+- Minimum: Texas only, using a recency-weighted likely-voter average plus an error model calibrated on past Senate polling error. The model form is undecided.
+- Next level: fundamentals and pollster house effects.
+- Final level: correlation between states, covering the full 2026 Senate landscape.
+- Runs on demand, whenever Rahan runs it.
+
+### Date
+
+2026-09-29
+
+### Context and alternatives
+
+Choices included output (per-race win probability, chamber control, or both), races (Texas only through the full Senate map), method floor, and run frequency (one-off, on demand, or scheduled).
+
+### Rahan's choice
+
+As listed above.
+
+### Reasoning and tradeoffs
+
+P(Democrats win the Senate) depends on every seat, including unpolled races, and on correlation between states, so it belongs in the final tier. The calibration step needs historical Senate poll averages and results, computed with the same likely-voter and recency rules.
+
+### Affected files
+
+PROJECT.md, STATUS.md, NEXT_STEPS.md, docs/methodology.md
+
+### Evidence / review
+
+Directed by Rahan in a Claude Code session on 2026-09-29, after Claude review.
 
 ## Future decision template
 
