@@ -25,6 +25,8 @@ Collect the first Texas Senate polling inventory and prepare source review.
 - Selected the Texas Politics Project tracker as the first Texas collection source (Decision 007).
 - Extracted 16 tracker rows into a reproducible timestamped source snapshot and CSVs; recorded a spread discrepancy and primary-review limits.
 
+- Added a file-by-file guide, expanded relevant folder READMEs, and recorded the standing README-maintenance rule.
+
 ## Not yet done
 
 - Local Python environment setup.
@@ -39,7 +41,7 @@ Review docs/texas_tracker_review.md, prioritize the AARP discrepancy and remaini
 
 ## Active branch / commit
 
-codex/texas-tracker-ingestion (see pull request for commit)
+The Texas ingestion PR #2 is merged. Current documentation update: codex/file-guide-readmes (see pull request for commit).
 
 ## Data snapshot
 

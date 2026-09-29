@@ -2,6 +2,10 @@
 
 A personal learning project by Rahan Arasteh: use polling to forecast 2026 U.S. elections while developing Python, statistics, and modeling skills.
 
+## File guide
+
+See [the file-by-file guide](docs/file_guide.md) for every current file, including the five files inside each Texas polling snapshot.
+
 ## Start here
 
 1. Read PROJECT.md for responsibilities and learning boundaries.

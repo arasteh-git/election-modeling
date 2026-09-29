@@ -54,3 +54,7 @@ First collection target: Texas U.S. Senate, starting with the Texas Politics Pro
 
 ## Definition of done
 
+
+## Documentation maintenance
+
+Rahan requested on 2026-09-29 that READMEs be updated whenever things are added. All contributors should update the relevant folder README and the root README or docs/file_guide.md as needed in the same change. Explain each new file, commands, outputs, and limitations.

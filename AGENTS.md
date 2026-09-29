@@ -27,3 +27,7 @@ Keep STATUS.md current after substantive work. Record consequential decisions on
 ## Execution environment and commands
 
 ## Approved data sources
+
+## Documentation maintenance
+
+Whenever adding, moving, or changing files or workflows, update the relevant folder README and the root README or docs/file_guide.md as needed in the same change. Explain purpose, how to run or use the files, generated outputs, and current limitations. Keep documentation aligned with implemented behavior.
