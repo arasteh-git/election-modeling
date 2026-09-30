@@ -33,19 +33,20 @@ Collect the first Texas Senate polling inventory and prepare source review.
 - Selected Texas as the first race; Georgia and Michigan are tentative next races (Decision 006).
 - Set the forecast target (win probability) and timeline: pre-election goal, backtest fallback (Decision 008).
 - Approved the first Texas poll rules (Decision 009): LV only, labels as reported, repeat polls as separate observations, undecided left as reported, fieldwork end date, recency weighting. Recorded in docs/methodology.md.
+- Rahan wrote the first LV-only, recency-weighted Texas average in notebooks/data-pulls.ipynb: +2.64 D − R with n_eff 5.48 at a working half-life of 14 days (Decision 009). Claude checked the results independently. Sensitivity for h = 7 and 30 is in docs/methodology.md.
 - Defined the minimum deliverable and tiers (Decision 010): Texas P(Democrat wins) first; fundamentals and house effects next; correlation and P(Democrats win the Senate) last.
 
 ## Not yet done
 
 - Local Python environment setup.
 - Choice of error-model form and approval of historical Senate polling sources for calibration.
-- Open poll rules: LV numbers from releases where the tracker shows RV; recency decay form and rate.
+- Open poll rule: LV numbers from releases where the tracker shows RV.
 - Uncertainty model for win probability, and the baseline.
 - Complete primary-source verification, analytical data cleaning, modeling, and evaluation.
 
 ## Next action
 
-Rahan: write the first LV-only, recency-weighted Texas average. Choose the error-model form with Claude, and ask ChatGPT/Codex to propose historical Senate polling sources.
+Rahan: choose the error-model form with Claude, and ask ChatGPT/Codex to propose historical Senate polling sources.
 
 ## Active branch / commit
 

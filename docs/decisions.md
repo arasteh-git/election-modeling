@@ -150,7 +150,7 @@ Directed by Rahan in a Claude Code session on 2026-09-29, after Claude review.
 - Leave undecided and other responses as reported; no allocation and no normalization to 100.
 - Compute each poll's margin as dem_pct minus rep_pct, in percentage points. The tracker's Spread column is not used (added 2026-09-29 after the row 6 AARP review).
 - Date each poll by its fieldwork end date. Publication dates are not used.
-- Weight polls by recency, measured from the fieldwork end date. The decay form and rate are not yet decided.
+- Weight polls by recency, measured from the fieldwork end date. Updated 2026-09-29: exponential decay, weight = 0.5^(age_days / h), with a working half-life of h = 14 days, to be recalibrated once historical Senate data is available.
 
 ### Date
 
@@ -168,7 +168,9 @@ As listed above.
 
 LV screens are preferred close to the election. On the first snapshot, an unweighted illustration gives mean D minus R of +1.7 for LV polls versus +3.2 for RV polls, so the rule shifts the picture toward Paxton and drops the most recent poll (NPR/Marist, RV). Treating repeat polls as separate lets a frequent pollster dominate; recency weighting reduces this for old polls but not for several recent polls from one firm. Leaving undecided voters as reported implicitly assumes they split evenly; with a win-probability target, a high undecided share should be reflected in uncertainty.
 
-Open: whether to use a release's LV numbers when the tracker shows only RV; recency decay form and rate.
+Half-life sensitivity on the first snapshot (reference date 2026-09-29, 11 LV polls): h = 7 gives +2.40 (n_eff 4.03), h = 14 gives +2.64 (n_eff 5.48), h = 30 gives +2.52 (n_eff 7.69), and unweighted gives +1.73. The average is insensitive to h within 7–30 days; applying recency weighting at all matters more.
+
+Open: whether to use a release's LV numbers when the tracker shows only RV.
 
 ### Affected files
 

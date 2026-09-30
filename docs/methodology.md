@@ -34,7 +34,9 @@ Undecided and other responses are left as reported: no allocation and no normali
 
 ## Weighting
 
-Recency weighting, with poll age measured from the fieldwork end date (Decision 009). The decay form and rate are not yet decided.
+Exponential recency weighting (Decision 009): weight = 0.5^(age_days / h), where age_days is the reference date minus the fieldwork end date. Working half-life h = 14 days, to be recalibrated on historical Senate data.
+
+Weighted average = Σ(weight × margin) / Σ(weight). Report the effective number of polls alongside it: n_eff = (Σ weight)² / Σ(weight²). n_eff assumes independent, equal-variance polls, so it is an upper bound on independent information.
 
 ## Uncertainty and probability model
 
@@ -45,5 +47,14 @@ Convert the poll average into P(Democrat wins) using an error model calibrated o
 ## Bias evaluation
 
 ## Sensitivity analysis
+
+Half-life, Texas first snapshot (reference date 2026-09-29, 11 LV polls):
+
+| h (days) | Weighted D − R | n_eff |
+| --- | --- | --- |
+| 7 | +2.40 | 4.03 |
+| 14 | +2.64 | 5.48 |
+| 30 | +2.52 | 7.69 |
+| Unweighted | +1.73 | 11 |
 
 ## Known limitations

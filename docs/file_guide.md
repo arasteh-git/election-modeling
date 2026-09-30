@@ -43,6 +43,7 @@ Every verification status in the generated CSV remains pending. docs/texas_track
 | docs/handoff_template.md | Blank structure for transferring a task between Rahan and assistants. |
 | docs/handoffs/2026-09-27-claude-chat-to-claude-code.md | Historical onboarding and scaffold-audit handoff. |
 | docs/handoffs/2026-09-29-codex-to-rahan-and-claude.md | Historical handoff for the Texas collection, checks, and unfinished verification. |
+| docs/handoffs/2026-09-29-claude-code-to-codex.md | Decisions 008–010, Texas poll rules, first average check, and requested source proposal for Codex. |
 
 ## Python and notebooks
 
