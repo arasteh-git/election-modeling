@@ -5,3 +5,5 @@ Original source inputs are tracked in Git (Decision 005). Preserve original snap
 The [Texas tracker collection](texas_tracker/README.md) contains timestamped snapshots. Each includes the original webpage, extracted table, a mechanically standardized copy, provenance, and discrepancy flags. The standardized copy remains with its source until analytical rules are agreed; it is not yet model-ready.
 
 .gitkeep is an empty directory marker. See [the complete file guide](../../docs/file_guide.md).
+
+The [historical Texas Senate inventory](texas_senate_historical/README.md) preserves 2018/2020 FiveThirtyEight candidate data from a pinned mirror and the 2024 UT tracker, with mechanical CSVs, retrieval details, checksums, and unresolved issue flags.

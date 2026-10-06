@@ -74,3 +74,11 @@ Each .gitkeep is an empty placeholder: Git tracks files rather than empty direct
 ## Suggested reading order
 
 Read the snapshot manifest, look at tracker.csv, compare normalized.csv, then read issues.json and docs/texas_tracker_review.md. Consult docs/data_dictionary.md while exploring in your notebook. Read methodology.md with Claude when ready to decide modeling rules.
+
+## Historical Texas Senate files
+
+`src/ingest/texas_senate_historical.py` collects and mechanically standardizes 2018/2020 archived FiveThirtyEight candidate data and UT's 2024 tracker. It preserves alternate questions and hypothetical candidates, flags issues, and supports offline replay. Run commands, output files, and limitations are in [data/raw/texas_senate_historical/README.md](../data/raw/texas_senate_historical/README.md).
+
+First snapshot: `data/raw/texas_senate_historical/20261006T024116Z/`. It contains unchanged source CSV/HTML and publisher documentation, candidate-row/table extracts, combined `normalized.csv`, three per-cycle CSVs, `manifest.json`, and `issues.json`. It is an inventory for review, without historical inclusion decisions, weights, results, or uncertainty calibration.
+
+[docs/handoffs/2026-10-05-codex-to-rahan-and-claude.md](handoffs/2026-10-05-codex-to-rahan-and-claude.md) records collection, observed checks, provenance limits, and next review steps. Rahan's `notebooks/data-pulls.ipynb` now loads the 2026 snapshot and computes the LV recency-weighted average and effective poll count; the older table description above is superseded by this entry.

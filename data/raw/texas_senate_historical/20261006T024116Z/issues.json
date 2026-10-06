@@ -1,0 +1,1674 @@
+[
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "135;136",
+    "poll_id": "72774",
+    "question_id": "136577",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "185;186;187;188",
+    "poll_id": "72583",
+    "question_id": "136217",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "267;268",
+    "poll_id": "72518",
+    "question_id": "136088",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "281;282",
+    "poll_id": "72614",
+    "question_id": "136276",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "361;362",
+    "poll_id": "72229",
+    "question_id": "135688",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "369;370",
+    "poll_id": "72498",
+    "question_id": "136057",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "522;523",
+    "poll_id": "72308",
+    "question_id": "135652",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "528;529",
+    "poll_id": "72206",
+    "question_id": "135451",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "538;539;540;541",
+    "poll_id": "71957",
+    "question_id": "134886",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "554;555;556",
+    "poll_id": "71967",
+    "question_id": "134908",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "563;564",
+    "poll_id": "72149",
+    "question_id": "135279",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "667;668",
+    "poll_id": "72186",
+    "question_id": "135401",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "682;683;684;685",
+    "poll_id": "71884",
+    "question_id": "134739",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "686;687;688;689",
+    "poll_id": "71884",
+    "question_id": "134740",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "690;691;692;693",
+    "poll_id": "71955",
+    "question_id": "134883",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "706;707",
+    "poll_id": "71647",
+    "question_id": "134232",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "708;709;710;711",
+    "poll_id": "71458",
+    "question_id": "133839",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "735;736",
+    "poll_id": "71556",
+    "question_id": "134044",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "776;777;778;779",
+    "poll_id": "71437",
+    "question_id": "133786",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "808;809",
+    "poll_id": "71169",
+    "question_id": "133244",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "nonstandard_population"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "966;967",
+    "poll_id": "70762",
+    "question_id": "132382",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "1022;1023",
+    "poll_id": "70682",
+    "question_id": "132201",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "1028;1029;1030;1031",
+    "poll_id": "70630",
+    "question_id": "132069",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "1079;1080;1081;1082",
+    "poll_id": "70658",
+    "question_id": "132129",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "1111;1112;1113",
+    "poll_id": "70694",
+    "question_id": "132240",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "1244;1245",
+    "poll_id": "70046",
+    "question_id": "130476",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "1289;1290;1291",
+    "poll_id": "69711",
+    "question_id": "129986",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "1294;1295",
+    "poll_id": "69975",
+    "question_id": "130315",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "1325;1326",
+    "poll_id": "69955",
+    "question_id": "130272",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "1374;1375",
+    "poll_id": "69642",
+    "question_id": "129835",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "1420;1421",
+    "poll_id": "69565",
+    "question_id": "129608",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "1440;1441",
+    "poll_id": "70770",
+    "question_id": "132389",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "1601;1602",
+    "poll_id": "68513",
+    "question_id": "128273",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "nonstandard_population"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "1618;1619;1620;1621",
+    "poll_id": "68492",
+    "question_id": "128224",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "1622;1623;1624;1625",
+    "poll_id": "68492",
+    "question_id": "128225",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "1685;1686",
+    "poll_id": "68480",
+    "question_id": "128199",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "1687;1688",
+    "poll_id": "69578",
+    "question_id": "129667",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "1721;1722;1723;1724",
+    "poll_id": "68082",
+    "question_id": "127527",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "1801;1802",
+    "poll_id": "67882",
+    "question_id": "127096",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "1836;1837",
+    "poll_id": "67883",
+    "question_id": "127097",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "1922;1923",
+    "poll_id": "67617",
+    "question_id": "126514",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "1924;1925",
+    "poll_id": "67629",
+    "question_id": "126539",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "1977;1978",
+    "poll_id": "67057",
+    "question_id": "125293",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "1979;1980",
+    "poll_id": "67057",
+    "question_id": "125294",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "hypothetical_or_unexpected_matchup",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "2001;2002",
+    "poll_id": "67054",
+    "question_id": "125285",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "2003;2004",
+    "poll_id": "67054",
+    "question_id": "125286",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "2005;2006",
+    "poll_id": "67054",
+    "question_id": "125287",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "hypothetical_or_unexpected_matchup",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "2007;2008",
+    "poll_id": "67054",
+    "question_id": "125288",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "hypothetical_or_unexpected_matchup",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "2059;2060",
+    "poll_id": "66979",
+    "question_id": "125103",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "nonstandard_population"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "2077;2078",
+    "poll_id": "66919",
+    "question_id": "124959",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "2079;2080",
+    "poll_id": "66919",
+    "question_id": "124960",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "hypothetical_or_unexpected_matchup",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "2251;2252",
+    "poll_id": "66043",
+    "question_id": "122510",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "2253;2254",
+    "poll_id": "66043",
+    "question_id": "122511",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "hypothetical_or_unexpected_matchup",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "2362;2363",
+    "poll_id": "64640",
+    "question_id": "119337",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "2448;2449",
+    "poll_id": "62992",
+    "question_id": "114141",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "hypothetical_or_unexpected_matchup",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "2450;2451",
+    "poll_id": "62992",
+    "question_id": "114142",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "hypothetical_or_unexpected_matchup",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "2452;2453",
+    "poll_id": "62992",
+    "question_id": "114143",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "2454;2455",
+    "poll_id": "62992",
+    "question_id": "114144",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "hypothetical_or_unexpected_matchup",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "2456;2457",
+    "poll_id": "62992",
+    "question_id": "114145",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "hypothetical_or_unexpected_matchup",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "2547;2548",
+    "poll_id": "57962",
+    "question_id": "100825",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "2559;2560",
+    "poll_id": "57601",
+    "question_id": "100819",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "hypothetical_or_unexpected_matchup"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "2567;2568",
+    "poll_id": "57528",
+    "question_id": "100817",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "hypothetical_or_unexpected_matchup"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2020",
+    "source_rows": "2573;2574",
+    "poll_id": "57419",
+    "question_id": "100814",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "hypothetical_or_unexpected_matchup"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "2585;2586",
+    "poll_id": "56817",
+    "question_id": "91571",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "2716;2717;2718",
+    "poll_id": "56702",
+    "question_id": "91332",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "2849;2850;2851",
+    "poll_id": "56632",
+    "question_id": "91196",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "2972;2973",
+    "poll_id": "56513",
+    "question_id": "90915",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "2982;2983",
+    "poll_id": "56590",
+    "question_id": "91092",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "2984;2985",
+    "poll_id": "56590",
+    "question_id": "91093",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3025;3026",
+    "poll_id": "56562",
+    "question_id": "91001",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3097;3098;3099",
+    "poll_id": "56386",
+    "question_id": "90645",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3104;3105;3106",
+    "poll_id": "56481",
+    "question_id": "90848",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3181;3182",
+    "poll_id": "56413",
+    "question_id": "90683",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3183;3184",
+    "poll_id": "56413",
+    "question_id": "90697",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3248;3249;3250",
+    "poll_id": "56232",
+    "question_id": "90312",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3274;3275",
+    "poll_id": "56237",
+    "question_id": "90327",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3276;3277",
+    "poll_id": "56237",
+    "question_id": "90328",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3278;3279;3280",
+    "poll_id": "56208",
+    "question_id": "90274",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3294;3295",
+    "poll_id": "56090",
+    "question_id": "89955",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3296;3297",
+    "poll_id": "56090",
+    "question_id": "89956",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3326;3327",
+    "poll_id": "56154",
+    "question_id": "90142",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3385;3386",
+    "poll_id": "56077",
+    "question_id": "89936",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3387;3388",
+    "poll_id": "56079",
+    "question_id": "89940",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3581;3582",
+    "poll_id": "54134",
+    "question_id": "87618",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "nonstandard_population",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3583;3584",
+    "poll_id": "54134",
+    "question_id": "87638",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "nonstandard_population",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3634;3635",
+    "poll_id": "54114",
+    "question_id": "87471",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3650;3651",
+    "poll_id": "54073",
+    "question_id": "87278",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3694;3695",
+    "poll_id": "54091",
+    "question_id": "87435",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3696;3697",
+    "poll_id": "54091",
+    "question_id": "90202",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3719;3720",
+    "poll_id": "54167",
+    "question_id": "87696",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3780;3781",
+    "poll_id": "53956",
+    "question_id": "86823",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3794;3795;3796",
+    "poll_id": "53971",
+    "question_id": "86858",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3876;3877",
+    "poll_id": "53776",
+    "question_id": "86415",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3912;3913",
+    "poll_id": "53736",
+    "question_id": "86236",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3935;3936",
+    "poll_id": "72925",
+    "question_id": "136809",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "missing_sample_size",
+      "missing_population",
+      "missing_release_url"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3962;3963",
+    "poll_id": "53476",
+    "question_id": "85660",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "nonstandard_population"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "3979;3980",
+    "poll_id": "53463",
+    "question_id": "84641",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "4006;4007;4008",
+    "poll_id": "53466",
+    "question_id": "84648",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "4009;4010;4011",
+    "poll_id": "53466",
+    "question_id": "84649",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "4050;4051",
+    "poll_id": "52801",
+    "question_id": "83444",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "4256;4257",
+    "poll_id": "52737",
+    "question_id": "83322",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "4258;4259",
+    "poll_id": "52737",
+    "question_id": "83323",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "multiple_questions_same_poll"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "4305;4306;4307",
+    "poll_id": "52735",
+    "question_id": "83318",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "4340;4341",
+    "poll_id": "53682",
+    "question_id": "86145",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "4354;4355",
+    "poll_id": "52597",
+    "question_id": "83157",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "4356;4357",
+    "poll_id": "52776",
+    "question_id": "83388",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "4370;4371",
+    "poll_id": "52632",
+    "question_id": "83161",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "nonstandard_population"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "4372;4373;4374",
+    "poll_id": "52596",
+    "question_id": "83156",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "4426;4427",
+    "poll_id": "52598",
+    "question_id": "83158",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "4534;4535",
+    "poll_id": "53681",
+    "question_id": "86144",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified",
+      "nonstandard_population"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "4548;4549",
+    "poll_id": "52631",
+    "question_id": "83160",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "538_archive",
+    "cycle": "2018",
+    "source_rows": "4590;4591",
+    "poll_id": "52630",
+    "question_id": "83159",
+    "flags": [
+      "mirror_not_verified_against_original",
+      "publication_date_unverified"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "1",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "2",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "3",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable",
+      "spread_mismatch"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "4",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "5",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable",
+      "release_url_shared_across_labels"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "6",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable",
+      "missing_moe",
+      "release_url_shared_across_labels"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "7",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "8",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "9",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "10",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "11",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "12",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "13",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "14",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "15",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "16",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable",
+      "missing_moe",
+      "release_url_shared_across_labels"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "17",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "18",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable",
+      "missing_moe",
+      "release_url_shared_across_labels"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "19",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "20",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable",
+      "unparsed_field_dates"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "21",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable",
+      "spread_mismatch"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "22",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "23",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable",
+      "spread_mismatch"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "24",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "25",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "26",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "27",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "28",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "29",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "30",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "31",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "32",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable",
+      "forced_undecided_source_note"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "33",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "34",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "35",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "36",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  },
+  {
+    "source": "ut_tracker_2024",
+    "cycle": "2024",
+    "source_rows": "37",
+    "poll_id": "",
+    "question_id": "",
+    "flags": [
+      "publication_date_unavailable"
+    ]
+  }
+]

@@ -172,6 +172,8 @@ Half-life sensitivity on the first snapshot (reference date 2026-09-29, 11 LV po
 
 Open: whether to use a release's LV numbers when the tracker shows only RV.
 
+Deferred 2026-10-05: Rahan considered down-weighting RV polls instead of excluding them and kept LV only for now. Including RV polls, likely via an estimated RV-minus-LV shift rather than down-weighting alone, will be revisited with house effects in the next tier (Decision 010).
+
 ### Affected files
 
 docs/methodology.md, PROJECT.md, STATUS.md

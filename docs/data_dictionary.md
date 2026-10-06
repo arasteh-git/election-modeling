@@ -42,3 +42,32 @@ Require one table with the expected nine headers, nonempty rows, nine cells per 
 
 Date and numeric conversions only. The script uses subtraction solely to flag a source discrepancy; it does not output model weights, averages, or probabilities.
 
+
+## Historical Texas Senate inventory
+
+Applies to `data/raw/texas_senate_historical/<timestamp>/`. This schema differs from the 2026 tracker; they should not be joined by row numbers.
+
+| Field | Meaning |
+| --- | --- |
+| source | `538_archive` or `ut_tracker_2024`; preserves source differences |
+| source_rows | Semicolon-separated 1-based archive candidate data rows, or UT table data row; identifies records only within the specific snapshot/source |
+| cycle | Election cycle, not necessarily fieldwork year; some fieldwork is in the preceding year |
+| race_id, poll_id, question_id, pollster_id | Original 538 identifiers, blank where UT has none. A poll can contain several questions/populations. Keys need source plus snapshot; `question_id` is not a separate independent survey |
+| poll_label, sponsors | 538 display label (pollster fallback) and sponsor text, or original UT poll label; no canonical firm mapping |
+| start_date, end_date | ISO fieldwork dates from explicit source dates; blank for the malformed 2024 interval, with `unparsed_field_dates` |
+| election_date | Original 538 date converted to ISO; blank for UT, which provides no date column |
+| sample_size | Parsed positive integer; source missing values stay blank, never imputed |
+| population, population_raw, population_full | Uppercased source code, original code, and source full population label. LV/RV/A as before; V is kept without reinterpretation and flagged, blanks preserved |
+| dem_candidate, rep_candidate | Candidate names actually present in that question, not an assumed mapping to the eventual nominees; hypothetical/unexpected matchups flagged |
+| dem_pct, rep_pct | Single DEM/REP candidate's source share, 0–100. Ambiguous/missing party answers stay blank and flagged. No undecided allocation or rescaling |
+| candidate_answers_json | All original candidate answers for each 538 question (names, IDs, parties, percentages as source text). Blank for UT, which only lists the major-party candidates |
+| field_dates_raw, moe_raw, spread_raw | UT original date interval, error text, and displayed spread; blank where not available. Spreads do not replace candidate shares |
+| release_url | Source link, possibly an intermediary, stale, missing, or shared/mislabeled; not evidence of primary verification |
+| created_at_raw | 538 database entry timestamp, original text and unverified timezone. Not verified publication/release time; blank for UT |
+| notes, methodology, tracking, internal, partisan | Original 538 metadata, blank where unavailable; does not establish analytical inclusion or exclusion |
+| primary_verification | `pending` for all collected records; primary releases not individually verified |
+| flags | Semicolon-separated review flags; no automatic corrections or exclusions |
+
+`texas_538_candidate_rows.csv` preserves the original archive fields plus `source_row`. `texas_2024_tracker.csv` preserves original table cell text plus row number and absolute link. The full source CSV/HTML remain unchanged. Source rows are counted excluding the archive header; the UT footnote is preserved in the manifest rather than counted as a poll.
+
+Missing values are empty CSV fields (pandas reads these as NaN by default). Required schema/identifier failures and inconsistent metadata within a 538 question stop extraction. Missing numeric values and ambiguous dates are retained with flags; malformed numeric values stop extraction. No `other` or undecided share is inferred as the complement of major-party shares.

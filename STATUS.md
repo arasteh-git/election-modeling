@@ -2,7 +2,7 @@
 
 ## Current milestone
 
-Collect the first Texas Senate polling inventory and prepare source review.
+Review the historical Texas Senate polling inventory and choose the uncertainty model.
 
 ## Completed
 
@@ -36,25 +36,30 @@ Collect the first Texas Senate polling inventory and prepare source review.
 - Rahan wrote the first LV-only, recency-weighted Texas average in notebooks/data-pulls.ipynb: +2.64 D − R with n_eff 5.48 at a working half-life of 14 days (Decision 009). Claude checked the results independently. Sensitivity for h = 7 and 30 is in docs/methodology.md.
 - Defined the minimum deliverable and tiers (Decision 010): Texas P(Democrat wins) first; fundamentals and house effects next; correlation and P(Democrats win the Senate) last.
 
+- Collected a historical Texas Senate inventory on 2026-10-05 at Rahan's request: 49 2018 questions, 63 2020 questions, and 37 2024 tracker rows, with all populations retained. Saved original sources, provenance/checksums, per-cycle CSVs, and mechanical flags.
+- Verified candidate-row preservation, schema rejection, flag retention, byte-identical offline replay, and overwrite rejection. No historical primary releases verified.
+
 ## Not yet done
 
 - Local Python environment setup.
-- Choice of error-model form and approval of historical Senate polling sources for calibration.
+- Choice of error-model form, historical source/inclusion review, and approval of broader Senate polling and result sources for calibration.
 - Open poll rule: LV numbers from releases where the tracker shows RV.
 - Uncertainty model for win probability, and the baseline.
 - Complete primary-source verification, analytical data cleaning, modeling, and evaluation.
 
 ## Next action
 
-Rahan: choose the error-model form with Claude, and ask ChatGPT/Codex to propose historical Senate polling sources.
+Rahan: review the historical inventory and flagged hypothetical/multiple-question observations with Claude, decide historical inclusion and availability rules, and choose the error-model form. Historical election results and a broader Senate calibration sample still need approved sources.
 
 ## Active branch / commit
 
-main at 2b9e095 (PR #3 merged), plus uncommitted Claude Code documentation updates from 2026-09-29.
+main at 087740e97f71b1663a25b82a9d4e14aee6565ce8, plus uncommitted 2026-10-05 historical collection and documentation changes.
 
 ## Data snapshot
 
 data/raw/texas_tracker/20260929T222648Z/ — 16 tracker rows; source last updated September 23, 2026. Extraction is complete; primary verification is incomplete.
+
+Historical: `data/raw/texas_senate_historical/20261006T024116Z/` — 149 question/tracker records (262 older candidate rows plus 37 newer tracker rows). Source dates and populations preserved; one malformed 2024 date remains blank and flagged. Full primary verification and historical analytical inclusion remain pending.
 
 ## Blockers
 
