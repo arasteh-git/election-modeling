@@ -50,7 +50,7 @@ Each candidate's win probability (Decision 008).
 
 Decision 010. Tiers build on each other:
 
-1. Minimum: P(Democrat wins) for Texas Senate, from a recency-weighted likely-voter average plus an error model calibrated on past Senate polling error (model form undecided). Run on demand by Rahan.
+1. Minimum: P(Democrat wins) for Texas Senate, from a recency-weighted likely-voter average plus normal errors calibrated on past Senate polling error (Decisions 012/015). Run on demand by Rahan.
 2. Next level: add fundamentals and pollster house effects (including how to bring RV and partisan polls back in); σ as a smooth function of days to election; extend to more races.
 3. Final level: correlation between states; cover the full 2026 Senate landscape and produce P(Democrats win the Senate).
 

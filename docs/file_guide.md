@@ -36,7 +36,8 @@ Every verification status in the generated CSV remains pending. docs/texas_track
 | --- | --- |
 | docs/file_guide.md | This explanatory map of the repository. |
 | docs/README.md | Shared-document navigation and the distinction between proposals, approved decisions, and implemented schemas/workflows. |
-| docs/calibration_preparation_plan.md | National preparation proposal, approved source/rule updates, collected-result coverage, planned processed outputs and validation; the national preparer remains unimplemented. |
+| docs/calibration_preparation_plan.md | Original national preparation design, approved source/rule updates and links to implemented behavior. |
+| docs/calibration_preparation_review.md | Actual mapping/filter counts, official references, pending cases, preservation and observed tests. |
 | docs/senate_results_review.md | Actual collected MEDSL V8.0 coverage, arithmetic/source flags, Texas source values, checks and remaining factual preparation work. |
 | docs/data_dictionary.md | Meaning, types, units, identifiers, and missing-value conventions of the data fields. |
 | docs/data_sources.md | Approved polling sources, proposed election-result sources, access methods, attribution, and snapshot provenance. |
@@ -103,3 +104,11 @@ First snapshot: `data/raw/texas_senate_historical/20261006T024116Z/`. It contain
 `data/processed/texas_senate_historical/20261006T024116Z/` contains Decision 011 outputs. `normalized.csv` has 137 records with confirmed 2024 election dates and source-based partisan tags. The three per-cycle CSVs use the same schema. `excluded.csv` preserves the 12 removed hypothetical 2020 questions with reasons; `changes.csv` audits all 149 inputs; `manifest.json` records source provenance, hashes, rules, processing time, and counts. [The prepared README](../data/processed/texas_senate_historical/README.md) explains all files, reproduction, and the notebook load path.
 
 `src/clean/prepare_texas_history.py` implements only the approved preparation rules. `tests/test_prepare_texas_history.py` checks exact exclusions, preserved values/inputs, date corrections, classifications, unknown/ambiguous cases, hashes, and overwrite protection. Run instructions are in their folder READMEs. [The cleanup handoff](handoffs/2026-10-05-codex-to-rahan-and-claude-history-cleanup.md) records this change and remaining review questions.
+
+## Prepared national Senate calibration files
+
+`src/clean/prepare_senate_calibration.py` is the offline, immutable preparer for Decisions 012–014. [src/clean/README.md](../src/clean/README.md) gives commands; [src/clean/calibration_references/README.md](../src/clean/calibration_references/README.md) explains `fec_facts.json`, `poll_aliases.json`, `round_facts.json` and the XLSX extractor `extract_fec.py`.
+
+`data/processed/senate_calibration/20261006T024116Z_20261006T035630Z_v1/` contains `contests.csv`, `candidate_results.csv`, `candidate_side_map.csv`, `poll_candidate_rows.csv`, `poll_questions.csv`, `crosswalk.csv`, `race_crosswalk.csv`, `race_inventory.csv`, `excluded.csv`, `pending.csv`, `changes.csv` and `manifest.json`. [Its folder README](../data/processed/senate_calibration/README.md) describes each file, loading/replay commands, counts and limitations. No margins or calibration calculations are implemented. [The data dictionary](data_dictionary.md#prepared-national-calibration-inputs-decisions-012014) explains keys/fields/statuses.
+
+`tests/test_prepare_senate_calibration.py` adds nine regression checks using the saved snapshots and temporary offline outputs. [The preparation review](calibration_preparation_review.md) and [handoff](handoffs/2026-10-06-codex-to-rahan-and-claude-calibration.md) record observed checks, source discrepancies, unconfirmed cases and Rahan's next steps. Downloaded official reference documents and implementation drafts remain under ignored `outputs/`; they are not additional tracked raw snapshots.

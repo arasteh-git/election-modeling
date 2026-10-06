@@ -1,0 +1,2669 @@
+{
+  "schema_version": 1,
+  "aliases": [
+    {
+      "poll_candidate_id": "14567",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "Jon Ossoff",
+      "result_name": "JON OSSOFF",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14568",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "David A. Perdue",
+      "result_name": "DAVID A. PERDUE",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14489",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "Raphael Warnock",
+      "result_name": "RAPHAEL WARNOCK",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13671",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "Kelly Loeffler",
+      "result_name": "KELLY LOEFFLER",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13466",
+      "cycle": "2020",
+      "state": "Iowa",
+      "poll_name": "Theresa Greenfield",
+      "result_name": "THERESA GREENFIELD",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13467",
+      "cycle": "2020",
+      "state": "Iowa",
+      "poll_name": "Joni K. Ernst",
+      "result_name": "JONI ERNST",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "13457",
+      "cycle": "2020",
+      "state": "South Carolina",
+      "poll_name": "Jaime Harrison",
+      "result_name": "JAIME HARRISON",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13458",
+      "cycle": "2020",
+      "state": "South Carolina",
+      "poll_name": "Lindsey Graham",
+      "result_name": "LINDSEY GRAHAM",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14517",
+      "cycle": "2020",
+      "state": "Montana",
+      "poll_name": "Steve Bullock",
+      "result_name": "STEVE BULLOCK",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14518",
+      "cycle": "2020",
+      "state": "Montana",
+      "poll_name": "Steve Daines",
+      "result_name": "STEVE DAINES",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13455",
+      "cycle": "2020",
+      "state": "Maine",
+      "poll_name": "Sara I. Gideon",
+      "result_name": "SARA I. GIDEON",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13456",
+      "cycle": "2020",
+      "state": "Maine",
+      "poll_name": "Susan M. Collins",
+      "result_name": "SUSAN MARGARET COLLINS",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "14690",
+      "cycle": "2020",
+      "state": "Maine",
+      "poll_name": "Lisa Savage",
+      "result_name": "LISA SAVAGE",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14691",
+      "cycle": "2020",
+      "state": "Maine",
+      "poll_name": "Max Linn",
+      "result_name": "MAX PATRICK LINN",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "13445",
+      "cycle": "2020",
+      "state": "Arizona",
+      "poll_name": "Mark Kelly",
+      "result_name": "MARK KELLY",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13446",
+      "cycle": "2020",
+      "state": "Arizona",
+      "poll_name": "Martha McSally",
+      "result_name": "MARTHA MCSALLY",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13468",
+      "cycle": "2020",
+      "state": "North Carolina",
+      "poll_name": "Cal Cunningham",
+      "result_name": "CAL CUNNINGHAM",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13461",
+      "cycle": "2020",
+      "state": "North Carolina",
+      "poll_name": "Thomas Roland Tillis",
+      "result_name": "THOM TILLIS",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "13459",
+      "cycle": "2020",
+      "state": "Texas",
+      "poll_name": "Mary Jennings Hegar",
+      "result_name": "MARY \"MJ\" HEGAR",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "13444",
+      "cycle": "2020",
+      "state": "Texas",
+      "poll_name": "John Cornyn",
+      "result_name": "JOHN CORNYN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14572",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "Shane Hazel",
+      "result_name": "SHANE HAZEL",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13669",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "Doug Collins",
+      "result_name": "DOUG COLLINS",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14549",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "Brian Richard Slowinski",
+      "result_name": "BRIAN SLOWINSKI",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "14490",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "Ed Tarver",
+      "result_name": "ED TARVER",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13670",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "Matt Lieberman",
+      "result_name": "MATT LIEBERMAN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13501",
+      "cycle": "2020",
+      "state": "Illinois",
+      "poll_name": "Richard J. Durbin",
+      "result_name": "RICHARD J. DURBIN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15646",
+      "cycle": "2020",
+      "state": "Illinois",
+      "poll_name": "Mark C. Curran",
+      "result_name": "MARK C. CURRAN JR.",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "13453",
+      "cycle": "2020",
+      "state": "Michigan",
+      "poll_name": "Gary C. Peters",
+      "result_name": "GARY PETERS",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "13454",
+      "cycle": "2020",
+      "state": "Michigan",
+      "poll_name": "John James",
+      "result_name": "JOHN JAMES",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15691",
+      "cycle": "2020",
+      "state": "Minnesota",
+      "poll_name": "Tina Smith",
+      "result_name": "TINA SMITH",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15692",
+      "cycle": "2020",
+      "state": "Minnesota",
+      "poll_name": "Jason Lewis",
+      "result_name": "JASON LEWIS",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14564",
+      "cycle": "2020",
+      "state": "New Jersey",
+      "poll_name": "Cory A. Booker",
+      "result_name": "CORY BOOKER",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "14565",
+      "cycle": "2020",
+      "state": "New Jersey",
+      "poll_name": "Rikin Mehta",
+      "result_name": "RIKIN \"RIK\" MEHTA",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "15614",
+      "cycle": "2020",
+      "state": "Iowa",
+      "poll_name": "Rick Stewart",
+      "result_name": "RICK STEWART",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15642",
+      "cycle": "2020",
+      "state": "Iowa",
+      "poll_name": "Suzanne Herzog",
+      "result_name": "SUZANNE HERZOG",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13474",
+      "cycle": "2020",
+      "state": "Colorado",
+      "poll_name": "John Wright Hickenlooper",
+      "result_name": "JOHN W. HICKENLOOPER",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "13475",
+      "cycle": "2020",
+      "state": "Colorado",
+      "poll_name": "Cory Gardner",
+      "result_name": "CORY GARDNER",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13500",
+      "cycle": "2020",
+      "state": "Illinois",
+      "poll_name": "WIllie Wilson",
+      "result_name": "WILLIE L. WILSON",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "15838",
+      "cycle": "2020",
+      "state": "Illinois",
+      "poll_name": "David F. Black",
+      "result_name": "DAVID F. BLACK",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15645",
+      "cycle": "2020",
+      "state": "Illinois",
+      "poll_name": "Danny Malouf",
+      "result_name": "DANNY MALOUF ",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14558",
+      "cycle": "2020",
+      "state": "North Carolina",
+      "poll_name": "Kevin Eugene Hayes",
+      "result_name": "KEVIN E. HAYES",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "14557",
+      "cycle": "2020",
+      "state": "North Carolina",
+      "poll_name": "Shannon W. Bray",
+      "result_name": "SHANNON W. BRAY",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15683",
+      "cycle": "2020",
+      "state": "Texas",
+      "poll_name": "Ricardo Turullols-Bonilla",
+      "result_name": "RICARDO TURULLOLS-BONILLA",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15835",
+      "cycle": "2020",
+      "state": "Texas",
+      "poll_name": "Kerry Douglas McKennon",
+      "result_name": "KERRY DOUGLAS MCKENNON",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14760",
+      "cycle": "2020",
+      "state": "Virginia",
+      "poll_name": "Mark R. Warner",
+      "result_name": "MARK R. WARNER",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15688",
+      "cycle": "2020",
+      "state": "Virginia",
+      "poll_name": "Daniel M. Gade",
+      "result_name": "DANIEL M. GADE",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13612",
+      "cycle": "2020",
+      "state": "Alabama",
+      "poll_name": "Gordon Douglas Jones",
+      "result_name": "DOUG JONES",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "13614",
+      "cycle": "2020",
+      "state": "Alabama",
+      "poll_name": "Tommy Tuberville",
+      "result_name": "TOMMY TUBERVILLE",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13698",
+      "cycle": "2020",
+      "state": "Kansas",
+      "poll_name": "Barbara Goolsbee Bollier",
+      "result_name": "BARBARA BOLLIER",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "14604",
+      "cycle": "2020",
+      "state": "Kansas",
+      "poll_name": "Roger Marshall",
+      "result_name": "ROGER MARSHALL",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15647",
+      "cycle": "2020",
+      "state": "Kansas",
+      "poll_name": "Jason Buckley",
+      "result_name": "JASON BUCKLEY",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14749",
+      "cycle": "2020",
+      "state": "South Carolina",
+      "poll_name": "Bill Bledsoe",
+      "result_name": "BILL BLEDSOE",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13651",
+      "cycle": "2020",
+      "state": "Mississippi",
+      "poll_name": "Mike Espy",
+      "result_name": "MIKE ESPY",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13652",
+      "cycle": "2020",
+      "state": "Mississippi",
+      "poll_name": "Cindy Hyde-Smith",
+      "result_name": "CINDY HYDE-SMITH",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14573",
+      "cycle": "2020",
+      "state": "Mississippi",
+      "poll_name": "Jimmy Edwards",
+      "result_name": "JIMMY L. EDWARDS",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "13470",
+      "cycle": "2020",
+      "state": "Kentucky",
+      "poll_name": "Amy McGrath",
+      "result_name": "AMY MCGRATH",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13471",
+      "cycle": "2020",
+      "state": "Kentucky",
+      "poll_name": "Mitch McConnell",
+      "result_name": "MITCH MCCONNELL",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14478",
+      "cycle": "2020",
+      "state": "Kentucky",
+      "poll_name": "Brad Barron",
+      "result_name": "BRAD BARRON",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15851",
+      "cycle": "2020",
+      "state": "Tennessee",
+      "poll_name": "Marquita Bradshaw",
+      "result_name": "MARQUITA BRADSHAW",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13694",
+      "cycle": "2020",
+      "state": "Tennessee",
+      "poll_name": "Bill Hagerty",
+      "result_name": "BILL HAGERTY",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15622",
+      "cycle": "2020",
+      "state": "Michigan",
+      "poll_name": "Marcia Squier",
+      "result_name": "MARCIA SQUIER",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13487",
+      "cycle": "2020",
+      "state": "Massachusetts",
+      "poll_name": "Edward J. Markey",
+      "result_name": "EDWARD J. MARKEY",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "16019",
+      "cycle": "2020",
+      "state": "Massachusetts",
+      "poll_name": "Kevin J. O'Connor",
+      "result_name": "KEVIN J. O'CONNER",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "15849",
+      "cycle": "2020",
+      "state": "Michigan",
+      "poll_name": "Douglas P. Dern",
+      "result_name": "DOUG DERN",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "15850",
+      "cycle": "2020",
+      "state": "Michigan",
+      "poll_name": "Valerie Willis",
+      "result_name": "VALERIE L. WILLIS",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "13626",
+      "cycle": "2020",
+      "state": "New Mexico",
+      "poll_name": "Ben Ray Luján",
+      "result_name": "BEN R. LUJAN",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "14622",
+      "cycle": "2020",
+      "state": "New Mexico",
+      "poll_name": "Mark V. Ronchetti",
+      "result_name": "MARK V. RONCHETTI",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15617",
+      "cycle": "2020",
+      "state": "New Mexico",
+      "poll_name": "Bob Walsh",
+      "result_name": "BOB WALSH",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14697",
+      "cycle": "2020",
+      "state": "Alaska",
+      "poll_name": "Al Gross",
+      "result_name": "AL GROSS",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13462",
+      "cycle": "2020",
+      "state": "Alaska",
+      "poll_name": "Dan Sullivan",
+      "result_name": "DAN SULLIVAN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13448",
+      "cycle": "2020",
+      "state": "New Hampshire",
+      "poll_name": "Jeanne Shaheen",
+      "result_name": "JEANNE SHAHEEN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14492",
+      "cycle": "2020",
+      "state": "New Hampshire",
+      "poll_name": "Bryant Messner",
+      "result_name": "CORKY MESSNER",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "15620",
+      "cycle": "2020",
+      "state": "New Hampshire",
+      "poll_name": "Justin F. O'Donnell",
+      "result_name": "JUSTIN O'DONNELL",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "15671",
+      "cycle": "2020",
+      "state": "South Dakota",
+      "poll_name": "Daniel P. Ahlers",
+      "result_name": "DAN AHLERS",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "15672",
+      "cycle": "2020",
+      "state": "South Dakota",
+      "poll_name": "M. Michael Rounds",
+      "result_name": "MIKE ROUNDS",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "16005",
+      "cycle": "2020",
+      "state": "Wyoming",
+      "poll_name": "Merav Ben-David",
+      "result_name": "MERAV BEN DAVID",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14769",
+      "cycle": "2020",
+      "state": "Wyoming",
+      "poll_name": "Cynthia M. Lummis",
+      "result_name": "CYNTHIA M. LUMMIS",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15663",
+      "cycle": "2020",
+      "state": "Nebraska",
+      "poll_name": "Chris E. Janicek",
+      "result_name": "CHRIS JANICEK",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "15613",
+      "cycle": "2020",
+      "state": "Nebraska",
+      "poll_name": "Ben Sasse",
+      "result_name": "BEN SASSE",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15664",
+      "cycle": "2020",
+      "state": "Nebraska",
+      "poll_name": "Gene Siadek",
+      "result_name": "GENE SIADEK",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15607",
+      "cycle": "2020",
+      "state": "Arkansas",
+      "poll_name": "Tom Cotton",
+      "result_name": "TOM COTTON",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15624",
+      "cycle": "2020",
+      "state": "Arkansas",
+      "poll_name": "Ricky Dale Harrington Jr.",
+      "result_name": "RICKY DALE HARRINGTON JR.",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "16040",
+      "cycle": "2020",
+      "state": "Alaska",
+      "poll_name": "John Wayne Howe",
+      "result_name": "JOHN WAYNE HOWE",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15658",
+      "cycle": "2020",
+      "state": "Minnesota",
+      "poll_name": "Oliver Steinberg",
+      "result_name": "OLIVER STEINBERG",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15661",
+      "cycle": "2020",
+      "state": "Minnesota",
+      "poll_name": "Kevin O'Connor",
+      "result_name": "KEVIN O'CONNOR",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14510",
+      "cycle": "2020",
+      "state": "Oklahoma",
+      "poll_name": "Abby Broyles",
+      "result_name": "ABBY BROYLES",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14511",
+      "cycle": "2020",
+      "state": "Oklahoma",
+      "poll_name": "James M. Inhofe",
+      "result_name": "JIM INHOFE",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "15609",
+      "cycle": "2020",
+      "state": "Oklahoma",
+      "poll_name": "Robert Murphy",
+      "result_name": "ROBERT MURPHY",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15612",
+      "cycle": "2020",
+      "state": "Oklahoma",
+      "poll_name": "Joan E. Farr",
+      "result_name": "JOAN FARR",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "15668",
+      "cycle": "2020",
+      "state": "Oklahoma",
+      "poll_name": "A. D. Nesbit",
+      "result_name": "A. D. NESBIT",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15852",
+      "cycle": "2020",
+      "state": "Texas",
+      "poll_name": "David B. Collins",
+      "result_name": "DAVID B. COLLINS",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15629",
+      "cycle": "2020",
+      "state": "Colorado",
+      "poll_name": "Stephen Dale Evans",
+      "result_name": "",
+      "status": "pending",
+      "basis": "No confirmed candidate identity"
+    },
+    {
+      "poll_candidate_id": "15627",
+      "cycle": "2020",
+      "state": "Colorado",
+      "poll_name": "Raymon Anthony Doane",
+      "result_name": "RAYMON ANTHONY DOANE",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14479",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "A. Wayne Johnson",
+      "result_name": "A. WAYNE JOHNSON",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15635",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "Tamara Y. Johnson-Shealey",
+      "result_name": "TAMARA JOHNSON-SHEALEY",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "14493",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "Richard Dien Winfield",
+      "result_name": "RICHARD DIEN WINFIELD",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14480",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "Al Bartell",
+      "result_name": "AL BARTELL",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "16051",
+      "cycle": "2020",
+      "state": "Colorado",
+      "poll_name": "Daniel Doyle",
+      "result_name": "DANIEL DOYLE",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15634",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "Joy Felicia Slade",
+      "result_name": "JOY FELICIA SLADE",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15638",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "Valencia Stovall",
+      "result_name": "VALENCIA STOVALL",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15636",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "John Fortuin",
+      "result_name": "JOHN FORTUIN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15632",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "Deborah A. Jackson",
+      "result_name": "DEBORAH JACKSON",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "15639",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "Annette L. Davis Jackson",
+      "result_name": "ANNETTE DAVIS JACKSON",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "15637",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "Michael Todd Greene",
+      "result_name": "MICHAEL TODD GREENE",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15610",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "Derrick E. Grayson",
+      "result_name": "DERRICK E. GRAYSON",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14762",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "Allen Buckley",
+      "result_name": "ALLEN BUCKLEY",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15633",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "Jamesia James",
+      "result_name": "JAMESIA JAMES",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15640",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "Kandiss Taylor",
+      "result_name": "KANDISS TAYLOR",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15689",
+      "cycle": "2020",
+      "state": "West Virginia",
+      "poll_name": "Paula Jean Swearengin",
+      "result_name": "PAULA JEAN SWEARENGIN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14765",
+      "cycle": "2020",
+      "state": "West Virginia",
+      "poll_name": "Shelley Moore Capito",
+      "result_name": "SHELLEY MOORE CAPITO",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "16098",
+      "cycle": "2020",
+      "state": "West Virginia",
+      "poll_name": "David D. Moran",
+      "result_name": "DAVID MORAN",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "15660",
+      "cycle": "2020",
+      "state": "Montana",
+      "poll_name": "Wendie Fredrickson",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit poll-to-FEC candidate identity; ballot membership checked separately for each round",
+      "fec_row": 304,
+      "reference_id": "fec_2020.xlsx"
+    },
+    {
+      "poll_candidate_id": "14763",
+      "cycle": "2020",
+      "state": "Oregon",
+      "poll_name": "Jeff Merkley",
+      "result_name": "JEFF MERKLEY",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15611",
+      "cycle": "2020",
+      "state": "Oregon",
+      "poll_name": "Jo Rae Perkins",
+      "result_name": "JO RAE PERKINS",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "16084",
+      "cycle": "2020",
+      "state": "Oregon",
+      "poll_name": "Gary Dye",
+      "result_name": "GARY DYE",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15669",
+      "cycle": "2020",
+      "state": "Oregon",
+      "poll_name": "Ibrahim Ali Taher",
+      "result_name": "IBRAHIM A TAHER",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "14761",
+      "cycle": "2020",
+      "state": "Delaware",
+      "poll_name": "Christopher A. Coons",
+      "result_name": "CHRISTOPHER A. COONS",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "16064",
+      "cycle": "2020",
+      "state": "Delaware",
+      "poll_name": "Lauren E. Witzke",
+      "result_name": "LAUREN WITZKE",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "15619",
+      "cycle": "2020",
+      "state": "Delaware",
+      "poll_name": "Nadine M. Frost",
+      "result_name": "NADINE M. FROST",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15631",
+      "cycle": "2020",
+      "state": "Delaware",
+      "poll_name": "Mark W. Turley",
+      "result_name": "MARK W. TURLEY",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15618",
+      "cycle": "2020",
+      "state": "Idaho",
+      "poll_name": "Paulette E. Jordan",
+      "result_name": "PAULETTE JORDAN",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "14766",
+      "cycle": "2020",
+      "state": "Idaho",
+      "poll_name": "James E. Risch",
+      "result_name": "JIM RISCH",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "13472",
+      "cycle": "2020",
+      "state": "New Hampshire",
+      "poll_name": "Donald C. Bolduc",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit reviewed primary candidate identity in FEC table; general ballot membership checked separately",
+      "fec_row": 337,
+      "reference_id": "fec_2020.xlsx"
+    },
+    {
+      "poll_candidate_id": "15846",
+      "cycle": "2020",
+      "state": "Louisiana",
+      "poll_name": "Adrian Perkins",
+      "result_name": "ADRIAN PERKINS",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14768",
+      "cycle": "2020",
+      "state": "Louisiana",
+      "poll_name": "Bill Cassidy",
+      "result_name": "\"BILL\" CASSIDY",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15845",
+      "cycle": "2020",
+      "state": "Louisiana",
+      "poll_name": "MV \"Vinny\" Mendoza",
+      "result_name": "M.V. \"VINNY\" MENDOZA",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15649",
+      "cycle": "2020",
+      "state": "Louisiana",
+      "poll_name": "Antoine Pierce",
+      "result_name": "ANTOINE PIERCE",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15654",
+      "cycle": "2020",
+      "state": "Louisiana",
+      "poll_name": "Dustin Murphy",
+      "result_name": "DUSTIN MURPHY",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "15848",
+      "cycle": "2020",
+      "state": "Louisiana",
+      "poll_name": "Aaron C. Sigler",
+      "result_name": "AARON C. SIGLER",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "14748",
+      "cycle": "2020",
+      "state": "South Carolina",
+      "poll_name": "Keenan Dunham",
+      "result_name": "",
+      "status": "pending",
+      "basis": "No confirmed candidate identity"
+    },
+    {
+      "poll_candidate_id": "13602",
+      "cycle": "2020",
+      "state": "Texas",
+      "poll_name": "Royce West",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit poll-to-FEC candidate identity; ballot membership checked separately for each round",
+      "fec_row": 482,
+      "reference_id": "fec_2020.xlsx"
+    },
+    {
+      "poll_candidate_id": "13613",
+      "cycle": "2020",
+      "state": "Alabama",
+      "poll_name": "Jeff Sessions",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit poll-to-FEC candidate identity; ballot membership checked separately for each round",
+      "fec_row": 4,
+      "reference_id": "fec_2020.xlsx"
+    },
+    {
+      "poll_candidate_id": "14698",
+      "cycle": "2020",
+      "state": "Arizona",
+      "poll_name": "Daniel McCarthy",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit reviewed primary candidate identity in FEC table; general ballot membership checked separately",
+      "fec_row": 30,
+      "reference_id": "fec_2020.xlsx"
+    },
+    {
+      "poll_candidate_id": "14645",
+      "cycle": "2020",
+      "state": "Alabama",
+      "poll_name": "Michael Parrish",
+      "result_name": "",
+      "status": "pending",
+      "basis": "No confirmed candidate identity"
+    },
+    {
+      "poll_candidate_id": "14640",
+      "cycle": "2020",
+      "state": "Kentucky",
+      "poll_name": "Charles Booker",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit poll-to-FEC candidate identity; ballot membership checked separately for each round",
+      "fec_row": 189,
+      "reference_id": "fec_2020.xlsx"
+    },
+    {
+      "poll_candidate_id": "13514",
+      "cycle": "2020",
+      "state": "Kansas",
+      "poll_name": "Kris W. Kobach",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit reviewed primary candidate identity in FEC table; general ballot membership checked separately",
+      "fec_row": 163,
+      "reference_id": "fec_2020.xlsx"
+    },
+    {
+      "poll_candidate_id": "14609",
+      "cycle": "2020",
+      "state": "Kansas",
+      "poll_name": "Bob Hamilton",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit reviewed primary candidate identity in FEC table; general ballot membership checked separately",
+      "fec_row": 164,
+      "reference_id": "fec_2020.xlsx"
+    },
+    {
+      "poll_candidate_id": "14578",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "Sarah Riggs Amico",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit poll-to-FEC candidate identity; ballot membership checked separately for each round",
+      "fec_row": 86,
+      "reference_id": "fec_2020.xlsx"
+    },
+    {
+      "poll_candidate_id": "14579",
+      "cycle": "2020",
+      "state": "Georgia",
+      "poll_name": "Teresa Tomlinson",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit poll-to-FEC candidate identity; ballot membership checked separately for each round",
+      "fec_row": 85,
+      "reference_id": "fec_2020.xlsx"
+    },
+    {
+      "poll_candidate_id": "14603",
+      "cycle": "2020",
+      "state": "Maine",
+      "poll_name": "Betsy Sweet",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit reviewed primary candidate identity in FEC table; general ballot membership checked separately",
+      "fec_row": 228,
+      "reference_id": "fec_2020.xlsx"
+    },
+    {
+      "poll_candidate_id": "13465",
+      "cycle": "2020",
+      "state": "Iowa",
+      "poll_name": "Eddie Mauro",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit reviewed primary candidate identity in FEC table; general ballot membership checked separately",
+      "fec_row": 153,
+      "reference_id": "fec_2020.xlsx"
+    },
+    {
+      "poll_candidate_id": "14566",
+      "cycle": "2020",
+      "state": "New Jersey",
+      "poll_name": "Hirsh Singh",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit poll-to-FEC candidate identity; ballot membership checked separately for each round",
+      "fec_row": 353,
+      "reference_id": "fec_2020.xlsx"
+    },
+    {
+      "poll_candidate_id": "13473",
+      "cycle": "2020",
+      "state": "New Hampshire",
+      "poll_name": "Bill O'Brien",
+      "result_name": "",
+      "status": "pending",
+      "basis": "No confirmed candidate identity"
+    },
+    {
+      "poll_candidate_id": "13616",
+      "cycle": "2020",
+      "state": "Alabama",
+      "poll_name": "Bradley Byrne",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit poll-to-FEC candidate identity; ballot membership checked separately for each round",
+      "fec_row": 5,
+      "reference_id": "fec_2020.xlsx"
+    },
+    {
+      "poll_candidate_id": "13693",
+      "cycle": "2020",
+      "state": "Tennessee",
+      "poll_name": "James Mackler",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit poll-to-FEC candidate identity; ballot membership checked separately for each round",
+      "fec_row": 459,
+      "reference_id": "fec_2020.xlsx"
+    },
+    {
+      "poll_candidate_id": "13695",
+      "cycle": "2020",
+      "state": "Tennessee",
+      "poll_name": "Manny Sethi",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit poll-to-FEC candidate identity; ballot membership checked separately for each round",
+      "fec_row": 442,
+      "reference_id": "fec_2020.xlsx"
+    },
+    {
+      "poll_candidate_id": "13627",
+      "cycle": "2020",
+      "state": "New Mexico",
+      "poll_name": "Gavin Clarkson",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit reviewed primary candidate identity in FEC table; general ballot membership checked separately",
+      "fec_row": 367,
+      "reference_id": "fec_2020.xlsx"
+    },
+    {
+      "poll_candidate_id": "13615",
+      "cycle": "2020",
+      "state": "Alabama",
+      "poll_name": "Roy S. Moore",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit reviewed primary candidate identity in FEC table; general ballot membership checked separately",
+      "fec_row": 6,
+      "reference_id": "fec_2020.xlsx"
+    },
+    {
+      "poll_candidate_id": "13617",
+      "cycle": "2020",
+      "state": "Alabama",
+      "poll_name": "Arnold Mooney",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit poll-to-FEC candidate identity; ballot membership checked separately for each round",
+      "fec_row": 8,
+      "reference_id": "fec_2020.xlsx"
+    },
+    {
+      "poll_candidate_id": "13476",
+      "cycle": "2020",
+      "state": "New Hampshire",
+      "poll_name": "Corey Lewandowski",
+      "result_name": "",
+      "status": "pending",
+      "basis": "No confirmed candidate identity"
+    },
+    {
+      "poll_candidate_id": "13443",
+      "cycle": "2020",
+      "state": "Texas",
+      "poll_name": "Beto O'Rourke",
+      "result_name": "",
+      "status": "texas_confirmed_nonballot",
+      "basis": "Decision 011: explicitly approved Texas 2020 non-Hegar hypothetical exclusion"
+    },
+    {
+      "poll_candidate_id": "13603",
+      "cycle": "2020",
+      "state": "Texas",
+      "poll_name": "Chris Bell",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit poll-to-FEC candidate identity; ballot membership checked separately for each round",
+      "fec_row": 486,
+      "reference_id": "fec_2020.xlsx"
+    },
+    {
+      "poll_candidate_id": "13604",
+      "cycle": "2020",
+      "state": "Texas",
+      "poll_name": "Sema Hernandez",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit poll-to-FEC candidate identity; ballot membership checked separately for each round",
+      "fec_row": 487,
+      "reference_id": "fec_2020.xlsx"
+    },
+    {
+      "poll_candidate_id": "13460",
+      "cycle": "2020",
+      "state": "North Carolina",
+      "poll_name": "Erica Danette Smith",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit poll-to-FEC candidate identity; ballot membership checked separately for each round",
+      "fec_row": 379,
+      "reference_id": "fec_2020.xlsx"
+    },
+    {
+      "poll_candidate_id": "13488",
+      "cycle": "2020",
+      "state": "Massachusetts",
+      "poll_name": "Charles D. Baker",
+      "result_name": "",
+      "status": "pending",
+      "basis": "No confirmed candidate identity"
+    },
+    {
+      "poll_candidate_id": "13489",
+      "cycle": "2020",
+      "state": "Massachusetts",
+      "poll_name": "Joseph Kennedy III",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit poll-to-FEC candidate identity; ballot membership checked separately for each round",
+      "fec_row": 237,
+      "reference_id": "fec_2020.xlsx"
+    },
+    {
+      "poll_candidate_id": "13490",
+      "cycle": "2020",
+      "state": "Massachusetts",
+      "poll_name": "Shannon Liss-Riordan",
+      "result_name": "",
+      "status": "pending",
+      "basis": "No confirmed candidate identity"
+    },
+    {
+      "poll_candidate_id": "13491",
+      "cycle": "2020",
+      "state": "Massachusetts",
+      "poll_name": "Steve Pemberton",
+      "result_name": "",
+      "status": "pending",
+      "basis": "No confirmed candidate identity"
+    },
+    {
+      "poll_candidate_id": "13477",
+      "cycle": "2020",
+      "state": "Colorado",
+      "poll_name": "Mike Johnston",
+      "result_name": "",
+      "status": "pending",
+      "basis": "No confirmed candidate identity"
+    },
+    {
+      "poll_candidate_id": "13469",
+      "cycle": "2020",
+      "state": "Maine",
+      "poll_name": "Danielle VanHelsing",
+      "result_name": "",
+      "status": "pending",
+      "basis": "No confirmed candidate identity"
+    },
+    {
+      "poll_candidate_id": "13513",
+      "cycle": "2020",
+      "state": "Kansas",
+      "poll_name": "Barry Grissom",
+      "result_name": "",
+      "status": "pending",
+      "basis": "No confirmed candidate identity"
+    },
+    {
+      "poll_candidate_id": "13463",
+      "cycle": "2020",
+      "state": "Alaska",
+      "poll_name": "Forrest Dunbar",
+      "result_name": "",
+      "status": "pending",
+      "basis": "No confirmed candidate identity"
+    },
+    {
+      "poll_candidate_id": "13464",
+      "cycle": "2020",
+      "state": "Alaska",
+      "poll_name": "Forrest Dunbar",
+      "result_name": "",
+      "status": "pending",
+      "basis": "No confirmed candidate identity"
+    },
+    {
+      "poll_candidate_id": "13522",
+      "cycle": "2020",
+      "state": "Michigan",
+      "poll_name": "Bill Schuette",
+      "result_name": "",
+      "status": "pending",
+      "basis": "No confirmed candidate identity"
+    },
+    {
+      "poll_candidate_id": "13449",
+      "cycle": "2020",
+      "state": "New Hampshire",
+      "poll_name": "Chris Sununu",
+      "result_name": "",
+      "status": "pending",
+      "basis": "No confirmed candidate identity"
+    },
+    {
+      "poll_candidate_id": "14509",
+      "cycle": "2020",
+      "state": "New Hampshire",
+      "poll_name": "Kelly Ayotte",
+      "result_name": "",
+      "status": "pending",
+      "basis": "No confirmed candidate identity"
+    },
+    {
+      "poll_candidate_id": "13447",
+      "cycle": "2020",
+      "state": "Arizona",
+      "poll_name": "Ruben Gallego",
+      "result_name": "",
+      "status": "pending",
+      "basis": "No confirmed candidate identity"
+    },
+    {
+      "poll_candidate_id": "13168",
+      "cycle": "2018",
+      "state": "Mississippi",
+      "poll_name": "Mike Espy",
+      "result_name": "MIKE ESPY",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13169",
+      "cycle": "2018",
+      "state": "Mississippi",
+      "poll_name": "Cindy Hyde-Smith",
+      "result_name": "CINDY HYDE-SMITH",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11408",
+      "cycle": "2018",
+      "state": "Michigan",
+      "poll_name": "Debbie Stabenow",
+      "result_name": "DEBBIE STABENOW",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11409",
+      "cycle": "2018",
+      "state": "Michigan",
+      "poll_name": "John James",
+      "result_name": "JOHN JAMES",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12413",
+      "cycle": "2018",
+      "state": "Florida",
+      "poll_name": "Bill Nelson",
+      "result_name": "BILL NELSON",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12414",
+      "cycle": "2018",
+      "state": "Florida",
+      "poll_name": "Rick Scott",
+      "result_name": "RICK SCOTT",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12409",
+      "cycle": "2018",
+      "state": "Arizona",
+      "poll_name": "Kyrsten Sinema",
+      "result_name": "KYRSTEN SINEMA",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12410",
+      "cycle": "2018",
+      "state": "Arizona",
+      "poll_name": "Martha McSally",
+      "result_name": "MARTHA MCSALLY",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11125",
+      "cycle": "2018",
+      "state": "Texas",
+      "poll_name": "Beto O'Rourke",
+      "result_name": "BETO O'ROURKE",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11126",
+      "cycle": "2018",
+      "state": "Texas",
+      "poll_name": "Ted Cruz",
+      "result_name": "TED CRUZ",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11150",
+      "cycle": "2018",
+      "state": "Nevada",
+      "poll_name": "Jacky Rosen",
+      "result_name": "JACKY ROSEN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11151",
+      "cycle": "2018",
+      "state": "Nevada",
+      "poll_name": "Dean Heller",
+      "result_name": "DEAN HELLER",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11128",
+      "cycle": "2018",
+      "state": "Indiana",
+      "poll_name": "Joe Donnelly",
+      "result_name": "JOE DONNELLY",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11129",
+      "cycle": "2018",
+      "state": "Indiana",
+      "poll_name": "Mike Braun",
+      "result_name": "MIKE BRAUN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11410",
+      "cycle": "2018",
+      "state": "Missouri",
+      "poll_name": "Claire McCaskill",
+      "result_name": "CLAIRE MCCASKILL",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11411",
+      "cycle": "2018",
+      "state": "Missouri",
+      "poll_name": "Josh Hawley",
+      "result_name": "JOSH HAWLEY",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11140",
+      "cycle": "2018",
+      "state": "Montana",
+      "poll_name": "Jon Tester",
+      "result_name": "JON TESTER",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11141",
+      "cycle": "2018",
+      "state": "Montana",
+      "poll_name": "Matt Rosendale",
+      "result_name": "MATT ROSENDALE",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11138",
+      "cycle": "2018",
+      "state": "Pennsylvania",
+      "poll_name": "Robert P. Casey Jr.",
+      "result_name": "ROBERT P CASEY JR",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11139",
+      "cycle": "2018",
+      "state": "Pennsylvania",
+      "poll_name": "Lou Barletta",
+      "result_name": "LOUIS J. BARLETTA",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "12449",
+      "cycle": "2018",
+      "state": "Pennsylvania",
+      "poll_name": "Neal Taylor Gale",
+      "result_name": "NEAL TAYLOR GALE",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12448",
+      "cycle": "2018",
+      "state": "Pennsylvania",
+      "poll_name": "Dale R. Kerns",
+      "result_name": "DALE R KERNS JR",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "13244",
+      "cycle": "2018",
+      "state": "Wyoming",
+      "poll_name": "Gary Trauner",
+      "result_name": "GARY TRAUNER",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13245",
+      "cycle": "2018",
+      "state": "Wyoming",
+      "poll_name": "John Barrasso",
+      "result_name": "JOHN BARRASSO",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13246",
+      "cycle": "2018",
+      "state": "Wyoming",
+      "poll_name": "Joseph Porambo",
+      "result_name": "JOSEPH PORAMBO",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13183",
+      "cycle": "2018",
+      "state": "Montana",
+      "poll_name": "Rick Breckenridge",
+      "result_name": "RICK BRECKENRIDGE",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11144",
+      "cycle": "2018",
+      "state": "New Jersey",
+      "poll_name": "Robert Menendez",
+      "result_name": "ROBERT MENENDEZ",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11145",
+      "cycle": "2018",
+      "state": "New Jersey",
+      "poll_name": "Bob Hugin",
+      "result_name": "BOB HUGIN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11226",
+      "cycle": "2018",
+      "state": "California",
+      "poll_name": "Dianne Feinstein",
+      "result_name": "DIANNE FEINSTEIN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11227",
+      "cycle": "2018",
+      "state": "California",
+      "poll_name": "Kevin de León",
+      "result_name": "KEVIN DE LEON",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12373",
+      "cycle": "2018",
+      "state": "Minnesota",
+      "poll_name": "Amy Klobuchar",
+      "result_name": "AMY KLOBUCHAR",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12374",
+      "cycle": "2018",
+      "state": "Minnesota",
+      "poll_name": "Jim Newberger",
+      "result_name": "JIM NEWBERGER",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12425",
+      "cycle": "2018",
+      "state": "Minnesota",
+      "poll_name": "Dennis Schuller",
+      "result_name": "DENNIS SCHULLER",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12424",
+      "cycle": "2018",
+      "state": "Minnesota",
+      "poll_name": "Paula M. Overby",
+      "result_name": "PAULA M OVERBY",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12376",
+      "cycle": "2018",
+      "state": "Minnesota",
+      "poll_name": "Tina Smith",
+      "result_name": "TINA SMITH",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12375",
+      "cycle": "2018",
+      "state": "Minnesota",
+      "poll_name": "Karin Housley",
+      "result_name": "KARIN HOUSLEY",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12426",
+      "cycle": "2018",
+      "state": "Minnesota",
+      "poll_name": "Sarah Wellington",
+      "result_name": "SARAH WELLINGTON",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12427",
+      "cycle": "2018",
+      "state": "Minnesota",
+      "poll_name": "Jerry Trooien",
+      "result_name": "JERRY TROOIEN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11416",
+      "cycle": "2018",
+      "state": "Mississippi",
+      "poll_name": "David Baria",
+      "result_name": "DAVID BARIA",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11417",
+      "cycle": "2018",
+      "state": "Mississippi",
+      "poll_name": "Roger F. Wicker",
+      "result_name": "ROGER F. WICKER",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11419",
+      "cycle": "2018",
+      "state": "Mississippi",
+      "poll_name": "Danny Bedwell",
+      "result_name": "DANNY BEDWELL",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11418",
+      "cycle": "2018",
+      "state": "Mississippi",
+      "poll_name": "Shawn R. O'Hara",
+      "result_name": "SHAWN O'HARA",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "13170",
+      "cycle": "2018",
+      "state": "Mississippi",
+      "poll_name": "Chris McDaniel",
+      "result_name": "CHRIS MCDANIEL",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "13171",
+      "cycle": "2018",
+      "state": "Mississippi",
+      "poll_name": "Tobey Bartee",
+      "result_name": "TOBEY BERNARD BARTEE",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "13231",
+      "cycle": "2018",
+      "state": "Michigan",
+      "poll_name": "George E. Huffman",
+      "result_name": "GEORGE E. HUFFMAN III",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "13232",
+      "cycle": "2018",
+      "state": "Michigan",
+      "poll_name": "Marcia Squier",
+      "result_name": "MARCIA SQUIER",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13233",
+      "cycle": "2018",
+      "state": "Michigan",
+      "poll_name": "John Howard Wilhelm",
+      "result_name": "JOHN HOWARD WILHELM",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11130",
+      "cycle": "2018",
+      "state": "Ohio",
+      "poll_name": "Sherrod Brown",
+      "result_name": "SHERROD BROWN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11131",
+      "cycle": "2018",
+      "state": "Ohio",
+      "poll_name": "Jim Renacci",
+      "result_name": "JIM RENACCI",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13146",
+      "cycle": "2018",
+      "state": "Arizona",
+      "poll_name": "Angela Green",
+      "result_name": "ANGELA GREEN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11202",
+      "cycle": "2018",
+      "state": "New York",
+      "poll_name": "Kirsten E. Gillibrand",
+      "result_name": "KIRSTEN E. GILLIBRAND",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11203",
+      "cycle": "2018",
+      "state": "New York",
+      "poll_name": "Chele Farley",
+      "result_name": "CHELE CHIAVACCI FARLEY",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "11154",
+      "cycle": "2018",
+      "state": "New Mexico",
+      "poll_name": "Martin Heinrich",
+      "result_name": "MARTIN T HEINRICH",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "11155",
+      "cycle": "2018",
+      "state": "New Mexico",
+      "poll_name": "Mick Rich",
+      "result_name": "MICK RICH",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12389",
+      "cycle": "2018",
+      "state": "New Mexico",
+      "poll_name": "Gary Johnson",
+      "result_name": "GARY E JOHNSON",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "12400",
+      "cycle": "2018",
+      "state": "Wisconsin",
+      "poll_name": "Tammy Baldwin",
+      "result_name": "TAMMY BALDWIN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12401",
+      "cycle": "2018",
+      "state": "Wisconsin",
+      "poll_name": "Leah Vukmir",
+      "result_name": "LEAH VUKMIR",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12455",
+      "cycle": "2018",
+      "state": "Missouri",
+      "poll_name": "Japheth R. Campbell",
+      "result_name": "JAPHETH CAMPBELL",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "12456",
+      "cycle": "2018",
+      "state": "Missouri",
+      "poll_name": "Jo Crain",
+      "result_name": "JO CRAIN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12519",
+      "cycle": "2018",
+      "state": "Missouri",
+      "poll_name": "Craig S. O'Dear",
+      "result_name": "CRAIG O'DEAR",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "11247",
+      "cycle": "2018",
+      "state": "Texas",
+      "poll_name": "Neal M. Dikeman",
+      "result_name": "NEAL M. DIKEMAN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12436",
+      "cycle": "2018",
+      "state": "Connecticut",
+      "poll_name": "Christopher Murphy",
+      "result_name": "CHRISTOPHER S MURPHY",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "12437",
+      "cycle": "2018",
+      "state": "Connecticut",
+      "poll_name": "Matthew Corey",
+      "result_name": "MATTHEW COREY",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13179",
+      "cycle": "2018",
+      "state": "Vermont",
+      "poll_name": "Lawrence Zupan",
+      "result_name": "LAWRENCE ZUPAN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13180",
+      "cycle": "2018",
+      "state": "Vermont",
+      "poll_name": "Bernard Sanders",
+      "result_name": "BERNIE SANDERS",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "11132",
+      "cycle": "2018",
+      "state": "West Virginia",
+      "poll_name": "Joe Manchin, III",
+      "result_name": "JOE MANCHIN",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "11133",
+      "cycle": "2018",
+      "state": "West Virginia",
+      "poll_name": "Patrick Morrisey",
+      "result_name": "PATRICK MORRISEY",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11135",
+      "cycle": "2018",
+      "state": "West Virginia",
+      "poll_name": "Rusty Hollen",
+      "result_name": "RUSTY HOLLEN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11382",
+      "cycle": "2018",
+      "state": "Tennessee",
+      "poll_name": "Phil Bredesen",
+      "result_name": "PHIL BREDESEN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11383",
+      "cycle": "2018",
+      "state": "Tennessee",
+      "poll_name": "Marsha Blackburn",
+      "result_name": "MARSHA BLACKBURN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12402",
+      "cycle": "2018",
+      "state": "New Jersey",
+      "poll_name": "Murray Sabrin",
+      "result_name": "MURRAY SABRIN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11148",
+      "cycle": "2018",
+      "state": "North Dakota",
+      "poll_name": "Heidi Heitkamp",
+      "result_name": "HEIDI HEITKAMP",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11149",
+      "cycle": "2018",
+      "state": "North Dakota",
+      "poll_name": "Kevin Cramer",
+      "result_name": "KEVIN CRAMER",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12458",
+      "cycle": "2018",
+      "state": "Indiana",
+      "poll_name": "Lucy M. Brenton",
+      "result_name": "LUCY M. BRENTON",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11393",
+      "cycle": "2018",
+      "state": "Maine",
+      "poll_name": "Zak Ringelstein",
+      "result_name": "ZAK RINGELSTEIN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11394",
+      "cycle": "2018",
+      "state": "Maine",
+      "poll_name": "Eric L. Brakey",
+      "result_name": "ERIC L. BRAKEY",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11395",
+      "cycle": "2018",
+      "state": "Maine",
+      "poll_name": "Angus S. King Jr.",
+      "result_name": "ANGUS S. KING, JR.",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12504",
+      "cycle": "2018",
+      "state": "Nevada",
+      "poll_name": "Timothy Rex Hagan",
+      "result_name": "TIM HAGAN",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "13190",
+      "cycle": "2018",
+      "state": "Ohio",
+      "poll_name": "Stephen Faris",
+      "result_name": "",
+      "status": "pending",
+      "basis": "No confirmed candidate identity"
+    },
+    {
+      "poll_candidate_id": "12480",
+      "cycle": "2018",
+      "state": "Massachusetts",
+      "poll_name": "Elizabeth Warren",
+      "result_name": "ELIZABETH A. WARREN",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "12481",
+      "cycle": "2018",
+      "state": "Massachusetts",
+      "poll_name": "Geoff Diehl",
+      "result_name": "GEOFF DIEHL",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13149",
+      "cycle": "2018",
+      "state": "Massachusetts",
+      "poll_name": "Shiva Ayyadurai",
+      "result_name": "SHIVA AYYADURAI",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11137",
+      "cycle": "2018",
+      "state": "Nebraska",
+      "poll_name": "Jane Raybould",
+      "result_name": "JANE RAYBOULD",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11136",
+      "cycle": "2018",
+      "state": "Nebraska",
+      "poll_name": "Deb Fischer",
+      "result_name": "DEB FISCHER",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12537",
+      "cycle": "2018",
+      "state": "Rhode Island",
+      "poll_name": "Sheldon Whitehouse",
+      "result_name": "SHELDON WHITEHOUSE",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12538",
+      "cycle": "2018",
+      "state": "Rhode Island",
+      "poll_name": "Bob Flanders",
+      "result_name": "ROBERT G. FLANDERS, JR.",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "13203",
+      "cycle": "2018",
+      "state": "New Jersey",
+      "poll_name": "Madelyn R. Hoffman",
+      "result_name": "MADELYN R. HOFFMAN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13216",
+      "cycle": "2018",
+      "state": "Vermont",
+      "poll_name": "Russell Beste",
+      "result_name": "RUSSELL BESTE",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13217",
+      "cycle": "2018",
+      "state": "Vermont",
+      "poll_name": "Bruce Busa",
+      "result_name": "BRUCE BUSA",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "16124",
+      "cycle": "2018",
+      "state": "Vermont",
+      "poll_name": "Brad J. Peacock",
+      "result_name": "BRAD J. PEACOCK",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "16125",
+      "cycle": "2018",
+      "state": "Vermont",
+      "poll_name": "Edward S. Gilbert",
+      "result_name": "EDWARD S. GILBERT JR",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "16126",
+      "cycle": "2018",
+      "state": "Vermont",
+      "poll_name": "Reid Kane",
+      "result_name": "REID KANE",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12403",
+      "cycle": "2018",
+      "state": "Washington",
+      "poll_name": "Maria Cantwell",
+      "result_name": "MARIA CANTWELL",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12404",
+      "cycle": "2018",
+      "state": "Washington",
+      "poll_name": "Susan Hutchison",
+      "result_name": "SUSAN HUTCHISON",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11224",
+      "cycle": "2018",
+      "state": "Utah",
+      "poll_name": "Jenny Wilson",
+      "result_name": "JENNY WILSON",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "11225",
+      "cycle": "2018",
+      "state": "Utah",
+      "poll_name": "Mitt Romney",
+      "result_name": "MITT ROMNEY",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12578",
+      "cycle": "2018",
+      "state": "Maryland",
+      "poll_name": "Benjamin L. Cardin",
+      "result_name": "BEN CARDIN",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "12579",
+      "cycle": "2018",
+      "state": "Maryland",
+      "poll_name": "Tony Campbell",
+      "result_name": "TONY CAMPBELL",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12580",
+      "cycle": "2018",
+      "state": "Maryland",
+      "poll_name": "Neal Simon",
+      "result_name": "NEAL SIMON",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13152",
+      "cycle": "2018",
+      "state": "Ohio",
+      "poll_name": "Bruce Jaynes",
+      "result_name": "",
+      "status": "pending",
+      "basis": "No confirmed candidate identity"
+    },
+    {
+      "poll_candidate_id": "13153",
+      "cycle": "2018",
+      "state": "Ohio",
+      "poll_name": "Philena Irene Farley",
+      "result_name": "",
+      "status": "pending",
+      "basis": "No confirmed candidate identity"
+    },
+    {
+      "poll_candidate_id": "12478",
+      "cycle": "2018",
+      "state": "Delaware",
+      "poll_name": "Thomas R. Carper",
+      "result_name": "THOMAS R CARPER",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12479",
+      "cycle": "2018",
+      "state": "Delaware",
+      "poll_name": "Rob Arlett",
+      "result_name": "ROBERT B ARLETT",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "13154",
+      "cycle": "2018",
+      "state": "Delaware",
+      "poll_name": "Nadine M. Frost",
+      "result_name": "NADINE M FROST",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "13155",
+      "cycle": "2018",
+      "state": "Delaware",
+      "poll_name": "Demitri G. Theodoropoulos",
+      "result_name": "DEMITRI G THEODOROPOULOS",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12581",
+      "cycle": "2018",
+      "state": "Maryland",
+      "poll_name": "Arvin Vohra",
+      "result_name": "ARVIN VOHRA",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12503",
+      "cycle": "2018",
+      "state": "Nevada",
+      "poll_name": "Barry Michaels",
+      "result_name": "BARRY MICHAELS",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12505",
+      "cycle": "2018",
+      "state": "Nevada",
+      "poll_name": "Kamau Akil Bakari",
+      "result_name": "KAMAU A. BAKARI",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "11146",
+      "cycle": "2018",
+      "state": "Virginia",
+      "poll_name": "Tim Kaine",
+      "result_name": "TIMOTHY M. KAINE",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "11147",
+      "cycle": "2018",
+      "state": "Virginia",
+      "poll_name": "Corey Stewart",
+      "result_name": "COREY A. STEWART",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "11392",
+      "cycle": "2018",
+      "state": "Virginia",
+      "poll_name": "Matt J. Waters",
+      "result_name": "MATT J. WATERS",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12513",
+      "cycle": "2018",
+      "state": "Arizona",
+      "poll_name": "Adam C. Kokesh",
+      "result_name": "",
+      "status": "pending",
+      "basis": "No confirmed candidate identity"
+    },
+    {
+      "poll_candidate_id": "12459",
+      "cycle": "2018",
+      "state": "Utah",
+      "poll_name": "Reed C. McCandless",
+      "result_name": "REED C. MCCANDLESS",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12460",
+      "cycle": "2018",
+      "state": "Utah",
+      "poll_name": "Craig R. Bowden",
+      "result_name": "CRAIG R. BOWDEN",
+      "status": "matched",
+      "basis": "Exact name after punctuation/case/accent normalization"
+    },
+    {
+      "poll_candidate_id": "12461",
+      "cycle": "2018",
+      "state": "Utah",
+      "poll_name": "Timothy Noel Aalders",
+      "result_name": "TIM AALDERS",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "12430",
+      "cycle": "2018",
+      "state": "Mississippi",
+      "poll_name": "Chris McDaniel",
+      "result_name": "CHRIS MCDANIEL",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "12454",
+      "cycle": "2018",
+      "state": "Mississippi",
+      "poll_name": "Tobey Bartee",
+      "result_name": "TOBEY BERNARD BARTEE",
+      "status": "matched",
+      "basis": "Explicit reviewed name alias; retains both source spellings"
+    },
+    {
+      "poll_candidate_id": "12411",
+      "cycle": "2018",
+      "state": "Arizona",
+      "poll_name": "Kelli Ward",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit poll-to-FEC candidate identity; ballot membership checked separately for each round",
+      "fec_row": 7,
+      "reference_id": "fec_2018.xlsx"
+    },
+    {
+      "poll_candidate_id": "12412",
+      "cycle": "2018",
+      "state": "Arizona",
+      "poll_name": "Joe Arpaio",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit poll-to-FEC candidate identity; ballot membership checked separately for each round",
+      "fec_row": 8,
+      "reference_id": "fec_2018.xlsx"
+    },
+    {
+      "poll_candidate_id": "11134",
+      "cycle": "2018",
+      "state": "West Virginia",
+      "poll_name": "Don Blankenship",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit poll-to-FEC candidate identity; ballot membership checked separately for each round",
+      "fec_row": 587,
+      "reference_id": "fec_2018.xlsx"
+    },
+    {
+      "poll_candidate_id": "11156",
+      "cycle": "2018",
+      "state": "New Mexico",
+      "poll_name": "Aubrey Dunn",
+      "result_name": "",
+      "status": "fec_identity",
+      "basis": "Explicit poll-to-FEC candidate identity; ballot membership checked separately for each round",
+      "fec_row": 359,
+      "reference_id": "fec_2018.xlsx"
+    },
+    {
+      "poll_candidate_id": "11127",
+      "cycle": "2018",
+      "state": "Texas",
+      "poll_name": "Jonathan Jenkins",
+      "result_name": "",
+      "status": "pending",
+      "basis": "No confirmed candidate identity"
+    },
+    {
+      "poll_candidate_id": "12431",
+      "cycle": "2018",
+      "state": "Mississippi",
+      "poll_name": "Jason Shelton",
+      "result_name": "",
+      "status": "pending",
+      "basis": "No confirmed candidate identity"
+    }
+  ]
+}

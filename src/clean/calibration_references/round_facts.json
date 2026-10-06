@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "fec_2018.xlsx": {
+      "url": "https://www.fec.gov/documents/2706/federalelections2018.xlsx",
+      "resolved_url": "https://www.fec.gov/resources/cms-content/documents/federalelections2018.xlsx",
+      "retrieved_at": "2026-10-06T05:19:47.917280+00:00",
+      "sha256": "f2c42311862b4927df2ca5908c5f9c8f8da6221a8db88fd00434a22ec1e0e303",
+      "bytes": 602712,
+      "local_path": "outputs/calibration_reference_research/fec_2018.xlsx"
+    },
+    "fec_2020.xlsx": {
+      "url": "https://www.fec.gov/documents/4228/federalelections2020.xlsx",
+      "resolved_url": "https://www.fec.gov/resources/cms-content/documents/federalelections2020.xlsx",
+      "retrieved_at": "2026-10-06T05:19:48.556687+00:00",
+      "sha256": "5073b6d2c76c86c941508dfb1a11cc497e8529b0068c5132aceb0f385c19352e",
+      "bytes": 6251110,
+      "local_path": "outputs/calibration_reference_research/fec_2020.xlsx"
+    },
+    "wy_2020.pdf": {
+      "url": "https://sos.wyo.gov/Elections/Docs/2020/Results/General/2020_General_Statewide_Candidates_Summary.pdf",
+      "resolved_url": "https://sos.wyo.gov/Elections/Docs/2020/Results/General/2020_General_Statewide_Candidates_Summary.pdf",
+      "retrieved_at": "2026-10-06T05:19:48.236264+00:00",
+      "sha256": "b76b5d34cfe608ccaecf94a2860aa1b1029089a402358c511d1540ac339c949c",
+      "bytes": 52166,
+      "local_path": "outputs/calibration_reference_research/wy_2020.pdf"
+    },
+    "senate_party_division.html": {
+      "url": "https://www.senate.gov/history/partydiv.htm",
+      "resolved_url": "https://www.senate.gov/history/partydiv.htm",
+      "retrieved_at": "2026-10-06T05:19:47.558396+00:00",
+      "sha256": "ad9191de31500004135d5897620545fb242694e193cfe3f96eae5893f233c0ae",
+      "bytes": 63610,
+      "local_path": "outputs/calibration_reference_research/senate_party_division.html"
+    },
+    "ak_2020_results.html": {
+      "url": "https://www.elections.alaska.gov/results/20GENR/",
+      "resolved_url": "https://www.elections.alaska.gov/results/20GENR/",
+      "retrieved_at": "2026-10-06T05:19:47.698044+00:00",
+      "sha256": "f0a4f6ff145fe6661bbabdf24091da49f789a3b8485849f3e1b0c2c14ee569b6",
+      "bytes": 17217,
+      "local_path": "outputs/calibration_reference_research/ak_2020_results.html"
+    },
+    "me_2020.xlsx": {
+      "url": "https://www.maine.gov/sos/sites/maine.gov.sos/files/content/assets/ussenator1120.xlsx",
+      "final_url": "https://www.maine.gov/sos/sites/maine.gov.sos/files/content/assets/ussenator1120.xlsx",
+      "retrieved_at": "2026-10-06T05:33:36.550884+00:00",
+      "sha256": "0880031fa74d62dbbaf2e6a40380b7a3801033e66fcf8634b2e6f4b3e3fb96ce",
+      "bytes": 44469,
+      "local_path": "outputs/calibration_reference_research/me_2020.xlsx"
+    }
+  },
+  "ordinary_dates": {
+    "2018": "2018-11-06",
+    "2020": "2020-11-03",
+    "2024": "2024-11-05"
+  },
+  "exceptions": {
+    "2018-MS-special-runoff": {
+      "date": "2018-11-27",
+      "reference_id": "fec_2018.xlsx",
+      "sheet": "2018 US Senate Results by State",
+      "rows": [
+        248,
+        249
+      ],
+      "basis": "General runoff date in candidate notes"
+    },
+    "2020-GA-ordinary-runoff": {
+      "date": "2021-01-05",
+      "reference_id": "fec_2020.xlsx",
+      "rows": [
+        84,
+        92
+      ],
+      "basis": "General runoff date in candidate notes"
+    },
+    "2020-GA-special-runoff": {
+      "date": "2021-01-05",
+      "reference_id": "fec_2020.xlsx",
+      "rows": [
+        97,
+        98
+      ],
+      "basis": "Special general runoff date in candidate notes"
+    }
+  },
+  "side_overrides": {
+    "2018:ME:ZAK RINGELSTEIN": {
+      "side": "other",
+      "basis": "Decision 013: separate Democrat alongside Democratic-side King",
+      "reference_id": "fec_2018.xlsx",
+      "row": 132
+    },
+    "2018:VT:BERNIE SANDERS": {
+      "side": "D",
+      "basis": "Decision 013, explicit Sanders exception; Senate party-division history confirms Democratic caucus",
+      "reference_id": "senate_party_division.html"
+    },
+    "2020:WY:CYNTHIA M. LUMMIS": {
+      "side": "R",
+      "basis": "Official Wyoming statewide summary, page 2, Republican",
+      "reference_id": "wy_2020.pdf"
+    },
+    "2020:AK:AL GROSS": {
+      "side": "D",
+      "basis": "Democratic nominee, not a caucusing-incumbent exception; official FEC party N(D)/D and explanatory note",
+      "reference_id": "fec_2020.xlsx",
+      "row": 17
+    },
+    "2018:ME:ANGUS S. KING, JR.": {
+      "side": "D",
+      "basis": "Decision 013, explicit King exception; Senate party-division history confirms Democratic caucus",
+      "reference_id": "senate_party_division.html"
+    },
+    "2020:WY:MERAV BEN DAVID": {
+      "side": "D",
+      "basis": "Official Wyoming statewide summary, page 2, Democratic",
+      "reference_id": "wy_2020.pdf"
+    }
+  },
+  "first_choice_checks": {
+    "2020-ME-ordinary-general": {
+      "reference_id": "me_2020.xlsx",
+      "sheet": "US Senator",
+      "row": 554,
+      "candidate_votes": {
+        "SUSAN MARGARET COLLINS": 417645,
+        "SARA I. GIDEON": 347223,
+        "MAX PATRICK LINN": 13508,
+        "LISA SAVAGE": 40579
+      },
+      "unnamed_writeins": 228,
+      "blank_votes": 9122,
+      "reported_total": 828305,
+      "basis": "Official initial candidate selections, including separate blank column; no reallocation"
+    },
+    "2018-ME-ordinary-general": {
+      "reference_id": "fec_2018.xlsx",
+      "sheet": "2018 US Senate Results by State",
+      "rows": [
+        129,
+        130,
+        132,
+        134
+      ],
+      "candidate_votes": {
+        "ANGUS S. KING, JR.": 344575,
+        "ERIC L. BRAKEY": 223502,
+        "ZAK RINGELSTEIN": 66268
+      },
+      "basis": "FEC published candidate counts match MEDSL; King has an outright first-choice majority, so no subsequent elimination/reallocation is needed"
+    }
+  },
+  "resolved_reference_conflicts": {
+    "2020:WY:MERAV BEN DAVID": {
+      "reference_id": "wy_2020.pdf",
+      "page": 2,
+      "votes": 72766,
+      "basis": "State summary agrees with MEDSL, differs from FEC 73766"
+    }
+  },
+  "result_fec_alias_rows": {
+    "2018:VT:BERNIE SANDERS": 496,
+    "2018:ME:ANGUS S. KING, JR.": 129,
+    "2018:VT:LAWRENCE ZUPAN": 515
+  }
+}

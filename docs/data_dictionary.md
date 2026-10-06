@@ -108,3 +108,43 @@ Applies to `data/processed/texas_senate_historical/20261006T024116Z/`. Original 
 `partisan` and `internal` continue to preserve the original source values. A `not_flagged_partisan` tag is not independent verification that the organization or sponsor is nonpartisan. No partisan polls are excluded by this preparation step.
 
 `normalized.csv` and per-cycle CSVs contain 137 retained records (49/51/37). `excluded.csv` contains the 12 hypothetical 2020 questions, all original fields plus derived tags and `exclusion_reason`. `changes.csv` audits all 149 inputs using source keys, election dates before/after, date basis, original partisan/internal values, derived classifications, and kept/excluded action/reason. `manifest.json` records approval/rule version, source provenance, input/output SHA-256 hashes, counts, and limitations. Original source flags—including multiple questions within one poll—remain intact and describe the original inventory.
+
+## Prepared national calibration inputs (Decisions 012–014)
+
+Applies to `data/processed/senate_calibration/20261006T024116Z_20261006T035630Z_v1/`. Original result/archive columns retain their meanings and values. Load with `dtype=str, keep_default_na=False` to preserve empty strings/identifiers; convert numeric columns explicitly as needed. Dates are ISO `YYYY-MM-DD`; blank means unknown. Percentages remain 0–100, without rescaling or margin calculation.
+
+| Field | Meaning |
+| --- | --- |
+| `record_key` | `medsl:<original row>`, `538-row:<original row>`, or `ut2024:<tracker row>:D/R`; snapshot-local row identity. |
+| `question_key` | `538:<cycle>:<race_id>:<poll_id>:<question_id>` or `ut2024:<row>`; joins inventories/crosswalks to candidate answers. |
+| `contest_id` | Reviewed `<cycle>-<state_po>-ordinary/special-general/first/runoff`. Exact-round join key. Actual date is explicit; blank for unverified rounds. |
+| `mapped_round_id` | Proposed source seat/stage mapping, retained even for an unverified round. Louisiana has this diagnostic ID but no registered `contest_id` or invented date. |
+| `canonical_candidate_id` | Contest ID plus explicitly matched normalized name. Identical named fusion lines share it; unnamed aggregates retain distinct source-row keys. Does not combine votes. |
+| `side` | `D`, `R`, `other`, `unknown`. Detailed affiliation, explicit approved exceptions/nominee evidence, official missing-label facts, or the identical candidate's major-party ballot line supply the basis. Never derived from simplified party alone. |
+| `side_basis`, `basis`, reference URL fields | Explain identity/side evidence. JSON aliases preserve alternate spellings and source locators. Generic write-in status does not establish affiliation. |
+| `membership` | Poll answer: `confirmed`, `confirmed_nonballot`, `unknown` in that exact round. Result mapping: `source_result_row`. |
+| `status` | Contests: `eligible`, `excluded`, `pending`. Questions/crosswalks: `selected`, `excluded`, `pending`. Approved exclusion takes precedence over concurrent unknowns; all reasons remain visible. |
+| `reasons`, flags | Semicolon-separated overlapping reasons/warnings. Source flags and new preparation flags are separate. Exclusive status counts differ from overlapping reason counts. |
+| `cycle`, `election_date` | Source-year 2021 Georgia runoffs have cycle 2020 and date 2021-01-05. Mississippi special `gen` returns map to November 27, 2018 runoff. |
+| `stage_normalized`, `mode_normalized` | Lowercase original labels. They do not replace raw columns or the verified registry round. |
+| `votes`, `reported_total` | Exact nonnegative integral conversions of decimal-string source counts. Repeated totals must not be summed over candidate rows. |
+| `valid_vote` | String `true` for candidate/write-in counts, `false` for BLANK/UNDER/OVER/VOID/SPOILED, `pending` for Nevada's ballot option. Result rows remain retained; blank in poll side-map rows. |
+| `preparation_flags` | Blank labels, unidentified aggregates, side disagreements, unofficial returns, FEC count conflicts and pending denominator treatment. |
+| `fec_reference_votes`, `reference_check` | Partial official comparison. Reference count or blank; check is `not_crosschecked`, `match`, `conflict`, `state_confirms_medsl`, or `official_first_choice_match`. MEDSL values are never replaced. |
+| `contest_status`, `question_status` | Parent registry/question selection status, copied onto long rows for explicit filtering. |
+
+`candidate_results.csv` preserves all 508 source rows/columns with the added identity, integral-count, side, round, valid-vote and reference fields above. `candidate_side_map.csv` covers every result/poll candidate with `record_type`, original source row/ID/name/party/simplified party, canonical identity, side/basis/reference, membership, valid-vote indicator and flags. Every blank label and side disagreement is flagged.
+
+`contests.csv` contains state/cycle, ordinary-or-special `seat`, exact `round`, actual date/basis/reference, source year(s), result-row count, repeated `reported_total`, mechanical `valid_vote_total`, `noncandidate_votes`, named non-write-in `ballot_candidate_ids_json`, scope/status/reasons. `valid_vote_total` includes valid third-party/write-in counts; no D/R sum, vote share or margin is derived. It is blank for missing returns or unresolved denominator semantics, but may be present for a contest pending on side/verification grounds. `scope` is `initial_calibration` or `outside_scope`; 2024 outside Texas is inventory-only.
+
+`poll_candidate_rows.csv` preserves original archive columns/order plus source row, record/question keys, round/identity/side/membership/evidence and final question status. Texas tracker shares become two rows, with every original field in `tracker_original_json`; no source affiliation is invented.
+
+`poll_questions.csv` retains source IDs, stage/seat fields, original election-date text, original population (`population_raw`), full population, sample size, pollster, internal/partisan flags and URL. Dates are ISO where known; `population` is uppercase. `candidate_answers_json` retains original archive IDs/names/parties/answers/shares, or the tracker pair. `candidate_rows` counts answers. `partisanship_basis` distinguishes archive source flags from the UT source exception; UT partisanship stays unknown. Missing population remains unknown/pending unless another approved exclusion applies.
+
+`poll_key` is archive poll ID or tracker-row key. Preference groups use `(source, poll_key, contest_id)`. `full_ballot` is string `true`/`false`, or `unknown` for tracker rows lacking a complete slate. True covers every named non-write-in result candidate, not every possible write-in or a verified primary questionnaire. Unique full-ballot LV alternatives are preferred; tied full/partial questions stay pending. A pending LV sibling holds an otherwise-selected question. `preference_basis` explains selection. No D/R share totals are computed.
+
+`crosswalk.csv` provides question IDs, round/date mapping, full-ballot/preference and final status. `race_crosswalk.csv` preserves 72 cycle/race-ID mappings and source stage/seat metadata; seat_number is never interpreted as Senate class. `race_inventory.csv` counts all/selected/excluded/pending questions per registered round and flags `unpolled_in_archive`. `horizon_drop_status` reserves horizon-specific reporting for Rahan.
+
+`excluded.csv`/`pending.csv` fields are `record_type`, `record_key`, `contest_id`, `status`, `reasons`; logs mix questions, contests and unresolved candidate mappings. `changes.csv` fields are `record_key`, `field`, `before`, `after`, `basis` for formatting and annotations/classifications/statuses, not raw edits. `manifest.json` records hashes, original provenance/permission receipts, output row counts, actual processing time, rule/schema version and audit counts.
+
+See [the prepared README](../data/processed/senate_calibration/README.md) for loading/replay and [the review](calibration_preparation_review.md) for pending cases. Rahan implements side aggregation/margins, horizon cutoffs, weights, averages, errors and uncertainty.

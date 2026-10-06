@@ -17,3 +17,12 @@ The regression fixture is the saved 20261006T024116Z inventory; integration outp
 ```bash
 python -B -m unittest discover -s tests -p 'test_senate_results.py' -v
 ```
+
+`test_prepare_senate_calibration.py` adds nine checks for complete source-field/notebook preservation, independent and nominee side mappings, fusion ballot lines, exact Mississippi/Georgia rounds, missing/unverified rounds, valid-vote/RCV handling, approved non-ballot/partisan exclusions, unique full-ballot choices/ties, audit reconciliation, byte-identical offline replay, tamper rejection and overwrite protection. Tests create temporary outputs from the saved snapshots; no network or model calculations.
+
+```bash
+python3 -B -m unittest discover -s tests -p 'test_prepare_senate_calibration.py' -v
+python3 -B -m unittest discover -s tests -v
+```
+
+The complete suite contains 20 tests. See [the prepared dataset](../data/processed/senate_calibration/README.md) and [review](../docs/calibration_preparation_review.md) for the implemented rules and remaining factual limits.

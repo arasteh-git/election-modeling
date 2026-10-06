@@ -2,7 +2,7 @@
 
 ## Current milestone
 
-MEDSL results collection and mechanical coverage audit complete (Decision 014). Next: verify dates, round coverage and candidate identities, then prepare national calibration inputs under Decisions 012/013.
+National calibration preparation implemented under Decisions 012–014. The saved contest/side/crosswalk snapshot has 729 selected questions, 873 exclusions and 348 pending questions. Rahan can begin margin/calibration work on eligible rounds while reviewing pending source, party and question-choice cases with Claude.
 
 ## Completed
 
@@ -56,22 +56,28 @@ MEDSL results collection and mechanical coverage audit complete (Decision 014). 
 
 - Claude Code audited the MEDSL results snapshot (2026-10-06). Party labels conflict with Decision 013 sides (King, Sanders, Wyoming 2020); Mississippi 2018 has runoff returns only; some totals include noncandidate votes. A side mapping and crosswalk were requested from Codex (docs/handoffs/2026-10-06-claude-code-to-codex.md).
 
+- Rahan authorized that handoff with “go” (2026-10-06). Implemented the offline preparer and explicit factual/alias JSON. Preserves all 508 result rows and 4,667 poll candidate answers, with 5,175 side mappings, 1,950 question crosswalks and 72 archive race mappings. No model calculations or notebook edits.
+- The registry has 108 rounds: 74 in scope (56 eligible, two excluded, 16 pending), plus 34 outside-scope 2024 rounds. Maps Mississippi's 2018 special returns to November 27 runoff; registers the missing four-candidate November 6 first round as pending; maps Georgia January 2021 runoffs to cycle 2020; leaves Louisiana's unverified runoff unmapped.
+- Selected factual references confirm King/Sanders/Ringelstein sides, Gross's Democratic nomination, Wyoming missing D/R labels, Maine first-choice counts and exceptional dates. Fusion ballot lines remain separate, 14 noncandidate rows are excluded from valid totals, and denominator ambiguity/unofficial returns/missing parties/reference disagreements remain pending. MEDSL counts are unchanged.
+- Questions selected/excluded/pending: 2018 333/408/138; 2020 373/451/210; Texas 2024 23/14/0. Tied LV preferences and pending siblings stay pending. Selected questions cover 52 eligible rounds before horizon cutoffs.
+- Nine preparation regression tests added; all 20 repository tests passed, including preservation, exact sides/rounds, valid votes, approved exclusions/preference, byte-identical replay, tamper rejection and overwrite refusal. All 47 pre-existing data files in the preservation baseline are unchanged. Rahan edited/committed the notebook during this task; Codex did not edit or execute it. See `docs/calibration_preparation_review.md` and the calibration handoff.
+
 ## Not yet done
 
 - Local Python environment setup.
-- National preparation and poll/result crosswalk implementation. Decisions 012/013/014 approve the source and preparation rules; factual verification remains for dates, ordinary/special seats, ballot-line identities, first-choice RCV, unofficial flags and missing round coverage. Ambiguous identities/metadata/question preferences must remain logged as pending.
-- Official results crosschecks. The source has no election dates; Mississippi 2018 special does not supply a separate multicandidate first-round group; Georgia 2021 runoff rows are preserved without an assigned cycle crosswalk. Some 2020 reported totals include blank/under/over votes and require valid-vote denominator preparation.
+- Review the 16 pending in-scope contests and 348 pending questions. Missing Mississippi first-round returns need Rahan's supplemental-source/exclusion decision; Nevada denominator semantics, named blank-party candidates, unofficial returns, FEC disagreements, aliases and tied preferences remain unresolved. Exact keys/evidence are in the prepared logs and review.
+- Comprehensive official-return/primary-poll verification. Checks so far are partial; source flags and mirror identity are not fully verified. Valid-vote categories and exceptional-round dates are prepared without changing MEDSL counts.
 - Open poll rule: LV numbers from releases where the tracker shows RV.
-- Uncertainty model for win probability, and the baseline.
+- Rahan's side/margin function and horizon/calibration loop, including no-poll logs, counts, errors and RMSE. Normal errors are approved (Decision 015); calibrated sigma and sensitivity remain unimplemented.
 - Complete primary-source verification, analytical data cleaning, modeling, and evaluation.
 
 ## Next action
 
-Use `docs/senate_results_review.md` to resolve factual source/date/round/identity issues and implement the national preparation described in `docs/calibration_preparation_plan.md` under Decisions 012/013. Keep uncertain cases pending and audit analytical exclusions. Rahan then computes historical averages, n_eff, errors, horizon RMSE, cycle means and dropped-race logs; the error-distribution form remains undecided.
+Read `docs/calibration_preparation_review.md` and the prepared README. Rahan implements exact-round side sums/margins using valid votes, then horizon cutoffs, averages, n_eff, errors, RMSE, cycle means and dropped-race logs under Decision 012. Review pending cases with Claude and approve consequential resolutions before a fresh preparation snapshot.
 
 ## Active branch / commit
 
-main at 443de40 (Rahan committed the updated Decision 013 during collection), plus uncommitted results collector/snapshot/documentation changes. Rahan's notebook is preserved and was not rerun.
+main at c3dc654 (observed during this task), plus uncommitted national preparer, reference JSON, processed snapshot, tests and documentation. Rahan committed notebook changes while Codex worked; Codex did not edit or execute it. No commit/push performed by Codex.
 
 ## Data snapshot
 
@@ -79,10 +85,12 @@ Latest 2026 tracker: `data/raw/texas_tracker/20261006T023757Z/` — 18 tracker r
 
 Historical: `data/raw/texas_senate_historical/20261006T024116Z/` — 149 question/tracker records (262 older candidate rows plus 37 newer tracker rows). Source dates and populations preserved; one malformed 2024 date remains blank and flagged. Full primary verification and historical analytical inclusion remain pending.
 
-The same historical snapshot also preserves the full 2018/2020 polling archive (4,593 candidate rows across all states); national derived preparation is not yet implemented.
+The same historical snapshot preserves the full 2018/2020 polling archive (4,593 candidate rows across all states); national preparation now uses that unchanged file.
 
 Results: `data/raw/senate_results/20261006T035630Z/` — MEDSL V8.0/CC0 full original CSV (3,945 rows), supporting source files and receipts; 508 requested/supplemental rows, 107 source groups. Original CSV SHA-256 `6f745db1b4a0026ad837e74428f9ed6f3f77fa51eb6f858b58ebdbc186fdb3bd`. This is a source inventory, not a finalized calibration dataset. All prior polling raw/prepared snapshots remain unchanged.
 
 Prepared historical: `data/processed/texas_senate_historical/20261006T024116Z/` — 137 retained records, 12 exclusions, complete date/partisanship change audit. Original 149-row snapshot preserved. The one malformed 2024 fieldwork date remains blank and flagged; its election date is now populated.
+
+Prepared national calibration: `data/processed/senate_calibration/20261006T024116Z_20261006T035630Z_v1/` — 108 rounds, 508 candidate returns, 5,175 side mappings, 1,950 question crosswalks, audit logs and provenance/hashes. [README](data/processed/senate_calibration/README.md) gives offline replay/loading; no margins or core model code.
 
 ## Blockers

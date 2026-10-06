@@ -17,3 +17,13 @@ python src/clean/prepare_texas_history.py --output-root outputs/history_preparat
 ```
 
 `--snapshot PATH` accepts another saved inventory with the original schema. The script verifies original source hashes and records input/output hashes. CSVs are deterministic, while the manifest records the current processing time. Partisanship follows source flags, with unknown metadata preserved; no partisan/population exclusion, deduplication, weighting, or uncertainty model is implemented. See [outputs and limitations](../../data/processed/texas_senate_historical/README.md).
+
+## National Senate calibration preparation
+
+`prepare_senate_calibration.py` applies Decisions 012–014 to the saved all-state 2018/2020 archive, MEDSL results and prepared Texas 2024 tracker. It creates contest/date/round mappings, explicit candidate sides, integral votes and valid-vote categories; applies approved LV/partisan/non-ballot filters and the unique full-ballot preference; retains ambiguous cases as pending. No core modeling logic is implemented.
+
+```bash
+python3 -B src/clean/prepare_senate_calibration.py --output outputs/calibration_replay
+```
+
+Default inputs are the 20261006T024116Z historical polls, 20261006T035630Z results and existing prepared Texas inventory. Default output is the saved `data/processed/senate_calibration/20261006T024116Z_20261006T035630Z_v1/`; use a fresh `--output` for replay. Inputs are hash-checked and existing outputs cannot be overwritten. `--created-at` allows byte-identical manifest replay. [The processed README](../../data/processed/senate_calibration/README.md) documents all 12 outputs, loading and limits; [the reference README](calibration_references/README.md) documents the explicit JSON and factual extraction workflow. [The review](../../docs/calibration_preparation_review.md) lists pending source issues.

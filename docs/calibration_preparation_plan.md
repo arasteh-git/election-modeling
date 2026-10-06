@@ -1,6 +1,6 @@
 # Historical Senate calibration preparation proposal
 
-Prepared 2026-10-05 (America/New_York) for Rahan and Claude; updated after Decisions 013/014. **National preparation remains proposed.** MEDSL V8.0 is now approved and collected for 2018/2020/2024, with a separate Georgia 2021 runoff supplement. Decisions 012/013 establish calibration and race-format rules. [The results review](senate_results_review.md) documents actual source coverage and flags; the national preparer/crosswalks are not yet implemented.
+Prepared 2026-10-05 (America/New_York) for Rahan and Claude; updated after Decisions 013/014 and implementation on 2026-10-06. **National preparation is implemented:** see [the prepared README](../data/processed/senate_calibration/README.md) for commands/schemas and [the preparation review](calibration_preparation_review.md) for observed counts, official references and pending cases. The original design below records the intended workflow; current behavior and limits are documented in those implementation files. MEDSL V8.0 remains the approved main source. No model calculations are implemented.
 
 ## Approved results source and proposed crosschecks
 
@@ -67,7 +67,7 @@ Texas 2024 continues to use the existing prepared 37 tracker rows with `2024-11-
 6. **Apply approved filters and matchup rules, with reasons.** Decision 012 excludes non-LV and partisan/internal polls, retaining `not_flagged_partisan` and the UT source exception. Decision 013 also treats LIB/`REP,REF` flags as partisan, excludes confirmed non-ballot questions, and selects one observation per poll/round, preferring full-ballot LV questions. Preserve original flags and source eligibility basis; unknowns, uncertain identities and ambiguous/tied question choices remain pending. Do not relabel all UT observations as independently verified nonpartisan.
 7. **Deliver preparation outputs for Rahan.** Produce the files below, with counts by cycle/contest and an audit of every correction, exclusion, and unresolved record. Rahan then computes horizon cutoffs, eligible averages, n_eff, errors, per-horizon σ, and no-poll exclusions under Decision 012. Codex does not implement those calculations in this preparation task.
 
-### Proposed outputs (not yet implemented)
+### Original output design (implemented files documented in the prepared README)
 
 Folder: `data/processed/senate_calibration/<snapshot ID>/`. Exact schema will be documented in the data dictionary alongside implementation.
 
@@ -82,7 +82,7 @@ Folder: `data/processed/senate_calibration/<snapshot ID>/`. Exact schema will be
 | `race_inventory.csv` | Poll/question counts and preparation status per contest, including zero-poll contests. It is not Rahan's horizon-specific dropped-race report. |
 | `manifest.json` | Source hashes, processing time, schema/rule version, approvals, output hashes, counts, and limitations. |
 
-An eventual national preparer should support fresh output and offline replay; no national-preparation command exists yet. The results collector is implemented as `python src/ingest/senate_results.py`. Its raw inventory fields are in the dictionary; update clean/processed READMEs and exact national schemas alongside future implementation.
+The national preparer supports fresh output and offline replay: `python3 -B src/clean/prepare_senate_calibration.py --output outputs/calibration_replay`. The results collector remains `python src/ingest/senate_results.py`. Actual national schemas are in the dictionary, with `candidate_side_map.csv` and `race_crosswalk.csv` added to the original output design. See the prepared README for all files and limits.
 
 ## Approved choices and factual review still needed
 

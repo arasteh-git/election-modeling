@@ -1,0 +1,544 @@
+{
+  "audit_counts": {
+    "LV_questions": 1433,
+    "candidate_flags": {
+      "Texas_tracker_party_not_supplied": 74,
+      "ballot_option_denominator_pending": 2,
+      "blank_detailed_party": 71,
+      "blank_source_party": 74,
+      "fec_vote_count_conflict": 15,
+      "side_differs_detailed_party": 59,
+      "side_differs_simplified_party": 34,
+      "side_differs_source_party": 61,
+      "unidentified_aggregate": 32,
+      "unofficial_source_returns": 19
+    },
+    "candidate_membership": {
+      "confirmed": 4514,
+      "confirmed_nonballot": 114,
+      "source_result_row": 508,
+      "unknown": 39
+    },
+    "candidate_sides": {
+      "D": 2207,
+      "R": 2111,
+      "other": 794,
+      "unknown": 63
+    },
+    "full_ballot_questions": 769,
+    "question_reasons": {
+      "RCV_reallocated_question": 1,
+      "alternate_question": 11,
+      "ambiguous_question_preference": 91,
+      "confirmed_nonballot_candidate": 109,
+      "contest_excluded": 25,
+      "contest_pending": 456,
+      "missing_fieldwork_end": 1,
+      "missing_population": 8,
+      "missing_source_election_date": 1,
+      "non_LV_population": 509,
+      "partisan_or_internal": 381,
+      "pending_sibling_question": 2,
+      "question_missing_D_or_R_side": 147,
+      "unresolved_poll_identity": 34,
+      "unresolved_poll_side": 37,
+      "unverified_round": 1
+    },
+    "result_valid_vote": {
+      "false": 14,
+      "pending": 2,
+      "true": 492
+    }
+  },
+  "authorization": "Rahan: go (2026-10-06), latest Claude mapping/crosswalk handoff",
+  "counts": {
+    "archive_candidate_rows": 4593,
+    "by_cycle": {
+      "2018": {
+        "excluded": 408,
+        "pending": 138,
+        "selected": 333
+      },
+      "2020": {
+        "excluded": 451,
+        "pending": 210,
+        "selected": 373
+      },
+      "2024": {
+        "excluded": 14,
+        "selected": 23
+      }
+    },
+    "candidate_mapping_rows": 5175,
+    "contest_status": {
+      "eligible": 56,
+      "excluded": 36,
+      "pending": 16
+    },
+    "contests": 108,
+    "question_status": {
+      "excluded": 873,
+      "pending": 348,
+      "selected": 729
+    },
+    "questions": 1950,
+    "race_crosswalks": 72,
+    "result_rows": 508,
+    "tracker_candidate_rows": 74
+  },
+  "created_at": "2026-10-06T05:46:25.131726+00:00",
+  "inputs_sha256": {
+    "data/processed/texas_senate_historical/20261006T024116Z/changes.csv": "62a7f04eb438c50a5dc9668f37dc97d4c4d3800687dc20fdde4a78d6ba444f42",
+    "data/processed/texas_senate_historical/20261006T024116Z/excluded.csv": "b52a82a8a30ddb33cf3f44f9a0918651868aac99e248d00a618b2eade50cd945",
+    "data/processed/texas_senate_historical/20261006T024116Z/manifest.json": "ba6e3b046b2eadf7ec0e76ca3c2ea251f48623c39ee9fa5f349ac3d8def15ceb",
+    "data/processed/texas_senate_historical/20261006T024116Z/normalized.csv": "31815823a9685ccb85b9224f2c4618e86bccf6877174205bf9e7cb7bb953db6f",
+    "data/processed/texas_senate_historical/20261006T024116Z/texas_2018.csv": "f6098d302484eae6c880e3460d75007ede15546fe802c83964e198b5ee28f84d",
+    "data/processed/texas_senate_historical/20261006T024116Z/texas_2020.csv": "947e87314e43ac75e763470673d6cd3aedfd95369a4a188b20842f55ad74b581",
+    "data/processed/texas_senate_historical/20261006T024116Z/texas_2024.csv": "be76d0153c99a4248768ac7fb4c8e64a6ecb1b522b3da5e6cdab91786b4c980f",
+    "data/raw/senate_results/20261006T035630Z/candidate_rows.csv": "1852da5965d53172bf1235b63027c4781597a2aa0a4591a031904efff94e07a6",
+    "data/raw/senate_results/20261006T035630Z/codebook.md": "221ca02977af4f2d3803340eab798cd9d09830e3b2c5254e700e0b2b45637333",
+    "data/raw/senate_results/20261006T035630Z/coverage.csv": "856fc1865329e688e0f7a8b99e7a93a19e421ea6375c899afc425cf71fb44055",
+    "data/raw/senate_results/20261006T035630Z/issues.json": "271fef4cb9df4fd7f2ec783d7bc2dfec4bd4250998d9c72a78346f4c04bc1a93",
+    "data/raw/senate_results/20261006T035630Z/manifest.json": "68aab919d7ca310d7cadc54cf0ecdce220beacfe914122ef7f45d634d645cab9",
+    "data/raw/senate_results/20261006T035630Z/metadata.json": "bba382910a6ed7afec6ac1c1d966e47ecaf128c60f104d22a08d91d40ef29073",
+    "data/raw/senate_results/20261006T035630Z/returns_2018.csv": "c0eac564569839d3682c3b40f0feccd187e9883f9017c7eb0db776f670fa8144",
+    "data/raw/senate_results/20261006T035630Z/returns_2020.csv": "31ecbba84c0092f112d7b58a737b3f96309c475c4b92cc9895f64da1a6f0bf93",
+    "data/raw/senate_results/20261006T035630Z/returns_2021.csv": "e53931aca00fcd0fcb1593d728c4e602703ff68128c1e8e44380492b27afac3f",
+    "data/raw/senate_results/20261006T035630Z/returns_2024.csv": "8ed7f176629fef2cf9eb44a0275b5e87f6fff76e5f274bb8a5e7c4c7d0c987b3",
+    "data/raw/senate_results/20261006T035630Z/senate_returns.csv": "6f745db1b4a0026ad837e74428f9ed6f3f77fa51eb6f858b58ebdbc186fdb3bd",
+    "data/raw/senate_results/20261006T035630Z/sources.csv": "c1de9cd25f1da28eb14289485a0b338a1b0b46128b2584911895e023747203d5",
+    "data/raw/texas_senate_historical/20261006T024116Z/fivethirtyeight_README.md": "df6cc1332e12ee4bb5c38d1a9247dd7250ef6b937ecd31069d6532ec45bc9d60",
+    "data/raw/texas_senate_historical/20261006T024116Z/fivethirtyeight_polls_README.md": "5981a47db732c48ca08e022c28a1e1f6ad1fe4f8fabb1eed37b32b2748362f53",
+    "data/raw/texas_senate_historical/20261006T024116Z/manifest.json": "0908744820d4316d05cb068eac25f867024eb6e78a22d5e3ca56c965cd3048b1",
+    "data/raw/texas_senate_historical/20261006T024116Z/senate_polls_historical.csv": "f781e2dad7b5fa0b0f9b3d453c35ae0efb2ce431b38573d2aa3164aa9d8808dd",
+    "data/raw/texas_senate_historical/20261006T024116Z/texas_2024_source.html": "7354a80bec6ae6fbcd00918e3a323c14e142c1f9fae4026ee3a13f30d2a7d7b2",
+    "src/clean/calibration_references/fec_facts.json": "09319d88fa6acb9202fada5ce802103903456e6836444f6788c7b5dc9f92bba4",
+    "src/clean/calibration_references/poll_aliases.json": "f8b7f3d6b4ebd83bb0188b3ab48967ce812467a6c78c740c3cf472c6baacf7b6",
+    "src/clean/calibration_references/round_facts.json": "90c00d0c0f173cb80b56be0be43a2c97f09669b621bbca9aabdff296643408c3"
+  },
+  "limitations": [
+    "No margins, D/R vote sums, weighting, horizon cutoffs, errors, RMSE or probabilities calculated",
+    "Official comparisons are partial: exact reference-name matches only; not every primary release or candidate vote crosschecked",
+    "Missing MS 2018 first-round returns, unofficial source returns, unresolved parties/identities, denominator ambiguity and reference conflicts remain pending",
+    "LA 2020 apparent runoff is unverified and has no registered contest/date",
+    "One observation per archive poll/round; tied questions and pending siblings held for review; tracker rows remain separate observations under Decision 009",
+    "Full ballot means all named, non-write-in source-result candidates, not every possible write-in; no primary questionnaire verification",
+    "2024 outside Texas retained as excluded source inventory, not expanded calibration scope",
+    "Valid-vote totals are mechanical counts only; do not use reported totals when they include invalid categories"
+  ],
+  "outputs": {
+    "candidate_results.csv": {
+      "rows": 508,
+      "sha256": "39779c93c595f913b43d167b0ec384894044bc8bf4eb9cce88c478843ace6ad7"
+    },
+    "candidate_side_map.csv": {
+      "rows": 5175,
+      "sha256": "b7005ab10d923769d70e548e6106908e6933cadf05730a8ded6cc6a813ab39ed"
+    },
+    "changes.csv": {
+      "rows": 18481,
+      "sha256": "3398e9a061fb6a56a38c0f15d9b791fe1feef0fc9831a052cb4ce37373dbcd55"
+    },
+    "contests.csv": {
+      "rows": 108,
+      "sha256": "524315a987cda7cc83d091b85ba66345b2c7ac95006a7900f93cfc3ae13a2269"
+    },
+    "crosswalk.csv": {
+      "rows": 1950,
+      "sha256": "c3a98129997314e242b73e9e95176935d7299e2bfaaa9ec31015176eb09afc66"
+    },
+    "excluded.csv": {
+      "rows": 909,
+      "sha256": "657525d23a75d18f9e71ab46bf0234634d2e99efb384ce690a683615c486fe41"
+    },
+    "pending.csv": {
+      "rows": 429,
+      "sha256": "7e5740e24a6f573c23fe77b48ccf1545d7e9d5a187332b450bdd3561702bb4b6"
+    },
+    "poll_candidate_rows.csv": {
+      "rows": 4667,
+      "sha256": "10205f553b37c7e8bdc062a98b29c4d4031cc286f53227d27e5bcc773147e684"
+    },
+    "poll_questions.csv": {
+      "rows": 1950,
+      "sha256": "ea3d1d870d0bce0ce6c7d773dca289d70fa20801637719d2e158c66d117870c8"
+    },
+    "race_crosswalk.csv": {
+      "rows": 72,
+      "sha256": "f3e5ee4371673356897f337ce9ef14f5498719c89af48418cd81a0f1988304d0"
+    },
+    "race_inventory.csv": {
+      "rows": 108,
+      "sha256": "e67918a017796c49169428f3b6c6565e3c68f39bfa3f67e3d3bd0223526099fb"
+    }
+  },
+  "reference_sources": {
+    "ak_2020_results.html": {
+      "bytes": 17217,
+      "local_path": "outputs/calibration_reference_research/ak_2020_results.html",
+      "resolved_url": "https://www.elections.alaska.gov/results/20GENR/",
+      "retrieved_at": "2026-10-06T05:19:47.698044+00:00",
+      "sha256": "f0a4f6ff145fe6661bbabdf24091da49f789a3b8485849f3e1b0c2c14ee569b6",
+      "url": "https://www.elections.alaska.gov/results/20GENR/"
+    },
+    "fec_2018.xlsx": {
+      "bytes": 602712,
+      "local_path": "outputs/calibration_reference_research/fec_2018.xlsx",
+      "resolved_url": "https://www.fec.gov/resources/cms-content/documents/federalelections2018.xlsx",
+      "retrieved_at": "2026-10-06T05:19:47.917280+00:00",
+      "sha256": "f2c42311862b4927df2ca5908c5f9c8f8da6221a8db88fd00434a22ec1e0e303",
+      "url": "https://www.fec.gov/documents/2706/federalelections2018.xlsx"
+    },
+    "fec_2020.xlsx": {
+      "bytes": 6251110,
+      "local_path": "outputs/calibration_reference_research/fec_2020.xlsx",
+      "resolved_url": "https://www.fec.gov/resources/cms-content/documents/federalelections2020.xlsx",
+      "retrieved_at": "2026-10-06T05:19:48.556687+00:00",
+      "sha256": "5073b6d2c76c86c941508dfb1a11cc497e8529b0068c5132aceb0f385c19352e",
+      "url": "https://www.fec.gov/documents/4228/federalelections2020.xlsx"
+    },
+    "me_2020.xlsx": {
+      "bytes": 44469,
+      "final_url": "https://www.maine.gov/sos/sites/maine.gov.sos/files/content/assets/ussenator1120.xlsx",
+      "local_path": "outputs/calibration_reference_research/me_2020.xlsx",
+      "retrieved_at": "2026-10-06T05:33:36.550884+00:00",
+      "sha256": "0880031fa74d62dbbaf2e6a40380b7a3801033e66fcf8634b2e6f4b3e3fb96ce",
+      "url": "https://www.maine.gov/sos/sites/maine.gov.sos/files/content/assets/ussenator1120.xlsx"
+    },
+    "senate_party_division.html": {
+      "bytes": 63610,
+      "local_path": "outputs/calibration_reference_research/senate_party_division.html",
+      "resolved_url": "https://www.senate.gov/history/partydiv.htm",
+      "retrieved_at": "2026-10-06T05:19:47.558396+00:00",
+      "sha256": "ad9191de31500004135d5897620545fb242694e193cfe3f96eae5893f233c0ae",
+      "url": "https://www.senate.gov/history/partydiv.htm"
+    },
+    "wy_2020.pdf": {
+      "bytes": 52166,
+      "local_path": "outputs/calibration_reference_research/wy_2020.pdf",
+      "resolved_url": "https://sos.wyo.gov/Elections/Docs/2020/Results/General/2020_General_Statewide_Candidates_Summary.pdf",
+      "retrieved_at": "2026-10-06T05:19:48.236264+00:00",
+      "sha256": "b76b5d34cfe608ccaecf94a2860aa1b1029089a402358c511d1540ac339c949c",
+      "url": "https://sos.wyo.gov/Elections/Docs/2020/Results/General/2020_General_Statewide_Candidates_Summary.pdf"
+    }
+  },
+  "rule_version": "Decisions 011–014 / calibration-preparation-v1",
+  "schema_version": 1,
+  "source_provenance": {
+    "polls": {
+      "archive_candidate_rows_all_states": 4593,
+      "archive_revision": "d3d0c6be4e35945e59c1cb574b4050ca1787a2bc",
+      "attribution": {
+        "538_archive": "FiveThirtyEight / ABC News; preserved by khristel26/Senate on GitHub",
+        "ut_tracker_2024": "Texas 2024 U.S. Senate Poll Tracker; Texas Politics Project at the University of Texas at Austin"
+      },
+      "counts_by_cycle": {
+        "2018": {
+          "flagged_matchups": 0,
+          "lv_records": 29,
+          "records": 49
+        },
+        "2020": {
+          "flagged_matchups": 12,
+          "lv_records": 40,
+          "records": 63
+        },
+        "2024": {
+          "flagged_matchups": 0,
+          "lv_records": 23,
+          "records": 37
+        }
+      },
+      "limitations": "2018/2020 use a third-party preserved 538 file; 2024 uses UT's tracker last updated October 30, 2024 and may omit later polls. Coverage is not an exhaustive or consistently sampled census across cycles. Question records are not independent surveys. Some 2020 questions use hypothetical Democratic candidates. Source rounding/forced undecided treatment is retained.",
+      "permissions": {
+        "538_archive": "FiveThirtyEight repository states CC BY 4.0 unless otherwise noted; saved READMEs. Mirror identity has not been verified byte-for-byte against original.",
+        "ut_tracker_2024": "Republishing guidelines in saved HTML: attribution, unchanged original, no resale, honor change/removal requests. CSVs are labeled mechanical derivatives."
+      },
+      "retrieved_at": "2026-10-06T02:41:16.485906+00:00",
+      "row_count": 149,
+      "selection": "Archive: state Texas, cycle 2018 or 2020. All selected rows must be U.S. Senate general-election stage. Tracker: every 2024 table data row, including early matchups. No population, recency, partisan, or quality exclusions.",
+      "sources": {
+        "fivethirtyeight_README.md": {
+          "final_url": "https://raw.githubusercontent.com/fivethirtyeight/data/master/README.md",
+          "retrieved_at": "2026-10-06T02:41:16.365981+00:00",
+          "sha256": "df6cc1332e12ee4bb5c38d1a9247dd7250ef6b937ecd31069d6532ec45bc9d60",
+          "url": "https://raw.githubusercontent.com/fivethirtyeight/data/master/README.md"
+        },
+        "fivethirtyeight_polls_README.md": {
+          "final_url": "https://raw.githubusercontent.com/fivethirtyeight/data/master/polls/README.md",
+          "retrieved_at": "2026-10-06T02:41:16.485867+00:00",
+          "sha256": "5981a47db732c48ca08e022c28a1e1f6ad1fe4f8fabb1eed37b32b2748362f53",
+          "url": "https://raw.githubusercontent.com/fivethirtyeight/data/master/polls/README.md"
+        },
+        "senate_polls_historical.csv": {
+          "final_url": "https://raw.githubusercontent.com/khristel26/Senate/d3d0c6be4e35945e59c1cb574b4050ca1787a2bc/senate_polls_historical.csv",
+          "retrieved_at": "2026-10-06T02:41:15.953448+00:00",
+          "sha256": "f781e2dad7b5fa0b0f9b3d453c35ae0efb2ce431b38573d2aa3164aa9d8808dd",
+          "url": "https://raw.githubusercontent.com/khristel26/Senate/d3d0c6be4e35945e59c1cb574b4050ca1787a2bc/senate_polls_historical.csv"
+        },
+        "texas_2024_source.html": {
+          "final_url": "https://texaspolitics.utexas.edu/blog/texas-2024-us-senate-poll-tracker",
+          "retrieved_at": "2026-10-06T02:41:16.264606+00:00",
+          "sha256": "7354a80bec6ae6fbcd00918e3a323c14e142c1f9fae4026ee3a13f30d2a7d7b2",
+          "url": "https://texaspolitics.utexas.edu/blog/texas-2024-us-senate-poll-tracker"
+        }
+      },
+      "texas_archive_candidate_rows": 262,
+      "tracker_footnotes": [
+        "* Result includes force for undecideds"
+      ],
+      "transformations": "Archive candidate rows grouped by cycle/poll_id/question_id/race_id; single DEM and REP shares copied with their names, all candidate answers retained as JSON. Dates converted to ISO; population codes uppercased; percentages parsed, never rescaled. Tracker whitespace collapsed, relative links resolved, unambiguous explicit dates parsed; malformed dates left blank and flagged. Repeat/hypothetical/ambiguous observations preserved.",
+      "verification": "Extraction and mechanical validation only. No individual primary releases verified. No election results collected. created_at is archive entry time, not verified publication time; 2024 publication dates unavailable. Historical availability remains unresolved."
+    },
+    "results": {
+      "approval": "Rahan, Decision 014, 2026-10-05",
+      "attribution": "MIT Election Data and Science Lab, U.S. Senate statewide returns, V8.0, doi:10.7910/DVN/PEJ5QU",
+      "dataset_doi": "doi:10.7910/DVN/PEJ5QU",
+      "dataset_release_time": "2026-05-11T16:13:52Z",
+      "dataset_version": "8.0",
+      "license": {
+        "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+        "languageCode": "en",
+        "name": "CC0 1.0",
+        "rightsIdentifier": "CC0-1.0",
+        "rightsIdentifierScheme": "SPDX",
+        "schemeUri": "https://spdx.org/licenses/",
+        "uri": "http://creativecommons.org/publicdomain/zero/1.0"
+      },
+      "limitations": [
+        "Coverage groups are source groups, not verified independent contests or round mappings",
+        "Source provides no election dates or poll crosswalk; 2021 runoff cycle remains unassigned",
+        "Unofficial flags, missing names, noncandidate categories and ballot lines remain retained",
+        "No official crosschecks, margins, party-side mapping, analytical exclusions or model calculations",
+        "Codebook body and source listing are older than the main file",
+        "Published tabular MD5 is not compared with original CSV; original byte sizes and codebook MD5 checked, SHA-256 recorded"
+      ],
+      "outputs": {
+        "candidate_rows.csv": {
+          "bytes": 95076,
+          "sha256": "1852da5965d53172bf1235b63027c4781597a2aa0a4591a031904efff94e07a6"
+        },
+        "coverage.csv": {
+          "bytes": 38618,
+          "sha256": "856fc1865329e688e0f7a8b99e7a93a19e421ea6375c899afc425cf71fb44055"
+        },
+        "issues.json": {
+          "bytes": 11505,
+          "sha256": "271fef4cb9df4fd7f2ec783d7bc2dfec4bd4250998d9c72a78346f4c04bc1a93"
+        },
+        "returns_2018.csv": {
+          "bytes": 28846,
+          "sha256": "c0eac564569839d3682c3b40f0feccd187e9883f9017c7eb0db776f670fa8144"
+        },
+        "returns_2020.csv": {
+          "bytes": 38070,
+          "sha256": "31ecbba84c0092f112d7b58a737b3f96309c475c4b92cc9895f64da1a6f0bf93"
+        },
+        "returns_2021.csv": {
+          "bytes": 1239,
+          "sha256": "e53931aca00fcd0fcb1593d728c4e602703ff68128c1e8e44380492b27afac3f"
+        },
+        "returns_2024.csv": {
+          "bytes": 27602,
+          "sha256": "8ed7f176629fef2cf9eb44a0275b5e87f6fff76e5f274bb8a5e7c4c7d0c987b3"
+        }
+      },
+      "retrieved_at": "2026-10-06T03:56:30.735602+00:00",
+      "schema_version": 1,
+      "snapshot_id": "20261006T035630Z",
+      "sources": {
+        "codebook.md": {
+          "bytes": 3700,
+          "content_type": "text/markdown",
+          "resolved_url": "https://dvn-cloud-iqss.s3.amazonaws.com/10.7910/DVN/PEJ5QU/184768e8ea4-63ccb628a42d?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27codebook-us-senate-1976%25E2%2580%25932024.md&response-content-type=text%2Fmarkdown&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261006T035630Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIAZT3GWQ6FKBSH5I56%2F20261006%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=3600&X-Amz-Signature=8ebac3e76c023ecd55c033a2b0d730e73f26fa6b0f40ecba813ecc05f0251a6d",
+          "retrieved_at": "2026-10-06T03:56:31.042671+00:00",
+          "sha256": "221ca02977af4f2d3803340eab798cd9d09830e3b2c5254e700e0b2b45637333",
+          "url": "https://dataverse.harvard.edu/api/access/datafile/6708560"
+        },
+        "metadata.json": {
+          "bytes": 6415,
+          "content_type": "application/json;charset=UTF-8",
+          "resolved_url": "https://dataverse.harvard.edu/api/datasets/3072248/versions/8.0",
+          "retrieved_at": "2026-10-06T03:56:30.060377+00:00",
+          "sha256": "bba382910a6ed7afec6ac1c1d966e47ecaf128c60f104d22a08d91d40ef29073",
+          "url": "https://dataverse.harvard.edu/api/datasets/3072248/versions/8.0"
+        },
+        "senate_returns.csv": {
+          "bytes": 530501,
+          "content_type": "text/comma-separated-values",
+          "resolved_url": "https://dvn-cloud-iqss.s3.amazonaws.com/10.7910/DVN/PEJ5QU/19e17cc9bc2-05615a632744.orig?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%271976-2024-senate-state.csv&response-content-type=text%2Fcomma-separated-values&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261006T035630Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIAZT3GWQ6FKBSH5I56%2F20261006%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=3600&X-Amz-Signature=40273fa7e71a0870c6281fa82dec1d7735a6a3d5301522a9360edfec5ffd6f8e",
+          "retrieved_at": "2026-10-06T03:56:30.735602+00:00",
+          "sha256": "6f745db1b4a0026ad837e74428f9ed6f3f77fa51eb6f858b58ebdbc186fdb3bd",
+          "url": "https://dataverse.harvard.edu/api/access/datafile/13887039?format=original"
+        },
+        "sources.csv": {
+          "bytes": 3049,
+          "content_type": "text/csv",
+          "resolved_url": "https://dvn-cloud-iqss.s3.amazonaws.com/10.7910/DVN/PEJ5QU/1771b2e25b0-43d511c60ed0.orig?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27sources-senate.csv&response-content-type=text%2Fcsv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261006T035631Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIAZT3GWQ6FKBSH5I56%2F20261006%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=3600&X-Amz-Signature=a45910585cded7d255797914fcf94c1d6a1d0bfb48816cdf7d36804fc2ebdebb",
+          "retrieved_at": "2026-10-06T03:56:31.422161+00:00",
+          "sha256": "c1de9cd25f1da28eb14289485a0b338a1b0b46128b2584911895e023747203d5",
+          "url": "https://dataverse.harvard.edu/api/access/datafile/4304792?format=original"
+        }
+      },
+      "summary": {
+        "full_source_rows": 3945,
+        "full_source_rows_by_year": {
+          "1976": 144,
+          "1978": 126,
+          "1980": 134,
+          "1982": 129,
+          "1984": 118,
+          "1986": 121,
+          "1988": 127,
+          "1990": 103,
+          "1992": 165,
+          "1994": 157,
+          "1996": 155,
+          "1998": 152,
+          "2000": 183,
+          "2002": 145,
+          "2004": 165,
+          "2006": 160,
+          "2008": 145,
+          "2010": 242,
+          "2012": 190,
+          "2014": 187,
+          "2016": 221,
+          "2018": 152,
+          "2020": 204,
+          "2021": 4,
+          "2022": 168,
+          "2024": 148
+        },
+        "group_flag_counts": {
+          "candidate_whitespace": 2,
+          "election_date_unavailable": 107,
+          "missing_candidate_name": 30,
+          "noncandidate_vote_category": 4,
+          "repeated_candidate_name_review_ballot_lines": 3,
+          "round_definition_unverified": 107,
+          "supplemental_2021_runoff_cycle_unassigned": 2,
+          "unofficial_return": 8
+        },
+        "inventoried_rows": 508,
+        "inventoried_rows_by_source_year": {
+          "2018": 152,
+          "2020": 204,
+          "2021": 4,
+          "2024": 148
+        },
+        "inventory_groups": 107,
+        "inventory_groups_by_source_year": {
+          "2018": 35,
+          "2020": 35,
+          "2021": 2,
+          "2024": 35
+        },
+        "row_flag_counts": {
+          "candidate_whitespace": 2,
+          "missing_candidate_name": 30,
+          "noncandidate_vote_category": 6,
+          "repeated_candidate_name_review_ballot_lines": 11,
+          "supplemental_2021_runoff_cycle_unassigned": 4,
+          "unofficial_return": 19
+        }
+      },
+      "transformations": [
+        "Select unchanged source strings for years 2018/2020/2024, plus GA 2021 runoff rows separately for review",
+        "Add 1-based source data-row IDs, snapshot-local inventory groups and review flags",
+        "Group by source year/state/office/district/stage/special/mode; lowercase stage/special/mode in coverage only",
+        "Compare exact integer source-row vote sums with one consistent reported group total; do not aggregate candidates or choose a denominator"
+      ]
+    },
+    "texas": {
+      "attribution": {
+        "538_archive": "FiveThirtyEight / ABC News; preserved by khristel26/Senate on GitHub",
+        "ut_tracker_2024": "Texas 2024 U.S. Senate Poll Tracker; Texas Politics Project at the University of Texas at Austin"
+      },
+      "counts_by_cycle": {
+        "2018": {
+          "excluded_records": 0,
+          "input_records": 49,
+          "lv_records": 29,
+          "partisan_status": {
+            "not_flagged_partisan": 34,
+            "partisan": 15
+          },
+          "retained_records": 49
+        },
+        "2020": {
+          "excluded_records": 12,
+          "input_records": 63,
+          "lv_records": 37,
+          "partisan_status": {
+            "not_flagged_partisan": 42,
+            "partisan": 9
+          },
+          "retained_records": 51
+        },
+        "2024": {
+          "excluded_records": 0,
+          "input_records": 37,
+          "lv_records": 23,
+          "partisan_status": {
+            "unknown": 37
+          },
+          "retained_records": 37
+        }
+      },
+      "created_at": "2026-10-06T03:05:02.976481+00:00",
+      "election_date_corrections": 37,
+      "input_sha256": {
+        "manifest.json": "0908744820d4316d05cb068eac25f867024eb6e78a22d5e3ca56c965cd3048b1",
+        "normalized.csv": "9e53e2e7a452e2ab5c5e9c48fbf1f5daeec9e042a0c3663e04e5f48f8717b02d"
+      },
+      "limitations": "All populations and partisan polls retained. Existing duplicate-question, field-date, source, and publication flags preserved. Primary releases, archive mirror identity, and 2024 partisanship not independently verified. No historical averaging or uncertainty calibration implemented.",
+      "output_sha256": {
+        "changes.csv": "62a7f04eb438c50a5dc9668f37dc97d4c4d3800687dc20fdde4a78d6ba444f42",
+        "excluded.csv": "b52a82a8a30ddb33cf3f44f9a0918651868aac99e248d00a618b2eade50cd945",
+        "normalized.csv": "31815823a9685ccb85b9224f2c4618e86bccf6877174205bf9e7cb7bb953db6f",
+        "texas_2018.csv": "f6098d302484eae6c880e3460d75007ede15546fe802c83964e198b5ee28f84d",
+        "texas_2020.csv": "947e87314e43ac75e763470673d6cd3aedfd95369a4a188b20842f55ad74b581",
+        "texas_2024.csv": "be76d0153c99a4248768ac7fb4c8e64a6ecb1b522b3da5e6cdab91786b4c980f"
+      },
+      "permissions": {
+        "538_archive": "FiveThirtyEight repository states CC BY 4.0 unless otherwise noted; saved READMEs. Mirror identity has not been verified byte-for-byte against original.",
+        "ut_tracker_2024": "Republishing guidelines in saved HTML: attribution, unchanged original, no resale, honor change/removal requests. CSVs are labeled mechanical derivatives."
+      },
+      "rule_version": "Decision 011 / 2026-10-05",
+      "rules": [
+        "Set all 2024 election dates to 2024-11-05 as confirmed by Rahan; record date basis.",
+        "Classify 2018/2020 using 538 partisan/internal flags; preserve original fields. Not flagged is not independent nonpartisan verification. 2024 remains unknown.",
+        "Exclude 2020 questions naming a non-Hegar Democratic challenger against John Cornyn; retain exclusions with keys and reasons. Do not exclude missing/ambiguous names automatically."
+      ],
+      "source_provenance": {
+        "fivethirtyeight_README.md": {
+          "final_url": "https://raw.githubusercontent.com/fivethirtyeight/data/master/README.md",
+          "retrieved_at": "2026-10-06T02:41:16.365981+00:00",
+          "sha256": "df6cc1332e12ee4bb5c38d1a9247dd7250ef6b937ecd31069d6532ec45bc9d60",
+          "url": "https://raw.githubusercontent.com/fivethirtyeight/data/master/README.md"
+        },
+        "fivethirtyeight_polls_README.md": {
+          "final_url": "https://raw.githubusercontent.com/fivethirtyeight/data/master/polls/README.md",
+          "retrieved_at": "2026-10-06T02:41:16.485867+00:00",
+          "sha256": "5981a47db732c48ca08e022c28a1e1f6ad1fe4f8fabb1eed37b32b2748362f53",
+          "url": "https://raw.githubusercontent.com/fivethirtyeight/data/master/polls/README.md"
+        },
+        "senate_polls_historical.csv": {
+          "final_url": "https://raw.githubusercontent.com/khristel26/Senate/d3d0c6be4e35945e59c1cb574b4050ca1787a2bc/senate_polls_historical.csv",
+          "retrieved_at": "2026-10-06T02:41:15.953448+00:00",
+          "sha256": "f781e2dad7b5fa0b0f9b3d453c35ae0efb2ce431b38573d2aa3164aa9d8808dd",
+          "url": "https://raw.githubusercontent.com/khristel26/Senate/d3d0c6be4e35945e59c1cb574b4050ca1787a2bc/senate_polls_historical.csv"
+        },
+        "texas_2024_source.html": {
+          "final_url": "https://texaspolitics.utexas.edu/blog/texas-2024-us-senate-poll-tracker",
+          "retrieved_at": "2026-10-06T02:41:16.264606+00:00",
+          "sha256": "7354a80bec6ae6fbcd00918e3a323c14e142c1f9fae4026ee3a13f30d2a7d7b2",
+          "url": "https://texaspolitics.utexas.edu/blog/texas-2024-us-senate-poll-tracker"
+        }
+      },
+      "source_retrieved_at": "2026-10-06T02:41:16.485906+00:00",
+      "source_snapshot": "data/raw/texas_senate_historical/20261006T024116Z"
+    }
+  }
+}
