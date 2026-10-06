@@ -36,7 +36,8 @@ Every verification status in the generated CSV remains pending. docs/texas_track
 | --- | --- |
 | docs/file_guide.md | This explanatory map of the repository. |
 | docs/README.md | Shared-document navigation and the distinction between proposals, approved decisions, and implemented schemas/workflows. |
-| docs/calibration_preparation_plan.md | Proposed MEDSL/official results sources, checked national archive inventory, unresolved race-format choices, preparation steps, planned outputs, and validation; no new pipeline implemented. |
+| docs/calibration_preparation_plan.md | National preparation proposal, approved source/rule updates, collected-result coverage, planned processed outputs and validation; the national preparer remains unimplemented. |
+| docs/senate_results_review.md | Actual collected MEDSL V8.0 coverage, arithmetic/source flags, Texas source values, checks and remaining factual preparation work. |
 | docs/data_dictionary.md | Meaning, types, units, identifiers, and missing-value conventions of the data fields. |
 | docs/data_sources.md | Approved polling sources, proposed election-result sources, access methods, attribution, and snapshot provenance. |
 | docs/decisions.md | History of decisions Rahan approved; later decisions can supersede earlier open questions. |
@@ -48,6 +49,7 @@ Every verification status in the generated CSV remains pending. docs/texas_track
 | docs/handoffs/2026-09-29-claude-code-to-codex.md | Decisions 008–010, Texas poll rules, first average check, and requested source proposal for Codex. |
 | docs/handoffs/2026-10-05-claude-code-to-codex.md | Decision 012 calibration rules, audit of the 10-05 data, and requests for a results source and all-state 2018/2020 preparation. |
 | docs/handoffs/2026-10-05-codex-to-rahan-and-claude-calibration-plan.md | Results-source research, corrected national archive counts, proposed preparation plan, observed checks, and decisions needed before collection. |
+| docs/handoffs/2026-10-06-codex-to-rahan-and-claude-results.md | Approved-source collection, MEDSL snapshot/audit, preservation and six passing tests, current approved rules and remaining factual preparation work. |
 
 ## Python and notebooks
 
@@ -56,12 +58,14 @@ Every verification status in the generated CSV remains pending. docs/texas_track
 | src/ingest/texas_tracker.py | Fetches the tracker and writes a new snapshot plus its CSVs, metadata, and issue log. Uses Python's standard library. Stops on certain unexpected formats; does not choose polls, weight them, or forecast. |
 | notebooks/data-pulls.ipynb | Rahan's notebook. Installs/imports libraries, loads the 2026 Texas snapshot, and computes the recency-weighted LV average and effective poll count. |
 | src/clean/prepare_texas_history.py | Applies approved historical date corrections, source-based partisan tags, and the 12 hypothetical-matchup exclusions, preserving raw snapshots and audit files. |
+| src/ingest/senate_results.py | Collects the approved pinned MEDSL results; preserves original sources and per-year rows, flags issues and audits source-group totals; supports immutable offline replay. |
 
 ## Folder READMEs
 
 | File | Purpose |
 | --- | --- |
 | data/raw/README.md | Explains original-source storage and links to the Texas collection. |
+| data/raw/senate_results/README.md | MEDSL attribution/CC0, collection and replay commands, all 12 snapshot files, source-year counts, notebook loading and preparation limits. |
 | data/raw/texas_tracker/README.md | Explains timestamped snapshots and all five generated files. |
 | data/processed/README.md | Explains derived data and links to the prepared historical Texas inventory. |
 | data/processed/texas_senate_historical/README.md | Prepared historical files, classifications, audits, reproduction commands, and notebook load path. |
@@ -88,6 +92,10 @@ Read the snapshot manifest, look at tracker.csv, compare normalized.csv, then re
 First snapshot: `data/raw/texas_senate_historical/20261006T024116Z/`. It contains unchanged source CSV/HTML and publisher documentation, candidate-row/table extracts, combined `normalized.csv`, three per-cycle CSVs, `manifest.json`, and `issues.json`. It is an inventory for review, without historical inclusion decisions, weights, results, or uncertainty calibration.
 
 [docs/handoffs/2026-10-05-codex-to-rahan-and-claude.md](handoffs/2026-10-05-codex-to-rahan-and-claude.md) records collection, observed checks, provenance limits, and next review steps.
+
+## MEDSL Senate result files
+
+`data/raw/senate_results/20261006T035630Z/` preserves unchanged `senate_returns.csv`, `metadata.json`, `codebook.md`, and `sources.csv`. `candidate_rows.csv` and `returns_2018.csv`/`returns_2020.csv`/`returns_2024.csv` preserve requested-year source strings; `returns_2021.csv` retains supplemental Georgia runoffs. `coverage.csv` checks source-group vote sums; `issues.json` lists flagged row IDs; `manifest.json` records receipts, source/output hashes, license, approval and limitations. No modeling margins or poll/result mappings are computed. [The results README](../data/raw/senate_results/README.md) explains every file and replay/loading; `tests/test_senate_results.py` checks preservation, group separation, anomalies, receipt integrity, byte-identical replay and overwrite protection. [The collection handoff](handoffs/2026-10-06-codex-to-rahan-and-claude-results.md) records observed work and remaining factual checks.
 
 ## Prepared historical Texas Senate files
 

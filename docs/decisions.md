@@ -187,7 +187,7 @@ Directed by Rahan in a Claude Code session on 2026-09-29, after Claude review.
 ### Decision
 
 - Output: P(Democrat wins) for each modeled race; ideally also P(Democrats win the Senate).
-- Minimum: Texas only, using a recency-weighted likely-voter average plus an error model calibrated on past Senate polling error. The model form is undecided.
+- Minimum: Texas only, using a recency-weighted likely-voter average plus an error model calibrated on past Senate polling error. The model form is normal (Decision 015).
 - Next level: fundamentals and pollster house effects.
 - Final level: correlation between states, covering the full 2026 Senate landscape.
 - Runs on demand, whenever Rahan runs it.
@@ -293,6 +293,13 @@ Directed by Rahan in a Claude Code session on 2026-10-05, after Claude review.
 - Same-party general elections (California 2018) are excluded from calibration.
 - Margin = sum of all Democratic-side candidates − sum of all Republican-side candidates, measured in the same round for polls and results. For ordinary races this reduces to D − R. It applies to jungle first rounds and ranked-choice races (using first-choice numbers in both polls and results).
 - Special elections and runoffs are included. Each poll is matched to the result of the round it asked about.
+- Added 2026-10-05 (approving Claude's recommendations on Codex's open cases):
+  - Races without both a Democratic-side and a Republican-side candidate (e.g., Arkansas 2020) are excluded.
+  - Each round for a seat (jungle first round, runoff) counts as a separate race; rounds for the same seat are not independent.
+  - Result vote shares use all valid votes, including third-party and write-in votes.
+  - LIB and `REP,REF` partisan flags count as partisan, so those polls are excluded from calibration.
+  - Outside Texas, exclude a question if any candidate it compares was not on that round's actual ballot. Missing or uncertain identities stay pending.
+  - One observation per poll per round. Where a poll has several LV questions, prefer the full-ballot question.
 
 ### Date
 
@@ -315,13 +322,7 @@ As listed above.
 - Democratic-caucusing independents play the Democratic role in these races.
 - Same-party races behave differently: many voters of the other party are undecided or skip the race, and the sign convention loses meaning. Excluding California 2018 costs one race.
 - Summing by party gives one rule for ordinary, jungle, and ranked-choice rounds.
-- Still open:
-  - races with no candidate on one side (e.g., Arkansas 2020, Cotton vs. a Libertarian);
-  - whether several rounds for one seat count as separate outcomes;
-  - the vote-share denominator;
-  - classification of LIB and `REP,REF` partisan flags;
-  - the general non-nominee exclusion rule;
-  - choosing among several LV questions from one poll.
+- The added rules close the cases Codex's plan left open. Counting rounds separately adds observations that share a seat, so they are not fully independent.
 
 ### Affected files
 
@@ -343,11 +344,43 @@ Approve the proposed MIT Election Data and Science Lab U.S. Senate statewide ret
 
 ### Scope and limits
 
-This authorizes collection and mechanical inventory of returns for all three years. Decision 012's initial polling calibration scope remains all 2018/2020 Senate races plus Texas 2024. Decision 013's approved race-format rules remain in force; source approval does not settle its outstanding denominator, no-DEM, multiple-round, partisanship-label, non-nominee, or duplicate-question choices. Official-source crosschecks remain proposed separately.
+This authorizes collection and mechanical inventory of returns for all three years. Decision 012's initial polling calibration scope remains all 2018/2020 Senate races plus Texas 2024. Decision 013, including its subsequent approved additions, governs analytical preparation; this source approval adds no new modeling rule. Actual dates, round coverage, candidate identities, ballot-line aggregation, unofficial flags and first-choice return definitions still need verification. Official-source crosschecks remain proposed separately.
 
 ### Evidence / review
 
 Rahan in this Codex session: "you have approval on the election results source for 2018/20/24!"
+
+## Decision 015: Error distribution
+
+### Decision
+
+The minimum deliverable uses a normal error distribution: P(Democrat wins) = Φ(average / σ), with σ the calibrated RMSE at the nearest horizon (Decision 012). A t-distribution is tested in the sensitivity analysis.
+
+### Date
+
+2026-10-06
+
+### Context and alternatives
+
+Normal versus t-distribution with ν degrees of freedom (heavier tails; reduces to the normal as ν grows).
+
+### Rahan's choice
+
+Normal for the minimum version; test t in sensitivity analysis.
+
+### Reasoning and tradeoffs
+
+The normal is simplest. Its tails are thin, so it understates the chance of a large industry-wide polling miss, and σ itself is estimated from only two to three cycles. Both are arguments for t.
+
+For the sensitivity test, match t's standard deviation to the RMSE: scale = σ · √((ν − 2) / ν). A t with the same SD is more confident on moderate leads and less confident on large ones. Toy example, average +3.32 and σ = 5: normal 74.7%, t(ν = 5) 78.5%.
+
+### Affected files
+
+docs/methodology.md
+
+### Evidence / review
+
+Directed by Rahan in a Claude Code session on 2026-10-06, after Claude review.
 
 ## Future decision template
 

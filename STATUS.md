@@ -2,7 +2,7 @@
 
 ## Current milestone
 
-Review the election-results source proposal and all-state preparation plan under Decision 012; then prepare inputs for Rahan's uncertainty-model calibration.
+MEDSL results collection and mechanical coverage audit complete (Decision 014). Next: verify dates, round coverage and candidate identities, then prepare national calibration inputs under Decisions 012/013.
 
 ## Completed
 
@@ -47,22 +47,29 @@ Review the election-results source proposal and all-state preparation plan under
 
 - Recorded the calibration race-format rules (Decision 013) and σ = RMSE of errors (Decision 012), 2026-10-05.
 
+- Rahan approved MEDSL Senate V8.0/CC0 for 2018/2020/2024 (Decision 014). Collected immutable original CSV, pinned metadata, codebook and source listing with actual retrieval receipts/hashes. Mechanical inventory preserves 508 rows: 152/204/148 for requested years plus four Georgia 2021 runoff rows separately for review; full original CSV preserves 3,945 rows.
+- Added `src/ingest/senate_results.py`, per-year inventories, 107 source-group coverage checks and exact row flags. Every source-group vote sum matches its reported total; 19 unofficial rows, 30 blank names, six noncandidate vote categories and repeated ballot lines remain retained. No result margins, poll/result crosswalks or model calculations performed.
+- Six collector regression tests passed, including exact source-field preservation, year/round/special separation, anomaly retention, byte-identical offline replay, overwrite refusal, tamper rejection and schema/metadata/checksum validation. Source audit and notebook load paths are in `docs/senate_results_review.md` and the results/notebook READMEs.
+- Final preservation check: all 33 existing polling/notebook files match the pre-collection SHA-256 baseline; notebook not edited/rerun. Collection handoff: `docs/handoffs/2026-10-06-codex-to-rahan-and-claude-results.md`.
+
+- Chose normal errors for the minimum version; t-distribution to be tested in sensitivity analysis (Decision 015, 2026-10-06).
+
 ## Not yet done
 
 - Local Python environment setup.
-- Approval of an election-results source (proposal ready; Decision 012). Calibration rules are set; the error-model form (e.g., normal vs. t distribution) is still undecided.
-- Implementation of results collection and all-state preparation after approval. Decision 013 settles independents, same-party races, sum-by-party margins, and specials/runoffs. Still open: no-DEM contests, multiple rounds per seat, denominator, LIB/`REP,REF` partisan labels, general non-nominee exclusion, and multiple LV questions per poll.
+- National preparation and poll/result crosswalk implementation. Decisions 012/013/014 approve the source and preparation rules; factual verification remains for dates, ordinary/special seats, ballot-line identities, first-choice RCV, unofficial flags and missing round coverage. Ambiguous identities/metadata/question preferences must remain logged as pending.
+- Official results crosschecks. The source has no election dates; Mississippi 2018 special does not supply a separate multicandidate first-round group; Georgia 2021 runoff rows are preserved without an assigned cycle crosswalk. Some 2020 reported totals include blank/under/over votes and require valid-vote denominator preparation.
 - Open poll rule: LV numbers from releases where the tracker shows RV.
 - Uncertainty model for win probability, and the baseline.
 - Complete primary-source verification, analytical data cleaning, modeling, and evaluation.
 
 ## Next action
 
-Rahan: review `docs/calibration_preparation_plan.md` and select the results source (recommended MEDSL V8.0 with official crosschecks). Source approval enables an immutable download and row-level coverage audit; approve the relevant unresolved preparation rules before analytical filtering. Codex then prepares the approved inputs; Rahan computes historical averages, n_eff, errors, σ, and dropped-race logs at the Decision 012 horizons. Partisan-tagged polls stay preserved but are excluded from calibration.
+Use `docs/senate_results_review.md` to resolve factual source/date/round/identity issues and implement the national preparation described in `docs/calibration_preparation_plan.md` under Decisions 012/013. Keep uncertain cases pending and audit analytical exclusions. Rahan then computes historical averages, n_eff, errors, horizon RMSE, cycle means and dropped-race logs; the error-distribution form remains undecided.
 
 ## Active branch / commit
 
-main at be97bf86c01e77b35514b5245e67635225a8a7d0, plus uncommitted source-proposal/plan documentation. `notebooks/data-pulls.ipynb` has pre-existing Rahan edits, preserved during this work.
+main at 443de40 (Rahan committed the updated Decision 013 during collection), plus uncommitted results collector/snapshot/documentation changes. Rahan's notebook is preserved and was not rerun.
 
 ## Data snapshot
 
@@ -70,7 +77,9 @@ Latest 2026 tracker: `data/raw/texas_tracker/20261006T023757Z/` — 18 tracker r
 
 Historical: `data/raw/texas_senate_historical/20261006T024116Z/` — 149 question/tracker records (262 older candidate rows plus 37 newer tracker rows). Source dates and populations preserved; one malformed 2024 date remains blank and flagged. Full primary verification and historical analytical inclusion remain pending.
 
-The same historical snapshot also preserves the full 2018/2020 polling archive (4,593 candidate rows across all states); national derived preparation is not yet implemented. No election-results snapshot exists yet.
+The same historical snapshot also preserves the full 2018/2020 polling archive (4,593 candidate rows across all states); national derived preparation is not yet implemented.
+
+Results: `data/raw/senate_results/20261006T035630Z/` — MEDSL V8.0/CC0 full original CSV (3,945 rows), supporting source files and receipts; 508 requested/supplemental rows, 107 source groups. Original CSV SHA-256 `6f745db1b4a0026ad837e74428f9ed6f3f77fa51eb6f858b58ebdbc186fdb3bd`. This is a source inventory, not a finalized calibration dataset. All prior polling raw/prepared snapshots remain unchanged.
 
 Prepared historical: `data/processed/texas_senate_historical/20261006T024116Z/` — 137 retained records, 12 exclusions, complete date/partisanship change audit. Original 149-row snapshot preserved. The one malformed 2024 fieldwork date remains blank and flagged; its election date is now populated.
 

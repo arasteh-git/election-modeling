@@ -72,6 +72,28 @@ Applies to `data/raw/texas_senate_historical/<timestamp>/`. This schema differs 
 
 Missing values are empty CSV fields (pandas reads these as NaN by default). Required schema/identifier failures and inconsistent metadata within a 538 question stop extraction. Missing numeric values and ambiguous dates are retained with flags; malformed numeric values stop extraction. No `other` or undecided share is inferred as the complement of major-party shares.
 
+## MEDSL results inventory (Decision 014)
+
+Applies to `data/raw/senate_results/20261006T035630Z/`. `senate_returns.csv` preserves the full original CSV bytes. `candidate_rows.csv` and `returns_<year>.csv` preserve all 19 source columns and source strings for 2018/2020/2024, with Georgia 2021 runoffs retained separately for review. Missing names/values remain empty CSV fields; pandas may infer NaN/types unless loaded with `dtype=str, keep_default_na=False`.
+
+| Field | Meaning |
+| --- | --- |
+| `source_row` | 1-based data-row index in this snapshot's full MEDSL CSV; not stable across versions. |
+| `selection_basis` | `requested_source_year` or `supplemental_GA_2021_runoff`; describes inventory selection, not calibration eligibility. |
+| `inventory_id` | Snapshot-local source-group ID; not a reviewed contest ID, Senate class, or polling race ID. |
+| `year` | Original source election year; Georgia 2021 runoffs retain 2021. No cycle assignment or date is inferred. |
+| `state`, `state_po`, `state_fips`, `state_cen`, `state_ic` | Original state identifiers/strings. |
+| `office`, `district` | Source `US SENATE` / `statewide`. |
+| `stage`, `special`, `mode` | Original stage, special flag and voting mode. Stage labels require actual-round verification; modes are not combined. |
+| `candidate`, `party_detailed`, `party_simplified`, `writein` | Original answer/ballot-line identity, party labels and write-in flag. Blank names, noncandidate categories and repeated ballot lines remain retained; no D-side mapping. |
+| `candidatevotes`, `totalvotes` | Original vote-count strings (often `.0`). Candidate votes apply to a source row/party line. Total is repeated across rows; do not sum it over rows. May include blank/under/over votes, so not automatically the Decision 013 valid-vote denominator. |
+| `unofficial`, `version` | Publisher certification flag and source revision string; source flags are not independent certification checks. |
+| `flags` | Semicolon-separated mechanical warnings; not corrections or exclusion decisions. |
+
+`coverage.csv` groups by year/state_po/office/district/stage/special/mode, lowercasing stage/special/mode only in this audit file. It adds `source_rows`, `row_count`, `named_candidate_count` (distinct nonblank source labels, not adjudicated candidates), `candidate_names_json`, `party_labels_json` (detailed labels), `reported_totals_json` (distinct original strings), and `unofficial_values_json`. `sum_source_row_votes` sums exact nonnegative integer counts over all source categories/ballot lines within a group. `reported_total` takes one consistent repeated total; `sum_minus_reported_total` checks arithmetic. Invalid/missing/inconsistent values leave derived numeric fields blank with flags. No result vote share or margin is derived.
+
+All groups carry `election_date_unavailable` and `round_definition_unverified`. Other flags cover unofficial/unknown booleans, missing fields/names, whitespace, noncandidate categories, repeated names, invalid counts, possible total-1 sentinels, votes exceeding total, sum mismatches and supplemental runoff cycle assignment. `issues.json` contains summary counts and flagged source-row IDs; `manifest.json` records sources, retrieval times, byte sizes, SHA-256, license, approval, transformations and output hashes. See [the results README](../data/raw/senate_results/README.md) and [review](senate_results_review.md).
+
 ## Prepared historical Texas dataset (Decision 011)
 
 Applies to `data/processed/texas_senate_historical/20261006T024116Z/`. Original inventory fields retain their meaning, with one documented correction: `election_date` is `2024-11-05` for all 37 2024 rows. These fields describe the correction and partisan classification:

@@ -11,3 +11,9 @@ python -B -m unittest discover -s tests -p 'test_prepare_texas_history.py' -v
 ```
 
 The regression fixture is the saved 20261006T024116Z inventory; integration outputs go in a temporary directory and are removed by the tests. No network or statistical-model validation is involved.
+
+`test_senate_results.py` uses the saved MEDSL 20261006T035630Z snapshot to verify exact candidate-row/field preservation, ordinary/special and year/round separation, anomaly retention, byte-identical offline replay, overwrite refusal, tamper rejection, and schema/version/DOI/license/restriction/checksum checks. Six tests; temporary replay outputs are removed. No network or model calculations.
+
+```bash
+python -B -m unittest discover -s tests -p 'test_senate_results.py' -v
+```

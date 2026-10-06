@@ -3,6 +3,7 @@
 ## Files
 
 - texas_tracker.py: collects the approved UT Texas Senate tracker and mechanically standardizes it. It uses only the Python standard library.
+- senate_results.py: collects pinned MEDSL V8.0 Senate results and a mechanical coverage audit (Decision 014).
 - .gitkeep: empty directory marker.
 
 ## Run from repository root
@@ -26,6 +27,15 @@ Use the original retrieval time from manifest.json, not the time of replay. If r
 Checks the table header and row structure, parses 2026 fieldwork dates and numeric fields, and flags mismatched spreads. Leaves original values intact. It does not verify every linked release, apply inclusion rules, impute values, or implement weighting or forecasts. A schema change can stop extraction and needs inspection.
 
 See [snapshot file descriptions](../../data/raw/texas_tracker/README.md) and [review notes](../../docs/texas_tracker_review.md).
+
+## MEDSL Senate results
+
+```bash
+python src/ingest/senate_results.py
+python src/ingest/senate_results.py --snapshot data/raw/senate_results/20261006T035630Z --output-root outputs/senate_results_replay
+```
+
+Preserves original CSV/metadata/codebook/source listing under `data/raw/senate_results/`, plus requested-year rows, separate Georgia 2021 runoff rows, coverage checks and flags. Offline replay verifies receipts and reproduces saved files; existing outputs are never overwritten. Standard library only. See [snapshot files and limits](../../data/raw/senate_results/README.md). No dates, candidate mappings, denominators, margins or eligibility inferred.
 
 ## Historical Texas Senate collection
 

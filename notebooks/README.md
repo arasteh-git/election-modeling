@@ -7,6 +7,17 @@ Rahan's exploration and learning work.
 
 Use [the file guide](../docs/file_guide.md) and [data dictionary](../docs/data_dictionary.md) when exploring the Texas CSVs. Paths depend on the notebook's working directory; from notebooks/, the snapshot is under ../data/raw/texas_tracker/.
 
+## Election-results inventory
+
+The approved MEDSL source is saved, without model margins or a poll/result crosswalk. From a kernel working in `notebooks/`:
+
+```python
+returns_2024 = pd.read_csv('../data/raw/senate_results/20261006T035630Z/returns_2024.csv')
+texas_returns_2024 = returns_2024[returns_2024['state_po'] == 'TX']
+```
+
+2018/2020 subsets are alongside it; Georgia's January runoffs remain in a separate 2021 file. [The results README](../data/raw/senate_results/README.md) documents fields, exact-string loading, replay and limits. Decision 013 approves a valid-vote denominator including third-party/write-in votes; [source flags](../docs/senate_results_review.md), ballot lines and round definitions still need verification before computing it. The existing notebook was preserved, not edited or rerun.
+
 ## Historical inventory
 
 From a kernel working in `notebooks/`, load the prepared historical data (Decision 011) with:

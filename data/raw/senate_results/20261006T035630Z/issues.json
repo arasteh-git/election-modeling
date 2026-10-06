@@ -1,0 +1,547 @@
+{
+  "flagged_rows": [
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-001",
+      "source_row": 3273
+    },
+    {
+      "flags": [
+        "repeated_candidate_name_review_ballot_lines"
+      ],
+      "inventory_id": "medsl-v8-group-003",
+      "source_row": 3276
+    },
+    {
+      "flags": [
+        "repeated_candidate_name_review_ballot_lines"
+      ],
+      "inventory_id": "medsl-v8-group-003",
+      "source_row": 3277
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-003",
+      "source_row": 3281
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-005",
+      "source_row": 3288
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-007",
+      "source_row": 3294
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-009",
+      "source_row": 3303
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-011",
+      "source_row": 3313
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-012",
+      "source_row": 3318
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-013",
+      "source_row": 3323
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-014",
+      "source_row": 3335
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-018",
+      "source_row": 3369
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-019",
+      "source_row": 3342
+    },
+    {
+      "flags": [
+        "repeated_candidate_name_review_ballot_lines"
+      ],
+      "inventory_id": "medsl-v8-group-023",
+      "source_row": 3360
+    },
+    {
+      "flags": [
+        "repeated_candidate_name_review_ballot_lines"
+      ],
+      "inventory_id": "medsl-v8-group-023",
+      "source_row": 3361
+    },
+    {
+      "flags": [
+        "repeated_candidate_name_review_ballot_lines"
+      ],
+      "inventory_id": "medsl-v8-group-023",
+      "source_row": 3362
+    },
+    {
+      "flags": [
+        "repeated_candidate_name_review_ballot_lines"
+      ],
+      "inventory_id": "medsl-v8-group-023",
+      "source_row": 3363
+    },
+    {
+      "flags": [
+        "repeated_candidate_name_review_ballot_lines"
+      ],
+      "inventory_id": "medsl-v8-group-023",
+      "source_row": 3364
+    },
+    {
+      "flags": [
+        "repeated_candidate_name_review_ballot_lines"
+      ],
+      "inventory_id": "medsl-v8-group-023",
+      "source_row": 3365
+    },
+    {
+      "flags": [
+        "repeated_candidate_name_review_ballot_lines"
+      ],
+      "inventory_id": "medsl-v8-group-023",
+      "source_row": 3366
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-024",
+      "source_row": 3372
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-026",
+      "source_row": 3379
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-030",
+      "source_row": 3409
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-031",
+      "source_row": 3405
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-033",
+      "source_row": 3417
+    },
+    {
+      "flags": [
+        "unofficial_return"
+      ],
+      "inventory_id": "medsl-v8-group-034",
+      "source_row": 3412
+    },
+    {
+      "flags": [
+        "unofficial_return"
+      ],
+      "inventory_id": "medsl-v8-group-034",
+      "source_row": 3413
+    },
+    {
+      "flags": [
+        "unofficial_return"
+      ],
+      "inventory_id": "medsl-v8-group-034",
+      "source_row": 3414
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-035",
+      "source_row": 3421
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-036",
+      "source_row": 3428
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-037",
+      "source_row": 3424
+    },
+    {
+      "flags": [
+        "noncandidate_vote_category"
+      ],
+      "inventory_id": "medsl-v8-group-044",
+      "source_row": 3498
+    },
+    {
+      "flags": [
+        "noncandidate_vote_category"
+      ],
+      "inventory_id": "medsl-v8-group-044",
+      "source_row": 3502
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-044",
+      "source_row": 3503
+    },
+    {
+      "flags": [
+        "candidate_whitespace"
+      ],
+      "inventory_id": "medsl-v8-group-046",
+      "source_row": 3490
+    },
+    {
+      "flags": [
+        "noncandidate_vote_category"
+      ],
+      "inventory_id": "medsl-v8-group-050",
+      "source_row": 3536
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-050",
+      "source_row": 3540
+    },
+    {
+      "flags": [
+        "noncandidate_vote_category"
+      ],
+      "inventory_id": "medsl-v8-group-051",
+      "source_row": 3530
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-051",
+      "source_row": 3535
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-053",
+      "source_row": 3552
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-057",
+      "source_row": 3562
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-058",
+      "source_row": 3566
+    },
+    {
+      "flags": [
+        "candidate_whitespace"
+      ],
+      "inventory_id": "medsl-v8-group-061",
+      "source_row": 3581
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-062",
+      "source_row": 3588
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-063",
+      "source_row": 3591
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-064",
+      "source_row": 3595
+    },
+    {
+      "flags": [
+        "unofficial_return"
+      ],
+      "inventory_id": "medsl-v8-group-065",
+      "source_row": 3596
+    },
+    {
+      "flags": [
+        "unofficial_return"
+      ],
+      "inventory_id": "medsl-v8-group-065",
+      "source_row": 3597
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-068",
+      "source_row": 3617
+    },
+    {
+      "flags": [
+        "noncandidate_vote_category"
+      ],
+      "inventory_id": "medsl-v8-group-070",
+      "source_row": 3623
+    },
+    {
+      "flags": [
+        "noncandidate_vote_category"
+      ],
+      "inventory_id": "medsl-v8-group-070",
+      "source_row": 3624
+    },
+    {
+      "flags": [
+        "missing_candidate_name"
+      ],
+      "inventory_id": "medsl-v8-group-070",
+      "source_row": 3625
+    },
+    {
+      "flags": [
+        "unofficial_return",
+        "supplemental_2021_runoff_cycle_unassigned"
+      ],
+      "inventory_id": "medsl-v8-group-071",
+      "source_row": 3626
+    },
+    {
+      "flags": [
+        "unofficial_return",
+        "supplemental_2021_runoff_cycle_unassigned"
+      ],
+      "inventory_id": "medsl-v8-group-071",
+      "source_row": 3627
+    },
+    {
+      "flags": [
+        "unofficial_return",
+        "supplemental_2021_runoff_cycle_unassigned"
+      ],
+      "inventory_id": "medsl-v8-group-072",
+      "source_row": 3628
+    },
+    {
+      "flags": [
+        "unofficial_return",
+        "supplemental_2021_runoff_cycle_unassigned"
+      ],
+      "inventory_id": "medsl-v8-group-072",
+      "source_row": 3629
+    },
+    {
+      "flags": [
+        "unofficial_return"
+      ],
+      "inventory_id": "medsl-v8-group-073",
+      "source_row": 3798
+    },
+    {
+      "flags": [
+        "unofficial_return"
+      ],
+      "inventory_id": "medsl-v8-group-073",
+      "source_row": 3799
+    },
+    {
+      "flags": [
+        "unofficial_return"
+      ],
+      "inventory_id": "medsl-v8-group-073",
+      "source_row": 3800
+    },
+    {
+      "flags": [
+        "unofficial_return"
+      ],
+      "inventory_id": "medsl-v8-group-075",
+      "source_row": 3803
+    },
+    {
+      "flags": [
+        "unofficial_return"
+      ],
+      "inventory_id": "medsl-v8-group-075",
+      "source_row": 3804
+    },
+    {
+      "flags": [
+        "repeated_candidate_name_review_ballot_lines"
+      ],
+      "inventory_id": "medsl-v8-group-076",
+      "source_row": 3805
+    },
+    {
+      "flags": [
+        "repeated_candidate_name_review_ballot_lines"
+      ],
+      "inventory_id": "medsl-v8-group-076",
+      "source_row": 3806
+    },
+    {
+      "flags": [
+        "unofficial_return"
+      ],
+      "inventory_id": "medsl-v8-group-091",
+      "source_row": 3868
+    },
+    {
+      "flags": [
+        "unofficial_return"
+      ],
+      "inventory_id": "medsl-v8-group-091",
+      "source_row": 3869
+    },
+    {
+      "flags": [
+        "unofficial_return"
+      ],
+      "inventory_id": "medsl-v8-group-104",
+      "source_row": 3929
+    },
+    {
+      "flags": [
+        "unofficial_return"
+      ],
+      "inventory_id": "medsl-v8-group-104",
+      "source_row": 3930
+    },
+    {
+      "flags": [
+        "unofficial_return"
+      ],
+      "inventory_id": "medsl-v8-group-104",
+      "source_row": 3931
+    }
+  ],
+  "summary": {
+    "full_source_rows": 3945,
+    "full_source_rows_by_year": {
+      "1976": 144,
+      "1978": 126,
+      "1980": 134,
+      "1982": 129,
+      "1984": 118,
+      "1986": 121,
+      "1988": 127,
+      "1990": 103,
+      "1992": 165,
+      "1994": 157,
+      "1996": 155,
+      "1998": 152,
+      "2000": 183,
+      "2002": 145,
+      "2004": 165,
+      "2006": 160,
+      "2008": 145,
+      "2010": 242,
+      "2012": 190,
+      "2014": 187,
+      "2016": 221,
+      "2018": 152,
+      "2020": 204,
+      "2021": 4,
+      "2022": 168,
+      "2024": 148
+    },
+    "group_flag_counts": {
+      "candidate_whitespace": 2,
+      "election_date_unavailable": 107,
+      "missing_candidate_name": 30,
+      "noncandidate_vote_category": 4,
+      "repeated_candidate_name_review_ballot_lines": 3,
+      "round_definition_unverified": 107,
+      "supplemental_2021_runoff_cycle_unassigned": 2,
+      "unofficial_return": 8
+    },
+    "inventoried_rows": 508,
+    "inventoried_rows_by_source_year": {
+      "2018": 152,
+      "2020": 204,
+      "2021": 4,
+      "2024": 148
+    },
+    "inventory_groups": 107,
+    "inventory_groups_by_source_year": {
+      "2018": 35,
+      "2020": 35,
+      "2021": 2,
+      "2024": 35
+    },
+    "row_flag_counts": {
+      "candidate_whitespace": 2,
+      "missing_candidate_name": 30,
+      "noncandidate_vote_category": 6,
+      "repeated_candidate_name_review_ballot_lines": 11,
+      "supplemental_2021_runoff_cycle_unassigned": 4,
+      "unofficial_return": 19
+    }
+  }
+}

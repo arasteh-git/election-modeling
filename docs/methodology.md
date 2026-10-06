@@ -42,7 +42,7 @@ Weighted average = Σ(weight × margin) / Σ(weight). Report the effective numbe
 
 ## Uncertainty and probability model
 
-Convert the poll average into P(Democrat wins) using an error model calibrated on past Senate polling error (Decision 010). The model form is undecided.
+Convert the poll average into P(Democrat wins) using an error model calibrated on past Senate polling error (Decision 010). Minimum version: normal errors, P(Democrat wins) = Φ(average / σ) (Decision 015).
 
 Calibration rules (Decision 012):
 
@@ -52,6 +52,8 @@ Calibration rules (Decision 012):
 - Mean error is assumed zero but reported by cycle.
 - Partisan- and internal-tagged polls are excluded.
 - Races need at least one eligible poll; n_eff and dropped races are logged.
+
+Decision 013's approved additions exclude races without both sides, count each round separately (acknowledging shared-seat dependence), and use all valid candidate votes including third-party/write-ins for result shares. LIB/`REP,REF` flags are partisan. Exclude questions comparing confirmed non-ballot candidates; missing/uncertain identities remain pending. Select one observation per poll/round, preferring a full-ballot LV question. Use first-choice RCV numbers on both sides of the comparison. MEDSL V8.0 results are approved under Decision 014; the collected inventory still requires factual round/identity/date verification before applying these rules.
 
 ## Historical evaluation and leakage prevention
 
@@ -71,5 +73,7 @@ Half-life, Texas first snapshot (reference date 2026-09-29, 11 LV polls):
 | 14 | +2.64 | 5.48 |
 | 30 | +2.52 | 7.69 |
 | Unweighted | +1.73 | 11 |
+
+Error distribution (Decision 015, planned): compare the normal with a t-distribution, for example ν = 5 and 10, with its SD matched to the calibrated σ (scale = σ · √((ν − 2) / ν)).
 
 ## Known limitations

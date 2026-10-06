@@ -1,0 +1,160 @@
+{
+  "approval": "Rahan, Decision 014, 2026-10-05",
+  "attribution": "MIT Election Data and Science Lab, U.S. Senate statewide returns, V8.0, doi:10.7910/DVN/PEJ5QU",
+  "dataset_doi": "doi:10.7910/DVN/PEJ5QU",
+  "dataset_release_time": "2026-05-11T16:13:52Z",
+  "dataset_version": "8.0",
+  "license": {
+    "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+    "languageCode": "en",
+    "name": "CC0 1.0",
+    "rightsIdentifier": "CC0-1.0",
+    "rightsIdentifierScheme": "SPDX",
+    "schemeUri": "https://spdx.org/licenses/",
+    "uri": "http://creativecommons.org/publicdomain/zero/1.0"
+  },
+  "limitations": [
+    "Coverage groups are source groups, not verified independent contests or round mappings",
+    "Source provides no election dates or poll crosswalk; 2021 runoff cycle remains unassigned",
+    "Unofficial flags, missing names, noncandidate categories and ballot lines remain retained",
+    "No official crosschecks, margins, party-side mapping, analytical exclusions or model calculations",
+    "Codebook body and source listing are older than the main file",
+    "Published tabular MD5 is not compared with original CSV; original byte sizes and codebook MD5 checked, SHA-256 recorded"
+  ],
+  "outputs": {
+    "candidate_rows.csv": {
+      "bytes": 95076,
+      "sha256": "1852da5965d53172bf1235b63027c4781597a2aa0a4591a031904efff94e07a6"
+    },
+    "coverage.csv": {
+      "bytes": 38618,
+      "sha256": "856fc1865329e688e0f7a8b99e7a93a19e421ea6375c899afc425cf71fb44055"
+    },
+    "issues.json": {
+      "bytes": 11505,
+      "sha256": "271fef4cb9df4fd7f2ec783d7bc2dfec4bd4250998d9c72a78346f4c04bc1a93"
+    },
+    "returns_2018.csv": {
+      "bytes": 28846,
+      "sha256": "c0eac564569839d3682c3b40f0feccd187e9883f9017c7eb0db776f670fa8144"
+    },
+    "returns_2020.csv": {
+      "bytes": 38070,
+      "sha256": "31ecbba84c0092f112d7b58a737b3f96309c475c4b92cc9895f64da1a6f0bf93"
+    },
+    "returns_2021.csv": {
+      "bytes": 1239,
+      "sha256": "e53931aca00fcd0fcb1593d728c4e602703ff68128c1e8e44380492b27afac3f"
+    },
+    "returns_2024.csv": {
+      "bytes": 27602,
+      "sha256": "8ed7f176629fef2cf9eb44a0275b5e87f6fff76e5f274bb8a5e7c4c7d0c987b3"
+    }
+  },
+  "retrieved_at": "2026-10-06T03:56:30.735602+00:00",
+  "schema_version": 1,
+  "snapshot_id": "20261006T035630Z",
+  "sources": {
+    "codebook.md": {
+      "bytes": 3700,
+      "content_type": "text/markdown",
+      "resolved_url": "https://dvn-cloud-iqss.s3.amazonaws.com/10.7910/DVN/PEJ5QU/184768e8ea4-63ccb628a42d?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27codebook-us-senate-1976%25E2%2580%25932024.md&response-content-type=text%2Fmarkdown&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261006T035630Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIAZT3GWQ6FKBSH5I56%2F20261006%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=3600&X-Amz-Signature=8ebac3e76c023ecd55c033a2b0d730e73f26fa6b0f40ecba813ecc05f0251a6d",
+      "retrieved_at": "2026-10-06T03:56:31.042671+00:00",
+      "sha256": "221ca02977af4f2d3803340eab798cd9d09830e3b2c5254e700e0b2b45637333",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/6708560"
+    },
+    "metadata.json": {
+      "bytes": 6415,
+      "content_type": "application/json;charset=UTF-8",
+      "resolved_url": "https://dataverse.harvard.edu/api/datasets/3072248/versions/8.0",
+      "retrieved_at": "2026-10-06T03:56:30.060377+00:00",
+      "sha256": "bba382910a6ed7afec6ac1c1d966e47ecaf128c60f104d22a08d91d40ef29073",
+      "url": "https://dataverse.harvard.edu/api/datasets/3072248/versions/8.0"
+    },
+    "senate_returns.csv": {
+      "bytes": 530501,
+      "content_type": "text/comma-separated-values",
+      "resolved_url": "https://dvn-cloud-iqss.s3.amazonaws.com/10.7910/DVN/PEJ5QU/19e17cc9bc2-05615a632744.orig?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%271976-2024-senate-state.csv&response-content-type=text%2Fcomma-separated-values&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261006T035630Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIAZT3GWQ6FKBSH5I56%2F20261006%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=3600&X-Amz-Signature=40273fa7e71a0870c6281fa82dec1d7735a6a3d5301522a9360edfec5ffd6f8e",
+      "retrieved_at": "2026-10-06T03:56:30.735602+00:00",
+      "sha256": "6f745db1b4a0026ad837e74428f9ed6f3f77fa51eb6f858b58ebdbc186fdb3bd",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/13887039?format=original"
+    },
+    "sources.csv": {
+      "bytes": 3049,
+      "content_type": "text/csv",
+      "resolved_url": "https://dvn-cloud-iqss.s3.amazonaws.com/10.7910/DVN/PEJ5QU/1771b2e25b0-43d511c60ed0.orig?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27sources-senate.csv&response-content-type=text%2Fcsv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261006T035631Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIAZT3GWQ6FKBSH5I56%2F20261006%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=3600&X-Amz-Signature=a45910585cded7d255797914fcf94c1d6a1d0bfb48816cdf7d36804fc2ebdebb",
+      "retrieved_at": "2026-10-06T03:56:31.422161+00:00",
+      "sha256": "c1de9cd25f1da28eb14289485a0b338a1b0b46128b2584911895e023747203d5",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/4304792?format=original"
+    }
+  },
+  "summary": {
+    "full_source_rows": 3945,
+    "full_source_rows_by_year": {
+      "1976": 144,
+      "1978": 126,
+      "1980": 134,
+      "1982": 129,
+      "1984": 118,
+      "1986": 121,
+      "1988": 127,
+      "1990": 103,
+      "1992": 165,
+      "1994": 157,
+      "1996": 155,
+      "1998": 152,
+      "2000": 183,
+      "2002": 145,
+      "2004": 165,
+      "2006": 160,
+      "2008": 145,
+      "2010": 242,
+      "2012": 190,
+      "2014": 187,
+      "2016": 221,
+      "2018": 152,
+      "2020": 204,
+      "2021": 4,
+      "2022": 168,
+      "2024": 148
+    },
+    "group_flag_counts": {
+      "candidate_whitespace": 2,
+      "election_date_unavailable": 107,
+      "missing_candidate_name": 30,
+      "noncandidate_vote_category": 4,
+      "repeated_candidate_name_review_ballot_lines": 3,
+      "round_definition_unverified": 107,
+      "supplemental_2021_runoff_cycle_unassigned": 2,
+      "unofficial_return": 8
+    },
+    "inventoried_rows": 508,
+    "inventoried_rows_by_source_year": {
+      "2018": 152,
+      "2020": 204,
+      "2021": 4,
+      "2024": 148
+    },
+    "inventory_groups": 107,
+    "inventory_groups_by_source_year": {
+      "2018": 35,
+      "2020": 35,
+      "2021": 2,
+      "2024": 35
+    },
+    "row_flag_counts": {
+      "candidate_whitespace": 2,
+      "missing_candidate_name": 30,
+      "noncandidate_vote_category": 6,
+      "repeated_candidate_name_review_ballot_lines": 11,
+      "supplemental_2021_runoff_cycle_unassigned": 4,
+      "unofficial_return": 19
+    }
+  },
+  "transformations": [
+    "Select unchanged source strings for years 2018/2020/2024, plus GA 2021 runoff rows separately for review",
+    "Add 1-based source data-row IDs, snapshot-local inventory groups and review flags",
+    "Group by source year/state/office/district/stage/special/mode; lowercase stage/special/mode in coverage only",
+    "Compare exact integer source-row vote sums with one consistent reported group total; do not aggregate candidates or choose a denominator"
+  ]
+}
