@@ -1,0 +1,90 @@
+{
+  "created_at": "2026-10-06T03:05:02.976481+00:00",
+  "source_snapshot": "data/raw/texas_senate_historical/20261006T024116Z",
+  "source_retrieved_at": "2026-10-06T02:41:16.485906+00:00",
+  "input_sha256": {
+    "normalized.csv": "9e53e2e7a452e2ab5c5e9c48fbf1f5daeec9e042a0c3663e04e5f48f8717b02d",
+    "manifest.json": "0908744820d4316d05cb068eac25f867024eb6e78a22d5e3ca56c965cd3048b1"
+  },
+  "source_provenance": {
+    "senate_polls_historical.csv": {
+      "url": "https://raw.githubusercontent.com/khristel26/Senate/d3d0c6be4e35945e59c1cb574b4050ca1787a2bc/senate_polls_historical.csv",
+      "final_url": "https://raw.githubusercontent.com/khristel26/Senate/d3d0c6be4e35945e59c1cb574b4050ca1787a2bc/senate_polls_historical.csv",
+      "retrieved_at": "2026-10-06T02:41:15.953448+00:00",
+      "sha256": "f781e2dad7b5fa0b0f9b3d453c35ae0efb2ce431b38573d2aa3164aa9d8808dd"
+    },
+    "texas_2024_source.html": {
+      "url": "https://texaspolitics.utexas.edu/blog/texas-2024-us-senate-poll-tracker",
+      "final_url": "https://texaspolitics.utexas.edu/blog/texas-2024-us-senate-poll-tracker",
+      "retrieved_at": "2026-10-06T02:41:16.264606+00:00",
+      "sha256": "7354a80bec6ae6fbcd00918e3a323c14e142c1f9fae4026ee3a13f30d2a7d7b2"
+    },
+    "fivethirtyeight_README.md": {
+      "url": "https://raw.githubusercontent.com/fivethirtyeight/data/master/README.md",
+      "final_url": "https://raw.githubusercontent.com/fivethirtyeight/data/master/README.md",
+      "retrieved_at": "2026-10-06T02:41:16.365981+00:00",
+      "sha256": "df6cc1332e12ee4bb5c38d1a9247dd7250ef6b937ecd31069d6532ec45bc9d60"
+    },
+    "fivethirtyeight_polls_README.md": {
+      "url": "https://raw.githubusercontent.com/fivethirtyeight/data/master/polls/README.md",
+      "final_url": "https://raw.githubusercontent.com/fivethirtyeight/data/master/polls/README.md",
+      "retrieved_at": "2026-10-06T02:41:16.485867+00:00",
+      "sha256": "5981a47db732c48ca08e022c28a1e1f6ad1fe4f8fabb1eed37b32b2748362f53"
+    }
+  },
+  "attribution": {
+    "538_archive": "FiveThirtyEight / ABC News; preserved by khristel26/Senate on GitHub",
+    "ut_tracker_2024": "Texas 2024 U.S. Senate Poll Tracker; Texas Politics Project at the University of Texas at Austin"
+  },
+  "permissions": {
+    "538_archive": "FiveThirtyEight repository states CC BY 4.0 unless otherwise noted; saved READMEs. Mirror identity has not been verified byte-for-byte against original.",
+    "ut_tracker_2024": "Republishing guidelines in saved HTML: attribution, unchanged original, no resale, honor change/removal requests. CSVs are labeled mechanical derivatives."
+  },
+  "rule_version": "Decision 011 / 2026-10-05",
+  "rules": [
+    "Set all 2024 election dates to 2024-11-05 as confirmed by Rahan; record date basis.",
+    "Classify 2018/2020 using 538 partisan/internal flags; preserve original fields. Not flagged is not independent nonpartisan verification. 2024 remains unknown.",
+    "Exclude 2020 questions naming a non-Hegar Democratic challenger against John Cornyn; retain exclusions with keys and reasons. Do not exclude missing/ambiguous names automatically."
+  ],
+  "counts_by_cycle": {
+    "2018": {
+      "input_records": 49,
+      "retained_records": 49,
+      "excluded_records": 0,
+      "lv_records": 29,
+      "partisan_status": {
+        "partisan": 15,
+        "not_flagged_partisan": 34
+      }
+    },
+    "2020": {
+      "input_records": 63,
+      "retained_records": 51,
+      "excluded_records": 12,
+      "lv_records": 37,
+      "partisan_status": {
+        "not_flagged_partisan": 42,
+        "partisan": 9
+      }
+    },
+    "2024": {
+      "input_records": 37,
+      "retained_records": 37,
+      "excluded_records": 0,
+      "lv_records": 23,
+      "partisan_status": {
+        "unknown": 37
+      }
+    }
+  },
+  "election_date_corrections": 37,
+  "output_sha256": {
+    "changes.csv": "62a7f04eb438c50a5dc9668f37dc97d4c4d3800687dc20fdde4a78d6ba444f42",
+    "excluded.csv": "b52a82a8a30ddb33cf3f44f9a0918651868aac99e248d00a618b2eade50cd945",
+    "normalized.csv": "31815823a9685ccb85b9224f2c4618e86bccf6877174205bf9e7cb7bb953db6f",
+    "texas_2018.csv": "f6098d302484eae6c880e3460d75007ede15546fe802c83964e198b5ee28f84d",
+    "texas_2020.csv": "947e87314e43ac75e763470673d6cd3aedfd95369a4a188b20842f55ad74b581",
+    "texas_2024.csv": "be76d0153c99a4248768ac7fb4c8e64a6ecb1b522b3da5e6cdab91786b4c980f"
+  },
+  "limitations": "All populations and partisan polls retained. Existing duplicate-question, field-date, source, and publication flags preserved. Primary releases, archive mirror identity, and 2024 partisanship not independently verified. No historical averaging or uncertainty calibration implemented."
+}

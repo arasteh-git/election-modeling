@@ -14,7 +14,7 @@ Folder: data/raw/texas_tracker/20260929T222648Z/. The name means September 29, 2
 | manifest.json | Collection receipt: source URL, attribution, retrieval time, source update label, row count, transformations, and SHA-256 fingerprint. The fingerprint detects changes to the original bytes; it does not establish factual accuracy. |
 | issues.json | Machine-detected discrepancies. Currently flags AARP row 6: displayed shares imply D+5 but the tracker says D+4. A flag is not an automatic correction or exclusion. |
 
-The normalized copy is stored beside the raw evidence for now because it is only a mechanical representation of that source. data/processed/ is reserved for future data produced under approved analytical rules.
+The 2026 normalized copy is stored beside the raw evidence because it is only a mechanical representation of that source. data/processed/ now also contains the historical Texas inventory prepared under Decision 011; see below.
 
 Every verification status in the generated CSV remains pending. docs/texas_tracker_review.md records a narrower Emerson spot-check, the blocked AARP source, and remaining verification work.
 
@@ -50,7 +50,8 @@ Every verification status in the generated CSV remains pending. docs/texas_track
 | File | Purpose |
 | --- | --- |
 | src/ingest/texas_tracker.py | Fetches the tracker and writes a new snapshot plus its CSVs, metadata, and issue log. Uses Python's standard library. Stops on certain unexpected formats; does not choose polls, weight them, or forecast. |
-| notebooks/data-pulls.ipynb | Rahan's notebook. Currently installs/imports matplotlib, plotnine, pandas, and NumPy and has an empty next cell. It does not yet load polls or implement a model. |
+| notebooks/data-pulls.ipynb | Rahan's notebook. Installs/imports libraries, loads the 2026 Texas snapshot, and computes the recency-weighted LV average and effective poll count. |
+| src/clean/prepare_texas_history.py | Applies approved historical date corrections, source-based partisan tags, and the 12 hypothetical-matchup exclusions, preserving raw snapshots and audit files. |
 
 ## Folder READMEs
 
@@ -58,14 +59,15 @@ Every verification status in the generated CSV remains pending. docs/texas_track
 | --- | --- |
 | data/raw/README.md | Explains original-source storage and links to the Texas collection. |
 | data/raw/texas_tracker/README.md | Explains timestamped snapshots and all five generated files. |
-| data/processed/README.md | Explains future analytically prepared datasets. None exist here yet. |
+| data/processed/README.md | Explains derived data and links to the prepared historical Texas inventory. |
+| data/processed/texas_senate_historical/README.md | Prepared historical files, classifications, audits, reproduction commands, and notebook load path. |
 | notebooks/README.md | Explains the exploratory notebook and its current contents. |
 | src/ingest/README.md | Collector instructions, outputs, offline replay, and limitations. |
-| src/clean/README.md | Placeholder guidance for future cleaning scripts; none implemented here yet. |
+| src/clean/README.md | Historical preparation commands, outputs, and limits under Decision 011. |
 | src/model/README.md | Placeholder guidance for Rahan's future modeling code. |
 | src/evaluate/README.md | Placeholder guidance for Rahan's future forecast evaluation code. |
 | outputs/README.md | Explains generated charts/results, which Git generally ignores. |
-| tests/README.md | Home for future automated checks. No committed test suite currently exists. The extraction checks reported in the PR were run separately. |
+| tests/README.md | Commands and scope for the historical-preparation regression tests. |
 
 ## Empty directory markers
 
@@ -81,4 +83,10 @@ Read the snapshot manifest, look at tracker.csv, compare normalized.csv, then re
 
 First snapshot: `data/raw/texas_senate_historical/20261006T024116Z/`. It contains unchanged source CSV/HTML and publisher documentation, candidate-row/table extracts, combined `normalized.csv`, three per-cycle CSVs, `manifest.json`, and `issues.json`. It is an inventory for review, without historical inclusion decisions, weights, results, or uncertainty calibration.
 
-[docs/handoffs/2026-10-05-codex-to-rahan-and-claude.md](handoffs/2026-10-05-codex-to-rahan-and-claude.md) records collection, observed checks, provenance limits, and next review steps. Rahan's `notebooks/data-pulls.ipynb` now loads the 2026 snapshot and computes the LV recency-weighted average and effective poll count; the older table description above is superseded by this entry.
+[docs/handoffs/2026-10-05-codex-to-rahan-and-claude.md](handoffs/2026-10-05-codex-to-rahan-and-claude.md) records collection, observed checks, provenance limits, and next review steps.
+
+## Prepared historical Texas Senate files
+
+`data/processed/texas_senate_historical/20261006T024116Z/` contains Decision 011 outputs. `normalized.csv` has 137 records with confirmed 2024 election dates and source-based partisan tags. The three per-cycle CSVs use the same schema. `excluded.csv` preserves the 12 removed hypothetical 2020 questions with reasons; `changes.csv` audits all 149 inputs; `manifest.json` records source provenance, hashes, rules, processing time, and counts. [The prepared README](../data/processed/texas_senate_historical/README.md) explains all files, reproduction, and the notebook load path.
+
+`src/clean/prepare_texas_history.py` implements only the approved preparation rules. `tests/test_prepare_texas_history.py` checks exact exclusions, preserved values/inputs, date corrections, classifications, unknown/ambiguous cases, hashes, and overwrite protection. Run instructions are in their folder READMEs. [The cleanup handoff](handoffs/2026-10-05-codex-to-rahan-and-claude-history-cleanup.md) records this change and remaining review questions.

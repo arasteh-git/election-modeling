@@ -9,7 +9,7 @@ Approval is for collection, not automatic inclusion of every row in the model. T
 
 ## Approved historical polling sources
 
-No named historical source has yet been approved for model inclusion. Rahan requested historical Texas Senate collection on 2026-10-05; the following inventory was collected under that request and remains subject to source review:
+Historical sources remain subject to source review for calibration. Rahan requested collection on 2026-10-05 and subsequently approved the specific corrections and hypothetical-matchup exclusion in Decision 011:
 
 - 2018 and 2020: preserved FiveThirtyEight Senate candidate-row file in `khristel26/Senate`, pinned to commit `d3d0c6be4e35945e59c1cb574b4050ca1787a2bc`. [Archive file](https://raw.githubusercontent.com/khristel26/Senate/d3d0c6be4e35945e59c1cb574b4050ca1787a2bc/senate_polls_historical.csv). Mirror identity is not independently verified against original bytes. Original [publisher polling documentation](https://github.com/fivethirtyeight/data/blob/master/polls/README.md) links to CSV endpoints that now return ABC webpages.
 - 2024: [Texas Politics Project tracker](https://texaspolitics.utexas.edu/blog/texas-2024-us-senate-poll-tracker), author/publisher Texas Politics Project at UT Austin, last updated October 30, 2024; may omit later polls.
@@ -17,6 +17,8 @@ No named historical source has yet been approved for model inclusion. Rahan requ
 Snapshot: `data/raw/texas_senate_historical/20261006T024116Z/`. The manifest records each source's URL, retrieval time, SHA-256, transformations, and limits. Run `python src/ingest/texas_senate_historical.py`; replay instructions and all file descriptions are in [the historical inventory README](../data/raw/texas_senate_historical/README.md). No population, quality, partisan, or hypothetical-matchup exclusions were applied to the requested source scope.
 
 FiveThirtyEight's [repository](https://github.com/fivethirtyeight/data) states CC BY 4.0 for datasets unless otherwise noted; publisher README copies are saved. Attribution: FiveThirtyEight / ABC News, with preservation credit to the mirror. The 2024 UT page includes the same attributed republication guidelines described below; its HTML is unchanged and CSVs are labeled mechanical derivatives. No linked reports have been downloaded.
+
+The approved derived inventory is under `data/processed/texas_senate_historical/20261006T024116Z/`. It fills the 2024 election date from Rahan's confirmation, tags 2018/2020 partisanship from archived `partisan` and `internal` fields, and removes the 12 hypothetical 2020 matchups from the active CSVs. Original inputs stay unchanged. See [the processed README](../data/processed/texas_senate_historical/README.md) for outputs, transformation/exclusion audits, input and output hashes, and limitations. `not_flagged_partisan` describes the archive's flags; `unknown` applies where metadata is absent, including all 2024 rows. Election results and primary-release partisanship verification have not been collected.
 
 ## Approved election-result sources
 
@@ -37,4 +39,3 @@ The source page's Republishing Guidelines allow attributed republication, requir
 The first snapshot contains 16 tracker rows; source last-updated label is September 23, 2026. Fieldwork runs from June 1 through September 20. Retrieval date is not publication date. Never use the snapshot retrieval date as historical poll availability.
 
 See docs/texas_tracker_review.md for verification limits and outstanding discrepancies.
-

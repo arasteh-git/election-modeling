@@ -20,6 +20,8 @@ Decision 009:
 - Repeat polls from the same label are separate observations.
 - No further deduplication rules have been decided.
 
+Historical Texas preparation (Decision 011, 2026-10-05): exclude the 12 clearly identified 2020 hypothetical Democratic challengers against Cornyn, retaining Hegar–Cornyn questions. Preserve the exclusions with source identifiers and reasons. Tag the older polls using 538 partisan/internal metadata, without excluding partisan polls. The processed inventory retains all populations and existing duplicate-question flags for subsequent review; it is not a completed calibration sample.
+
 ## Population selection
 
 Likely-voter (LV) polls only (Decision 009). Registered-voter and adult polls are excluded.

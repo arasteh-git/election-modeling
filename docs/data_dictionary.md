@@ -71,3 +71,18 @@ Applies to `data/raw/texas_senate_historical/<timestamp>/`. This schema differs 
 `texas_538_candidate_rows.csv` preserves the original archive fields plus `source_row`. `texas_2024_tracker.csv` preserves original table cell text plus row number and absolute link. The full source CSV/HTML remain unchanged. Source rows are counted excluding the archive header; the UT footnote is preserved in the manifest rather than counted as a poll.
 
 Missing values are empty CSV fields (pandas reads these as NaN by default). Required schema/identifier failures and inconsistent metadata within a 538 question stop extraction. Missing numeric values and ambiguous dates are retained with flags; malformed numeric values stop extraction. No `other` or undecided share is inferred as the complement of major-party shares.
+
+## Prepared historical Texas dataset (Decision 011)
+
+Applies to `data/processed/texas_senate_historical/20261006T024116Z/`. Original inventory fields retain their meaning, with one documented correction: `election_date` is `2024-11-05` for all 37 2024 rows. These fields describe the correction and partisan classification:
+
+| Field | Meaning |
+| --- | --- |
+| election_date_basis | `538 archive election_date` for older rows; Rahan-confirmed general-election date for 2024. This is election day, not poll publication or fieldwork |
+| partisan_status | `partisan` when 538 supplies a recognized party flag or marks an internal poll; `not_flagged_partisan` when the older archive has blank partisan and internal false; `unknown` for absent/unrecognized metadata, including 2024 |
+| partisan_party | Original 538 party classification: DEM, REP, or IND when recognized; blank for unspecified or unknown party. It is separate from the candidates' parties |
+| partisanship_basis | Identifies the source flag or reason no classification could be made. No party affiliation is inferred from a pollster's name |
+
+`partisan` and `internal` continue to preserve the original source values. A `not_flagged_partisan` tag is not independent verification that the organization or sponsor is nonpartisan. No partisan polls are excluded by this preparation step.
+
+`normalized.csv` and per-cycle CSVs contain 137 retained records (49/51/37). `excluded.csv` contains the 12 hypothetical 2020 questions, all original fields plus derived tags and `exclusion_reason`. `changes.csv` audits all 149 inputs using source keys, election dates before/after, date basis, original partisan/internal values, derived classifications, and kept/excluded action/reason. `manifest.json` records approval/rule version, source provenance, input/output SHA-256 hashes, counts, and limitations. Original source flags—including multiple questions within one poll—remain intact and describe the original inventory.

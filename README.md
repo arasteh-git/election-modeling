@@ -34,6 +34,8 @@ Run `python src/ingest/texas_tracker.py` from the repository root (standard libr
 
 Historical Texas Senate inventory (2018, 2020, 2024): run `python src/ingest/texas_senate_historical.py`. See [the inventory README](data/raw/texas_senate_historical/README.md) for per-cycle CSVs, notebook loading, offline replay, source permissions, and review flags. First snapshot: `data/raw/texas_senate_historical/20261006T024116Z/`.
 
+Prepare the historical inventory under Decision 011 with `python src/clean/prepare_texas_history.py`. [The prepared dataset](data/processed/texas_senate_historical/README.md) contains 137 records with corrected 2024 election dates and source-based partisan tags, plus audits of 12 excluded hypothetical 2020 matchups. The README gives fresh-output replay commands and the notebook load path. Existing outputs are never overwritten; raw snapshots remain preserved.
+
 ## Model execution command
 
 ## Evaluation command
@@ -50,4 +52,3 @@ Historical Texas Senate inventory (2018, 2020, 2024): run `python src/ingest/tex
 - tests/: future data validation and meaningful checks.
 
 The 2026 tracker and historical Texas Senate inventory are available. Rahan's notebook implements the first recency-weighted LV average and effective poll count. The uncertainty model and scheduled automation remain unimplemented.
-

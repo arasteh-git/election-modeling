@@ -2,7 +2,7 @@
 
 ## Current milestone
 
-Review the historical Texas Senate polling inventory and choose the uncertainty model.
+Review the prepared historical Texas Senate polling inventory and choose the uncertainty model.
 
 ## Completed
 
@@ -39,6 +39,9 @@ Review the historical Texas Senate polling inventory and choose the uncertainty 
 - Collected a historical Texas Senate inventory on 2026-10-05 at Rahan's request: 49 2018 questions, 63 2020 questions, and 37 2024 tracker rows, with all populations retained. Saved original sources, provenance/checksums, per-cycle CSVs, and mechanical flags.
 - Verified candidate-row preservation, schema rejection, flag retention, byte-identical offline replay, and overwrite rejection. No historical primary releases verified.
 
+- Applied Rahan-approved historical preparation (Decision 011): set all 37 2024 election dates to 2024-11-05, tag older source partisanship, and exclude the 12 hypothetical 2020 matchups from processed outputs. Retained 137 records (49/51/37), including 24 source-tagged partisan records; source flags remain preserved. Changes and exclusions are audited; raw snapshots remain unchanged.
+- Five historical-preparation regression tests passed, checking exact exclusions, field preservation, date corrections, classifications/unknowns, ambiguous candidate retention, conflicting-date rejection, provenance hashes, and overwrite protection.
+
 ## Not yet done
 
 - Local Python environment setup.
@@ -49,17 +52,19 @@ Review the historical Texas Senate polling inventory and choose the uncertainty 
 
 ## Next action
 
-Rahan: review the historical inventory and flagged hypothetical/multiple-question observations with Claude, decide historical inclusion and availability rules, and choose the error-model form. Historical election results and a broader Senate calibration sample still need approved sources.
+Rahan: load the prepared historical CSV, review remaining duplicate-question/field-date/source flags with Claude, decide remaining historical inclusion and availability rules, and choose the error-model form. Partisan polls are tagged and retained. Historical election results and a broader Senate calibration sample still need approved sources.
 
 ## Active branch / commit
 
-main at 087740e97f71b1663a25b82a9d4e14aee6565ce8, plus uncommitted 2026-10-05 historical collection and documentation changes.
+main at bc15a9542c2470f22401a29743839c173e2092e4, plus uncommitted Decision 011 historical preparation and documentation changes.
 
 ## Data snapshot
 
 data/raw/texas_tracker/20260929T222648Z/ — 16 tracker rows; source last updated September 23, 2026. Extraction is complete; primary verification is incomplete.
 
 Historical: `data/raw/texas_senate_historical/20261006T024116Z/` — 149 question/tracker records (262 older candidate rows plus 37 newer tracker rows). Source dates and populations preserved; one malformed 2024 date remains blank and flagged. Full primary verification and historical analytical inclusion remain pending.
+
+Prepared historical: `data/processed/texas_senate_historical/20261006T024116Z/` — 137 retained records, 12 exclusions, complete date/partisanship change audit. Original 149-row snapshot preserved. The one malformed 2024 fieldwork date remains blank and flagged; its election date is now populated.
 
 ## Blockers
 

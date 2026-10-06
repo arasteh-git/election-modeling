@@ -1,6 +1,6 @@
 # Historical Texas Senate polling
 
-Inventory for the 2018, 2020, and 2024 Texas U.S. Senate general elections. Collected at Rahan's request on 2026-10-05. This is source review data; historical model inclusion and calibration remain undecided.
+Inventory for the 2018, 2020, and 2024 Texas U.S. Senate general elections. Collected at Rahan's request on 2026-10-05. This original snapshot preserves source review data. [The prepared inventory](../../processed/texas_senate_historical/README.md) applies Rahan's later approved corrections and hypothetical-matchup exclusion (Decision 011); broader calibration choices remain undecided.
 
 First snapshot: `20261006T024116Z/`.
 
@@ -37,7 +37,7 @@ Runs create a new UTC-stamped directory and never overwrite an existing snapshot
 
 ## Load in your notebook
 
-From a kernel working in `notebooks/`:
+For the corrected active inventory, use [the prepared CSV](../../processed/texas_senate_historical/README.md). To inspect the original 149-row inventory for audit instead, from a kernel working in `notebooks/`:
 
 ```python
 history = pd.read_csv('../data/raw/texas_senate_historical/20261006T024116Z/normalized.csv')
@@ -48,6 +48,7 @@ If the kernel works from the repository root, omit `../`. Start by inspecting `c
 ## Review before modeling
 
 - Hypothetical 2020 Democratic challengers remain present and flagged. No matchup or population rows were dropped from the collection.
+- Decision 011 excludes those 12 hypothetical questions only in the processed inventory. Its 37 2024 election dates are `2024-11-05`, while this original snapshot preserves the absent source date. Partisan tags and audits are also in processed outputs.
 - Several questions can belong to one poll. `multiple_questions_same_poll` flags all affected records; their duplication/population/undecided treatment needs review before averaging.
 - The 2024 date `8/24/8/29/2024` is unresolved: both normalized field dates are blank and the source text is preserved. No date was invented.
 - Missing sample/population/release links and tracker MOEs are flagged. Spread discrepancies retain source shares and displayed spreads. Shared links across different labels are flagged, including an Activote row linked to Morning Consult. The Marist asterisk records source-forced undecided treatment.

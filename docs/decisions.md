@@ -216,6 +216,31 @@ PROJECT.md, STATUS.md, NEXT_STEPS.md, docs/methodology.md
 
 Directed by Rahan in a Claude Code session on 2026-09-29, after Claude review.
 
+## Decision 011: Historical Texas polling corrections and matchup exclusion
+
+### Date
+
+2026-10-05 (America/New_York)
+
+### Rahan's choice
+
+- Set the election date for all 37 historical 2024 records to November 5, 2024 (`2024-11-05` in ISO format).
+- Tag 2018 and 2020 observations using the source's partisan and internal-poll classifications; preserve the original fields. A party flag or internal-poll flag indicates partisan. A blank party flag with internal false is labeled `not_flagged_partisan`, rather than independently verified nonpartisan. Missing/unrecognized metadata stays `unknown`; the 2024 tracker does not supply these fields.
+- Exclude the 12 hypothetical 2020 challenger matchups from the derived dataset. These questions name a Democratic challenger other than M.J. Hegar against John Cornyn. Missing or otherwise ambiguous candidate names are not automatically excluded.
+- Preserve the raw snapshot and record excluded observations and corrections in the derived dataset's audit files. Tagging does not authorize excluding partisan polls.
+
+### Affected records and limits
+
+The derived inventory retains 137 records: 49 for 2018, 51 for 2020, and 37 for 2024. Partisan tags cover 15 retained 2018 questions and 9 retained 2020 questions. All populations remain available in this preparation step; it does not implement weighting, deduplication, uncertainty, or evaluation.
+
+### Affected files
+
+`src/clean/prepare_texas_history.py`, `data/processed/texas_senate_historical/20261006T024116Z/`, tests, and relevant documentation.
+
+### Evidence / review
+
+Rahan instructed Codex to fill the 2024 date with 11/5/24, tag partisan historical polls, and drop the 12 hypothetical 2020 matchups in this session. Partisanship describes the archived source classification; individual primary releases have not been independently checked.
+
 ## Future decision template
 
 ### Decision
@@ -231,4 +256,3 @@ Directed by Rahan in a Claude Code session on 2026-09-29, after Claude review.
 ### Affected files
 
 ### Evidence / review
-
