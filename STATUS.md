@@ -54,6 +54,8 @@ MEDSL results collection and mechanical coverage audit complete (Decision 014). 
 
 - Chose normal errors for the minimum version; t-distribution to be tested in sensitivity analysis (Decision 015, 2026-10-06).
 
+- Claude Code audited the MEDSL results snapshot (2026-10-06). Party labels conflict with Decision 013 sides (King, Sanders, Wyoming 2020); Mississippi 2018 has runoff returns only; some totals include noncandidate votes. A side mapping and crosswalk were requested from Codex (docs/handoffs/2026-10-06-claude-code-to-codex.md).
+
 ## Not yet done
 
 - Local Python environment setup.

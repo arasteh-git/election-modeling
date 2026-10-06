@@ -48,6 +48,7 @@ Every verification status in the generated CSV remains pending. docs/texas_track
 | docs/handoffs/2026-09-29-codex-to-rahan-and-claude.md | Historical handoff for the Texas collection, checks, and unfinished verification. |
 | docs/handoffs/2026-09-29-claude-code-to-codex.md | Decisions 008–010, Texas poll rules, first average check, and requested source proposal for Codex. |
 | docs/handoffs/2026-10-05-claude-code-to-codex.md | Decision 012 calibration rules, audit of the 10-05 data, and requests for a results source and all-state 2018/2020 preparation. |
+| docs/handoffs/2026-10-06-claude-code-to-codex.md | MEDSL results audit (party-label conflicts, Mississippi 2018 rounds, noncandidate totals) and request for contest, side-mapping, and poll crosswalk files. |
 | docs/handoffs/2026-10-05-codex-to-rahan-and-claude-calibration-plan.md | Results-source research, corrected national archive counts, proposed preparation plan, observed checks, and decisions needed before collection. |
 | docs/handoffs/2026-10-06-codex-to-rahan-and-claude-results.md | Approved-source collection, MEDSL snapshot/audit, preservation and six passing tests, current approved rules and remaining factual preparation work. |
 
