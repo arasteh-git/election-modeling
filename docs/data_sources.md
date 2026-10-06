@@ -22,9 +22,11 @@ The approved derived inventory is under `data/processed/texas_senate_historical/
 
 ## Approved election-result sources
 
-No election-result source has been approved yet.
+Rahan approved the proposed MEDSL Senate returns source for **2018, 2020, and 2024** in this Codex session on 2026-10-05 (Decision 014). Use the versioned V8.0 download described below; preserve the full source and inventory all three requested years. The initial polling calibration still covers all 2018/2020 races plus Texas 2024 (Decision 012); collecting all-state 2024 returns does not expand the approved polling sample.
 
-## Proposed election-result sources (2026-10-05; awaiting Rahan)
+Approval covers results collection and mechanical coverage auditing. It does not resolve the remaining analytical preparation rules. Official references below are proposed crosschecks; their access and redistribution limits remain applicable.
+
+## Approved main source and proposed official crosschecks
 
 Recommend **MIT Election Data and Science Lab, U.S. Senate statewide 1976–2024**, [Harvard Dataverse DOI 10.7910/DVN/PEJ5QU](https://doi.org/10.7910/DVN/PEJ5QU), published version **8.0**, released `2026-05-11T16:13:52Z`. Public API metadata identifies unrestricted tabular file `13887039` (`1976-2024-senate-state.tab`, original CSV name `1976-2024-senate-state.csv`) and an explicit [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) license. Proposed original-CSV download: `https://dataverse.harvard.edu/api/access/datafile/13887039?format=original`.
 

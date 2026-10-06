@@ -248,6 +248,7 @@ Rahan instructed Codex to fill the 2024 date with 11/5/24, tag partisan historic
 - Polling error for a past race = actual margin minus the poll average, both D minus R, in percentage points. Positive means the Democrat beat the polls. The average uses the same rules as the live model (Decision 009: LV only, fieldwork end date, h = 14) and only polls that ended by the horizon date.
 - Exclude polls tagged partisan or internal (Decision 011 tags) from calibration. Polls tagged `not_flagged_partisan`, and UT tracker polls (nonpartisan by source policy), are retained. Partisan polls are revisited with house effects.
 - Compute σ at several fixed horizons before Election Day (working set: 7, 14, 28, and 42 days). Each run uses the horizon closest to its days-to-election.
+- σ is the root-mean-square of the errors at each horizon, √(Σ eᵢ² / n): spread around zero (consistent with the mean-zero assumption), dividing by n, not n − 1 (added 2026-10-05).
 - Assume mean error is zero when converting to probability, but measure and report the mean error by cycle.
 - A race enters calibration at a given horizon if at least one eligible poll ended by then. Record n_eff per race and log every race dropped for having no polls.
 - Codex to propose an election-results source for all 2018/2020 Senate races and Texas 2024, with licensing terms, for Rahan's approval.
@@ -283,6 +284,70 @@ docs/methodology.md, PROJECT.md, STATUS.md
 ### Evidence / review
 
 Directed by Rahan in a Claude Code session on 2026-10-05, after Claude review.
+
+## Decision 013: Calibration race-format rules
+
+### Decision
+
+- An independent who caucuses with Democrats is the Democratic side (e.g., Maine and Vermont 2018). If a separate Democrat also runs, that candidate counts as other.
+- Same-party general elections (California 2018) are excluded from calibration.
+- Margin = sum of all Democratic-side candidates − sum of all Republican-side candidates, measured in the same round for polls and results. For ordinary races this reduces to D − R. It applies to jungle first rounds and ranked-choice races (using first-choice numbers in both polls and results).
+- Special elections and runoffs are included. Each poll is matched to the result of the round it asked about.
+
+### Date
+
+2026-10-05
+
+### Context and alternatives
+
+Raised by the Decision 012 handoff and Codex's calibration preparation plan. Alternatives considered:
+
+- Independents: exclude, or use official affiliation only.
+- Same-party races: keep with incumbent-as-Democrat labeling.
+- Multi-candidate rounds: top-two head-to-head only.
+
+### Rahan's choice
+
+As listed above.
+
+### Reasoning and tradeoffs
+
+- Democratic-caucusing independents play the Democratic role in these races.
+- Same-party races behave differently: many voters of the other party are undecided or skip the race, and the sign convention loses meaning. Excluding California 2018 costs one race.
+- Summing by party gives one rule for ordinary, jungle, and ranked-choice rounds.
+- Still open:
+  - races with no candidate on one side (e.g., Arkansas 2020, Cotton vs. a Libertarian);
+  - whether several rounds for one seat count as separate outcomes;
+  - the vote-share denominator;
+  - classification of LIB and `REP,REF` partisan flags;
+  - the general non-nominee exclusion rule;
+  - choosing among several LV questions from one poll.
+
+### Affected files
+
+docs/methodology.md, STATUS.md
+
+### Evidence / review
+
+Directed by Rahan in a Claude Code session on 2026-10-05, after Claude review.
+
+## Decision 014: Election-results source approval
+
+### Date
+
+2026-10-05 (America/New_York)
+
+### Rahan's choice
+
+Approve the proposed MIT Election Data and Science Lab U.S. Senate statewide returns, Harvard Dataverse DOI `10.7910/DVN/PEJ5QU`, version 8.0, as the main election-results source for 2018, 2020, and 2024. Preserve the versioned source, metadata, attribution, license, retrieval times, and checksums; audit actual coverage before analytical preparation.
+
+### Scope and limits
+
+This authorizes collection and mechanical inventory of returns for all three years. Decision 012's initial polling calibration scope remains all 2018/2020 Senate races plus Texas 2024. Decision 013's approved race-format rules remain in force; source approval does not settle its outstanding denominator, no-DEM, multiple-round, partisanship-label, non-nominee, or duplicate-question choices. Official-source crosschecks remain proposed separately.
+
+### Evidence / review
+
+Rahan in this Codex session: "you have approval on the election results source for 2018/20/24!"
 
 ## Future decision template
 

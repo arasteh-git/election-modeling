@@ -1,0 +1,119 @@
+# Historical Senate calibration preparation proposal
+
+Prepared 2026-10-05 (America/New_York) for Rahan and Claude. **Proposal only:** no election-results dataset has been saved or prepared, no national preparer has been implemented, and no new inclusion rules are approved. Decision 012 establishes the calibration rules; this document proposes sources and the preparation needed to give Rahan usable inputs.
+
+## Recommended results source
+
+Use MIT Election Data and Science Lab (MEDSL), **U.S. Senate statewide 1976–2024**, Harvard Dataverse DOI [10.7910/DVN/PEJ5QU](https://doi.org/10.7910/DVN/PEJ5QU), as the main results source for all 2018/2020 Senate contests and Texas 2024. Use official federal compilations and state returns to check candidate identities, election dates, exceptional rounds, and discrepancies.
+
+MEDSL offers a consistent tabular source across the requested cycles and an explicit **CC0 1.0** license. Its version metadata was read successfully through the public API. Coverage is confirmed at the dataset-description level; the actual candidate rows, totals, and round coverage still need verification after source approval.
+
+| Source | Proposed role and access | Fields / format | Redistribution and verification limits |
+| --- | --- | --- | --- |
+| [MEDSL Senate statewide](https://doi.org/10.7910/DVN/PEJ5QU) | Main source. Public Dataverse metadata and unrestricted file downloads; pin V8.0 rather than following future revisions silently. | CSV/TSV; documented candidate, party, candidate votes, contest total, state, year, stage, special, mode, unofficial, and version fields. | Metadata explicitly specifies [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). Main data file not downloaded; actual schema and coverage not checked. |
+| [FEC Federal Elections 2018](https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/federal-elections-2018/) and [2020](https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/federal-elections-2020/) | Official crosschecks; publicly linked [2018 Excel](https://www.fec.gov/documents/2706/federalelections2018.xlsx) and [2020 Excel](https://www.fec.gov/documents/4228/federalelections2020.xlsx). | Candidate, party, vote counts/percentages, contest totals and election dates across general, primary/runoff and special tables. | FEC describes a compilation of certified state results. No explicit dataset license located; federal agency-produced work generally falls under [17 USC 105](https://www.copyright.gov/title17/92chap1.html), which does not establish rights for every third-party item. Workbook schemas not inspected. |
+| [House Clerk election statistics](https://history.house.gov/Institution/Election-Statistics/) | Official federal reference, including a listed 2024 PDF, for Texas 2024 and discrepancies in older cycles. | Published candidate/party/vote-count tables; PDF extraction requires review. | Landing page and 2024 listing checked, individual 2024 tables not inspected. Federal-work scope as above; no blanket third-party license asserted. |
+| [Texas SOS results archive](https://www.sos.state.tx.us/elections/historical/elections-results-archive.shtml) | Official Texas crosscheck. Follow its 2019–2024 link to [the results portal](https://results.texas-election.com/); older 2018 returns use the separate 1992–2019 portal. | Election-specific statewide Senate returns; exact 2024 export and certification status still to verify. | No explicit redistribution license established in [site policies](https://www.sos.state.tx.us/policies.shtml). Federal public-domain rules do not establish state-source permissions. |
+
+The FEC index currently lists congressional compilations through 2022 and a separate 2024 presidential publication. That presidential workbook is not a Senate source. MEDSL's CC0 file is the proposed redistributable main dataset; official references do not replace the need to record where each correction came from.
+
+### MEDSL version and proposed download receipt
+
+Public metadata endpoint checked:
+`https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/PEJ5QU`
+
+- Dataset ID: `3072248`; published version **8.0**, released `2026-05-11T16:13:52Z`.
+- Main file ID: `13887039`; hosted filename `1976-2024-senate-state.tab`, original filename `1976-2024-senate-state.csv`. Metadata marks the file unrestricted.
+- Proposed original-CSV access after approval: `https://dataverse.harvard.edu/api/access/datafile/13887039?format=original`. Default download is the hosted tabular representation; preserve whichever bytes are actually retrieved and identify the format.
+- Metadata MD5 for the hosted file: `0f8b51cf0f77a2ef0bff992f7a64d1b4`. Do not assume this is the checksum of the original CSV. Compute our own SHA-256 when downloading.
+- Codebook file ID `6708560` was read through its public download endpoint; source listing file ID `4304792` was identified in metadata but its contents were not inspected.
+
+The [MEDSL catalog](https://electionlab.mit.edu/data) still labels this Senate series through 2020. The codebook filename says 2024 while its body describes older coverage through 2018. The versioned dataset metadata is newer, but the stale documentation makes inspecting headers, certification flags, and exceptional-round semantics a required first check. The Dataverse landing page displayed a JavaScript/bot challenge; the documented public API returned normally. No access controls were bypassed.
+
+## What the saved polling file actually contains
+
+Input: `data/raw/texas_senate_historical/20261006T024116Z/senate_polls_historical.csv`.
+SHA-256: `f781e2dad7b5fa0b0f9b3d453c35ae0efb2ce431b38573d2aa3164aa9d8808dd`.
+
+Read-only inspection found **4,593 candidate rows**, **1,913 questions** keyed by `(cycle, race_id, poll_id, question_id)`, and **72 race/stage groups**:
+
+| Cycle | Candidate rows | General race IDs | Jungle-primary IDs | Runoff IDs |
+| --- | ---: | ---: | ---: | ---: |
+| 2018 | 2,019 | 33 | 1 | 1 |
+| 2020 | 2,574 | 32 | 2 | 3 |
+| Total | 4,593 | 65 | 3 | 4 |
+
+This corrects the handoff's approximate count of 64 general races. The 72 groups are not 72 independent seat outcomes: several stages concern the same seat, and a source stage label is not proof that a round happened. All-state collection is already present in the raw CSV, so no polling re-fetch is needed to extend preparation.
+
+Other checks and preparation implications:
+
+- Candidate-row partisanship labels: blank 3,658; DEM 495; REP 414; LIB 19; IND 5; `REP,REF` 2. These are row counts, not counts of independent polls. Preserve the raw values; the Texas preparer's DEM/REP/IND whitelist cannot classify every national label.
+- Internal flags: 294 true and 4,299 false candidate rows. The inspected question groups agree internally on partisanship, internal flag, population, sample size, and election date.
+- Missing candidate-row metadata: sample size 12, population 18, URL 16, election date 2. Missing values stay blank and flagged.
+- Population labels include LV, RV, V, A, and blanks. Only LV qualifies under Decision 012; do not reinterpret V as LV.
+- The two missing election dates belong to one Louisiana 2020 runoff question: race `7787`, poll `68124`, question `132277`, Adrian Perkins/Bill Cassidy, fieldwork August 6–12. Verify whether this was a hypothetical round; do not fill a date or join it to November results from its state/cycle alone.
+- Three `ranked_choice_reallocated=true` candidate rows occur in **Maine 2018**, race `103`. Maine 2020 rows are all false, which does not establish the absence of ranked-choice voting. Verify each contest's official round definition.
+- Archive `seat_number` is often 0 and sometimes 2 in ordinary races. It must not be treated as a Senate class without a reviewed crosswalk. Preserve `seat_name`, special status, and stage as evidence.
+
+Texas 2024 continues to use the existing prepared 37 tracker rows with `2024-11-05` election dates. Its malformed fieldwork interval remains blank and flagged. The approved Texas inventory has 137 retained rows (49/51/37); this proposal does not change it.
+
+## Proposed workflow after approval
+
+1. **Record source approval and the chosen preparation rules.** Put approved source/version/access/permissions in `data_sources.md`; record consequential inclusion choices in `decisions.md` and `methodology.md`. Keep unresolved cases in a pending log. Source approval can precede inclusion decisions; collecting a result does not make its contest eligible.
+2. **Save an immutable results snapshot.** Create `data/raw/senate_results/<UTC timestamp>/` containing unchanged CSV/TSV, metadata, codebook, source listing, and a manifest with URL, actual retrieval time, dataset/file IDs, version, license, byte counts, SHA-256, and limits. Do not overwrite a snapshot or use the receipt time as election/publication time. Inspect actual headers and requested-year/round coverage before building derivatives.
+3. **Prepare candidate returns mechanically.** Preserve source-row identity, candidate name, detailed and simplified party labels, ballot line, voting mode, stage, special, source year, and official-status flags. Retain all candidates and write-ins, not only D/R. Distinguish ordinary/special seats and each round. Take a repeated contest total once; never sum it over candidate rows or add a `total` mode to its components. Where the same candidate has several ballot lines, preserve the lines and aggregate only with an explicit reviewed identity/aggregation rule. The codebook's vote-total-1 encoding for uncontested races is a sentinel to flag, not a factual count to feed calibration. Hold unofficial or incomplete returns for review.
+4. **Create a contest registry and explicit crosswalk.** Register all requested 2018/2020 result contests, including unpolled contests, plus Texas 2024. Keep `cycle` separate from actual election date/year (a 2020-cycle runoff can occur in 2021). Proposed key components are state, seat/ordinary-or-special identifier, cycle, round, and election date, with a stable local contest ID. Map archive race IDs and candidate IDs to these reviewed IDs; MEDSL names do not share 538 identifiers. Use a documented alias table, with source evidence and unresolved matches; never silently accept fuzzy name matches, substitute a winner, or derive nominees by vote rank.
+5. **Extend polling preparation using the existing archive.** Keep a long candidate-row inventory and one question-level inventory, preserving source indices, IDs, candidate answers, populations, dates, raw partisan/internal labels, stage/seat fields, and RCV flag. Avoid prematurely collapsing California's two Democrats or multicandidate jungle questions into a single D/R row. Reuse the Texas formatting/audit approach, with a broader explicitly approved partisanship-label map. Unknown metadata stays unknown; raw flags remain intact. Candidate-specific and question-specific missing data remain visible.
+6. **Apply only approved filters and matchup rules, with reasons.** Decision 012 already excludes non-LV and partisan/internal polls from calibration, retaining `not_flagged_partisan` and the approved UT tracker source exception. Record both underlying raw flags and the basis of eligibility; do not relabel all UT observations as independently verified nonpartisan. Propose treating LIB and compound `REP,REF` source flags as partisan while preserving their exact labels; unrecognized labels require a reviewed classification. Unknowns outside the UT exception, duplicate questions, and ambiguous matchups remain pending until Rahan chooses rules.
+7. **Deliver preparation outputs for Rahan.** Produce the files below, with counts by cycle/contest and an audit of every correction, exclusion, and unresolved record. Rahan then computes horizon cutoffs, eligible averages, n_eff, errors, per-horizon σ, and no-poll exclusions under Decision 012. Codex does not implement those calculations in this preparation task.
+
+### Proposed outputs (not yet implemented)
+
+Folder: `data/processed/senate_calibration/<snapshot ID>/`. Exact schema will be documented in the data dictionary alongside implementation.
+
+| File | Intended purpose |
+| --- | --- |
+| `candidate_results.csv` | Candidate/ballot-line returns, source IDs, reviewed identity, votes and totals, with mode/round/status flags preserved. |
+| `contests.csv` | Result-contest universe, actual dates, seat/round identifiers, candidate slate, denominator basis, and approved/pending scope status; includes contests without archived polls. |
+| `crosswalk.csv` | Explicit archive race/candidate mappings and name aliases, evidence links, review status, and ambiguity reasons. |
+| `poll_candidate_rows.csv` | All archived candidate answers with source indices and mechanically normalized fields. |
+| `poll_questions.csv` | Question-level inventory with candidate answers and eligibility prerequisites; D/R fields only where the approved mapping is unambiguous. Texas 2024 retains its tracker-based provenance. |
+| `excluded.csv`, `pending.csv`, `changes.csv` | Exact record keys, original values, actions, reasons, and rule/source basis; multiple applicable flags preserved. |
+| `race_inventory.csv` | Poll/question counts and preparation status per contest, including zero-poll contests. It is not Rahan's horizon-specific dropped-race report. |
+| `manifest.json` | Source hashes, processing time, schema/rule version, approvals, output hashes, counts, and limitations. |
+
+An eventual preparer should support a fresh output directory and offline replay. There is no results collector or national-preparation command to run yet. Once implemented, update `src/ingest/README.md`, `src/clean/README.md`, data-folder READMEs, and the dictionary with exact commands and schemas before handing the files to Rahan's notebook.
+
+## Choices Rahan needs to make
+
+Recommended initial calibration scope: contests with an unambiguous single Democratic and single Republican comparison, including reviewed special elections with that structure. Preserve all other contests in the inventory and hold their calibration status pending rather than silently discarding them. This recommendation is not an approved exclusion rule.
+
+| Case present in the archive | Proposed handling to review |
+| --- | --- |
+| Maine 2018 (King IND), Vermont 2018 (Sanders IND); Alaska 2020 (Gross labeled DEM in polls) | Decide whether a named independent substitutes for D and how that outcome is labeled. Keep official affiliation and polling affiliation separately; do not infer identity/party from caucusing or a source label alone. |
+| California 2018, Feinstein/de León both DEM | Keep candidate rows; hold outside the initial D/R calibration unless Rahan chooses a separate candidate-comparison definition. |
+| Arkansas 2020, Cotton REP/Harrington LIB, no DEM | Hold outside the initial D/R calibration unless Rahan approves an alternative comparison. |
+| Minnesota 2018 ordinary/special; Mississippi 2018 ordinary/special; Arizona 2020 special | Assign separate reviewed seat IDs. Ordinary and special contests in the same state/year must never be merged. |
+| Mississippi 2018 special jungle/runoff; Georgia 2020 ordinary/runoff and special jungle/runoff; Louisiana 2020 jungle and apparent runoff | Match a poll to its exact ballot slate and round. Decide which stages enter calibration and whether multiple rounds for one seat count as separate outcomes. Georgia January 2021 runoffs retain cycle 2020 but their actual 2021 dates. Do not reuse another round's result. Louisiana's undated apparent runoff needs source verification first. |
+| Maine 2018/2020 ranked-choice contests | Decide the comparison of poll responses to first-preference versus final-round official returns. Preserve archived reallocation flags and available result-round counts; hold mixed/unclear definitions pending. |
+| Non-nominee/hypothetical questions beyond Texas | Proposed rule: in an approved contest/round, exclude a question when a compared candidate is confirmed absent from that round's actual ballot slate. Require both approved comparison candidates before preparing D/R fields; missing candidates or uncertain identities stay pending. Allow both valid head-to-head and full-slate questions only if Rahan approves their comparability; do not require exactly two candidate rows or select the top two result finishers. Decision 011's 12 named Texas exclusions remain in force. |
+| Several eligible questions/populations/versions from one poll | Preserve all versions and flag common poll IDs. Existing repeat-poll permission is not permission to silently pick among competing questions or count versions as independent surveys. Rahan needs an adjudication rule where the national inventory presents this ambiguity. |
+| Unrecognized partisan flags, unknown metadata outside UT, unofficial returns, source sentinels | Keep visible in the pending log until a rule or source check resolves them. Proposed LIB/`REP,REF` classification needs confirmation before applying beyond the existing Texas rules. |
+
+### Proposed vote-share denominator
+
+For an ordinary approved D/R contest, propose using the contest's total valid candidate votes **including third-party and write-in votes**, rather than a two-party denominator. Preserve official totals and candidate/ballot-line details, check their consistency, and document any residual. Do not use turnout including undervotes as candidate-vote total or silently force sums to match. A future D−R result in points would use that same-round denominator; Rahan chooses this rule and computes the margin. RCV final-round denominators require a separate decision because exhausted ballots and round totals can differ.
+
+## Validation and handoff before modeling
+
+- Confirm source snapshots and Rahan's notebook remain unchanged; receipt SHA-256 values must match the actual bytes. Verify fresh-output offline replay and refusal to overwrite existing data.
+- Check schema, unique contest/round keys, dates, candidate identity and party mappings, valid votes, official-status flags, and result coverage. Check totals/modes/ballot lines without double counting; report source inconsistencies and sentinel values instead of inventing replacements.
+- Reconcile every polling candidate row/question to kept, excluded, or pending status. Validate approved exclusions by exact source keys, including the existing 12 Texas hypotheticals. Preserve missing/ambiguous data and every applied reason.
+- Verify no ordinary/special or first-round/runoff joins cross seats/rounds. Track source cycle separately from election year. Compare Texas returns and exceptional contests with official references; record disagreements, rather than claiming all primary sources verified.
+- Give Rahan a complete registry with zero-poll contests and enough metadata to apply each horizon. He implements the one-eligible-poll rule, per-horizon dropped-race log, n_eff, averages, errors and σ.
+
+Decision 012 uses LV polls, fieldwork end dates, half-life 14, and horizons 7/14/28/42. Publication-time leakage remains possible because end date stands in for availability. Stages for the same seat and states in the same cycle are not independent observations; the normal-versus-t choice and statistical evaluation remain Rahan/Claude's work.
+
+## Next action
+
+Rahan reviews the MEDSL-main/official-crosscheck source proposal and the preparation choices above. Source approval enables an immutable results download and row-level coverage audit. National analytical preparation follows the approved rules, leaving unresolved cases flagged for Rahan and Claude. See [the handoff](handoffs/2026-10-05-codex-to-rahan-and-claude-calibration-plan.md).

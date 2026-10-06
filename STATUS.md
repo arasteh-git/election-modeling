@@ -45,11 +45,13 @@ Review the election-results source proposal and all-state preparation plan under
 - Researched election-result sources and wrote `docs/calibration_preparation_plan.md` (2026-10-05): proposed MEDSL Senate V8.0/CC0 for 2018/2020 and Texas 2024, with official crosschecks, access/permission limits, output plan, and unresolved race rules. Metadata and codebook inspected; no result dataset saved or prepared. No source or new inclusion rule approved.
 - Inspected the saved national polling archive: 4,593 candidate rows, 1,913 questions, 65 general race IDs and seven jungle/runoff IDs (72 race/stage groups, not independent seat outcomes). Flagged wider partisan labels, Maine 2018 RCV-reallocated rows, and a Louisiana apparent-runoff question without an election date. Raw data and the notebook were preserved.
 
+- Recorded the calibration race-format rules (Decision 013) and σ = RMSE of errors (Decision 012), 2026-10-05.
+
 ## Not yet done
 
 - Local Python environment setup.
 - Approval of an election-results source (proposal ready; Decision 012). Calibration rules are set; the error-model form (e.g., normal vs. t distribution) is still undecided.
-- Implementation of results collection and all-state preparation after approval; independent/same-party/no-DEM contests, special/jungle/runoff/RCV definitions, generalized non-nominee exclusions, denominator, and ambiguous question/metadata rules remain unresolved in the preparation proposal.
+- Implementation of results collection and all-state preparation after approval. Decision 013 settles independents, same-party races, sum-by-party margins, and specials/runoffs. Still open: no-DEM contests, multiple rounds per seat, denominator, LIB/`REP,REF` partisan labels, general non-nominee exclusion, and multiple LV questions per poll.
 - Open poll rule: LV numbers from releases where the tracker shows RV.
 - Uncertainty model for win probability, and the baseline.
 - Complete primary-source verification, analytical data cleaning, modeling, and evaluation.
