@@ -45,14 +45,14 @@ Review the prepared historical Texas Senate polling inventory and choose the unc
 ## Not yet done
 
 - Local Python environment setup.
-- Choice of error-model form, historical source/inclusion review, and approval of broader Senate polling and result sources for calibration.
+- Approval of an election-results source (Codex to propose; Decision 012). Calibration rules are set; the error-model form (e.g., normal vs. t distribution) is still undecided.
 - Open poll rule: LV numbers from releases where the tracker shows RV.
 - Uncertainty model for win probability, and the baseline.
 - Complete primary-source verification, analytical data cleaning, modeling, and evaluation.
 
 ## Next action
 
-Rahan: load the prepared historical CSV, review remaining duplicate-question/field-date/source flags with Claude, decide remaining historical inclusion and availability rules, and choose the error-model form. Partisan polls are tagged and retained. Historical election results and a broader Senate calibration sample still need approved sources.
+Codex: propose an election-results source for 2018/2020 Senate races and Texas 2024 (Decision 012). Rahan: approve it, then compute historical averages and errors at the Decision 012 horizons. Partisan-tagged polls are retained in the processed data but excluded from calibration.
 
 ## Active branch / commit
 

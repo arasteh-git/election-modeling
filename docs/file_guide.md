@@ -44,6 +44,7 @@ Every verification status in the generated CSV remains pending. docs/texas_track
 | docs/handoffs/2026-09-27-claude-chat-to-claude-code.md | Historical onboarding and scaffold-audit handoff. |
 | docs/handoffs/2026-09-29-codex-to-rahan-and-claude.md | Historical handoff for the Texas collection, checks, and unfinished verification. |
 | docs/handoffs/2026-09-29-claude-code-to-codex.md | Decisions 008–010, Texas poll rules, first average check, and requested source proposal for Codex. |
+| docs/handoffs/2026-10-05-claude-code-to-codex.md | Decision 012 calibration rules, audit of the 10-05 data, and requests for a results source and all-state 2018/2020 preparation. |
 
 ## Python and notebooks
 

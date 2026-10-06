@@ -44,9 +44,21 @@ Weighted average = Σ(weight × margin) / Σ(weight). Report the effective numbe
 
 Convert the poll average into P(Democrat wins) using an error model calibrated on past Senate polling error (Decision 010). The model form is undecided.
 
+Calibration rules (Decision 012):
+
+- Error = actual margin − poll average (D − R, points), with the average computed under live rules at a fixed horizon before Election Day.
+- σ at horizons of 7, 14, 28, and 42 days; each run uses the closest horizon.
+- Mean error is assumed zero but reported by cycle.
+- Partisan- and internal-tagged polls are excluded.
+- Races need at least one eligible poll; n_eff and dropped races are logged.
+
 ## Historical evaluation and leakage prevention
 
+When computing a past race's average at a horizon, use only polls whose fieldwork ended on or before the horizon date (Decision 012). Fieldwork end date stands in for availability, because publication dates are not used (Decision 009); a poll fielded before the horizon but released after it can still leak.
+
 ## Bias evaluation
+
+Report mean signed polling error by cycle for the calibration sample (Decision 012).
 
 ## Sensitivity analysis
 

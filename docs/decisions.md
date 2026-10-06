@@ -241,6 +241,49 @@ The derived inventory retains 137 records: 49 for 2018, 51 for 2020, and 37 for 
 
 Rahan instructed Codex to fill the 2024 date with 11/5/24, tag partisan historical polls, and drop the 12 hypothetical 2020 matchups in this session. Partisanship describes the archived source classification; individual primary releases have not been independently checked.
 
+## Decision 012: Error-model calibration rules
+
+### Decision
+
+- Polling error for a past race = actual margin minus the poll average, both D minus R, in percentage points. Positive means the Democrat beat the polls. The average uses the same rules as the live model (Decision 009: LV only, fieldwork end date, h = 14) and only polls that ended by the horizon date.
+- Exclude polls tagged partisan or internal (Decision 011 tags) from calibration. Polls tagged `not_flagged_partisan`, and UT tracker polls (nonpartisan by source policy), are retained. Partisan polls are revisited with house effects.
+- Compute σ at several fixed horizons before Election Day (working set: 7, 14, 28, and 42 days). Each run uses the horizon closest to its days-to-election.
+- Assume mean error is zero when converting to probability, but measure and report the mean error by cycle.
+- A race enters calibration at a given horizon if at least one eligible poll ended by then. Record n_eff per race and log every race dropped for having no polls.
+- Codex to propose an election-results source for all 2018/2020 Senate races and Texas 2024, with licensing terms, for Rahan's approval.
+
+### Date
+
+2026-10-05
+
+### Context and alternatives
+
+- Partisan polls: include or exclude.
+- Horizon: σ at several horizons, one fixed horizon, or σ as a smooth function of days to election.
+- Mean error: assume zero or subtract the historical mean.
+- Minimum polls: 1 or a higher threshold.
+- Results scope: 2018/2020 plus Texas 2024, or also broader 2022/2024 polling.
+
+### Rahan's choice
+
+As listed above. A smooth σ(days) function is preferred long term but deferred beyond the minimum deliverable.
+
+### Reasoning and tradeoffs
+
+- Calibration should match the 2026 input, which contains only nonpartisan public polls. Partisan polls are released selectively (often for fundraising), a selection bias that house-effect correction cannot fix.
+- Error grows with time to the election, so a single σ would be too wide or too narrow at some point in the run-up; a small horizon table is simple and honest.
+- With 2–3 cycles, a persistent polling bias cannot be distinguished from a one-cycle miss.
+- Logging dropped races avoids silent drops and allows checking whether thinly polled races have larger errors.
+- Limitation: about 64 races come from only two cycles (2018, 2020), so error shared across states within a cycle is sampled only twice.
+
+### Affected files
+
+docs/methodology.md, PROJECT.md, STATUS.md
+
+### Evidence / review
+
+Directed by Rahan in a Claude Code session on 2026-10-05, after Claude review.
+
 ## Future decision template
 
 ### Decision
