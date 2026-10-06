@@ -2,7 +2,7 @@
 
 ## Current milestone
 
-Review the prepared historical Texas Senate polling inventory and choose the uncertainty model.
+Review the election-results source proposal and all-state preparation plan under Decision 012; then prepare inputs for Rahan's uncertainty-model calibration.
 
 ## Completed
 
@@ -42,29 +42,34 @@ Review the prepared historical Texas Senate polling inventory and choose the unc
 - Applied Rahan-approved historical preparation (Decision 011): set all 37 2024 election dates to 2024-11-05, tag older source partisanship, and exclude the 12 hypothetical 2020 matchups from processed outputs. Retained 137 records (49/51/37), including 24 source-tagged partisan records; source flags remain preserved. Changes and exclusions are audited; raw snapshots remain unchanged.
 - Five historical-preparation regression tests passed, checking exact exclusions, field preservation, date corrections, classifications/unknowns, ambiguous candidate retention, conflicting-date rejection, provenance hashes, and overwrite protection.
 
+- Researched election-result sources and wrote `docs/calibration_preparation_plan.md` (2026-10-05): proposed MEDSL Senate V8.0/CC0 for 2018/2020 and Texas 2024, with official crosschecks, access/permission limits, output plan, and unresolved race rules. Metadata and codebook inspected; no result dataset saved or prepared. No source or new inclusion rule approved.
+- Inspected the saved national polling archive: 4,593 candidate rows, 1,913 questions, 65 general race IDs and seven jungle/runoff IDs (72 race/stage groups, not independent seat outcomes). Flagged wider partisan labels, Maine 2018 RCV-reallocated rows, and a Louisiana apparent-runoff question without an election date. Raw data and the notebook were preserved.
+
 ## Not yet done
 
 - Local Python environment setup.
-- Approval of an election-results source (Codex to propose; Decision 012). Calibration rules are set; the error-model form (e.g., normal vs. t distribution) is still undecided.
+- Approval of an election-results source (proposal ready; Decision 012). Calibration rules are set; the error-model form (e.g., normal vs. t distribution) is still undecided.
+- Implementation of results collection and all-state preparation after approval; independent/same-party/no-DEM contests, special/jungle/runoff/RCV definitions, generalized non-nominee exclusions, denominator, and ambiguous question/metadata rules remain unresolved in the preparation proposal.
 - Open poll rule: LV numbers from releases where the tracker shows RV.
 - Uncertainty model for win probability, and the baseline.
 - Complete primary-source verification, analytical data cleaning, modeling, and evaluation.
 
 ## Next action
 
-Codex: propose an election-results source for 2018/2020 Senate races and Texas 2024 (Decision 012). Rahan: approve it, then compute historical averages and errors at the Decision 012 horizons. Partisan-tagged polls are retained in the processed data but excluded from calibration.
+Rahan: review `docs/calibration_preparation_plan.md` and select the results source (recommended MEDSL V8.0 with official crosschecks). Source approval enables an immutable download and row-level coverage audit; approve the relevant unresolved preparation rules before analytical filtering. Codex then prepares the approved inputs; Rahan computes historical averages, n_eff, errors, σ, and dropped-race logs at the Decision 012 horizons. Partisan-tagged polls stay preserved but are excluded from calibration.
 
 ## Active branch / commit
 
-main at bc15a9542c2470f22401a29743839c173e2092e4, plus uncommitted Decision 011 historical preparation and documentation changes.
+main at be97bf86c01e77b35514b5245e67635225a8a7d0, plus uncommitted source-proposal/plan documentation. `notebooks/data-pulls.ipynb` has pre-existing Rahan edits, preserved during this work.
 
 ## Data snapshot
 
-data/raw/texas_tracker/20260929T222648Z/ — 16 tracker rows; source last updated September 23, 2026. Extraction is complete; primary verification is incomplete.
+Latest 2026 tracker: `data/raw/texas_tracker/20261006T023757Z/` — 18 tracker rows; source last updated October 3, 2026. Extraction is complete; primary verification is incomplete. Original `20260929T222648Z/` 16-row snapshot remains preserved.
 
 Historical: `data/raw/texas_senate_historical/20261006T024116Z/` — 149 question/tracker records (262 older candidate rows plus 37 newer tracker rows). Source dates and populations preserved; one malformed 2024 date remains blank and flagged. Full primary verification and historical analytical inclusion remain pending.
+
+The same historical snapshot also preserves the full 2018/2020 polling archive (4,593 candidate rows across all states); national derived preparation is not yet implemented. No election-results snapshot exists yet.
 
 Prepared historical: `data/processed/texas_senate_historical/20261006T024116Z/` — 137 retained records, 12 exclusions, complete date/partisanship change audit. Original 149-row snapshot preserved. The one malformed 2024 fieldwork date remains blank and flagged; its election date is now populated.
 
 ## Blockers
-

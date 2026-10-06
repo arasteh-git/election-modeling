@@ -22,6 +22,16 @@ The approved derived inventory is under `data/processed/texas_senate_historical/
 
 ## Approved election-result sources
 
+No election-result source has been approved yet.
+
+## Proposed election-result sources (2026-10-05; awaiting Rahan)
+
+Recommend **MIT Election Data and Science Lab, U.S. Senate statewide 1976–2024**, [Harvard Dataverse DOI 10.7910/DVN/PEJ5QU](https://doi.org/10.7910/DVN/PEJ5QU), published version **8.0**, released `2026-05-11T16:13:52Z`. Public API metadata identifies unrestricted tabular file `13887039` (`1976-2024-senate-state.tab`, original CSV name `1976-2024-senate-state.csv`) and an explicit [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) license. Proposed original-CSV download: `https://dataverse.harvard.edu/api/access/datafile/13887039?format=original`.
+
+Use this consistent main source for 2018/2020 and Texas 2024; use [FEC 2018](https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/federal-elections-2018/) / [2020](https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/federal-elections-2020/), [House Clerk election statistics](https://history.house.gov/Institution/Election-Statistics/) (including a listed 2024 PDF), and [Texas SOS](https://www.sos.state.tx.us/elections/historical/elections-results-archive.shtml) as official crosschecks. FEC/Clerk federal compilations are generally federal works; no explicit dataset license was found. Texas-source redistribution permission remains unestablished. These are not additional approved collection sources.
+
+Metadata, the MEDSL codebook, official source landing pages, and the FEC 2018 PDF were inspected during source research. No result dataset was saved or candidate vote counts verified; workbook schemas remain uninspected. The MEDSL catalog/codebook descriptions lag the dataset's 2024 version, so actual headers, coverage, ballot lines, modes, round definitions, and certification flags must be checked after approval. See [the preparation plan](calibration_preparation_plan.md) for access details, documented fields, permissions, source limitations, race-format choices, proposed outputs, and validation. Approval will be recorded here before results collection, as requested in [the Claude-to-Codex handoff](handoffs/2026-10-05-claude-code-to-codex.md).
+
 ## Access method and update frequency
 
 Run `python src/ingest/texas_tracker.py` from the repository root. Standard library only; no additional packages. Each run fetches one public page and saves a new UTC-stamped directory. Updates are manual for now.

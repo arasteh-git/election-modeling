@@ -36,6 +36,8 @@ Historical Texas Senate inventory (2018, 2020, 2024): run `python src/ingest/tex
 
 Prepare the historical inventory under Decision 011 with `python src/clean/prepare_texas_history.py`. [The prepared dataset](data/processed/texas_senate_historical/README.md) contains 137 records with corrected 2024 election dates and source-based partisan tags, plus audits of 12 excluded hypothetical 2020 matchups. The README gives fresh-output replay commands and the notebook load path. Existing outputs are never overwritten; raw snapshots remain preserved.
 
+[The calibration preparation plan](docs/calibration_preparation_plan.md) proposes MEDSL Senate returns for 2018/2020 and Texas 2024, official crosschecks, and preparation of all states from the already saved polling archive. Rahan must select the results source and unresolved race rules before the corresponding collection/preparation. No results collector or national preparer is implemented yet. [The documentation README](docs/README.md) explains where proposals, approved decisions, schemas, and handoffs belong.
+
 ## Model execution command
 
 ## Evaluation command

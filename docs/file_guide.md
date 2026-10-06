@@ -35,8 +35,10 @@ Every verification status in the generated CSV remains pending. docs/texas_track
 | File | Purpose |
 | --- | --- |
 | docs/file_guide.md | This explanatory map of the repository. |
+| docs/README.md | Shared-document navigation and the distinction between proposals, approved decisions, and implemented schemas/workflows. |
+| docs/calibration_preparation_plan.md | Proposed MEDSL/official results sources, checked national archive inventory, unresolved race-format choices, preparation steps, planned outputs, and validation; no new pipeline implemented. |
 | docs/data_dictionary.md | Meaning, types, units, identifiers, and missing-value conventions of the data fields. |
-| docs/data_sources.md | Approved collection sources, access methods, attribution, and snapshot provenance. |
+| docs/data_sources.md | Approved polling sources, proposed election-result sources, access methods, attribution, and snapshot provenance. |
 | docs/decisions.md | History of decisions Rahan approved; later decisions can supersede earlier open questions. |
 | docs/methodology.md | Home for approved statistical assumptions and formulas. Forecast target, scope, and first Texas poll rules are filled in (Decisions 008–009); blank sections are still undecided. |
 | docs/texas_tracker_review.md | Human-readable source audit and outstanding issues; broader than the automatic issues.json. |
@@ -45,6 +47,7 @@ Every verification status in the generated CSV remains pending. docs/texas_track
 | docs/handoffs/2026-09-29-codex-to-rahan-and-claude.md | Historical handoff for the Texas collection, checks, and unfinished verification. |
 | docs/handoffs/2026-09-29-claude-code-to-codex.md | Decisions 008–010, Texas poll rules, first average check, and requested source proposal for Codex. |
 | docs/handoffs/2026-10-05-claude-code-to-codex.md | Decision 012 calibration rules, audit of the 10-05 data, and requests for a results source and all-state 2018/2020 preparation. |
+| docs/handoffs/2026-10-05-codex-to-rahan-and-claude-calibration-plan.md | Results-source research, corrected national archive counts, proposed preparation plan, observed checks, and decisions needed before collection. |
 
 ## Python and notebooks
 
