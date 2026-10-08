@@ -1,6 +1,6 @@
 # Process documents
 
-How the project is run, as opposed to what the model does. Moved here from the repository root and `docs/handoffs/` on 2026-10-08; contents are unchanged apart from link paths.
+How the project is run, as opposed to what the model does.
 
 | File | Purpose |
 | --- | --- |

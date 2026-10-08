@@ -13,7 +13,7 @@ A polling-based forecast of the 2026 Texas U.S. Senate race: a recency-weighted 
 | Half-life h | 14 days |
 | σ (calibration RMSE at the 28-day horizon) | 7.03 points |
 
-The first forecast, from the `20261006T023757Z` snapshot, was 68.1%. This is the Tier 1 deliverable (Decision 010): one race, run on demand.
+This is the Tier 1 deliverable (Decision 010): one race, run on demand. The first forecast, from the `20261006T023757Z` snapshot, was 68.1%.
 
 ## Method
 

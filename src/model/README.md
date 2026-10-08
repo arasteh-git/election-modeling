@@ -1,6 +1,6 @@
 # Modeling
 
-Rahan's core modeling code. Moved from the notebook on 2026-10-08 as a mechanical refactor; results are unchanged (checked by `tests/test_texas_model.py`).
+Rahan's core modeling code, refactored out of the forecast notebook. `tests/test_texas_model.py` checks that it reproduces the notebook's saved results.
 
 | File | Purpose |
 | --- | --- |

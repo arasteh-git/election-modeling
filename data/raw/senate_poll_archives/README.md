@@ -1,6 +1,10 @@
 # Approved 2022/2024 Senate polling archives
 
-Decision 017 approves the two dated FiveThirtyEight exports in [the proposal](../../../docs/polling_sources_2022_2024_proposal.md). **No complete polling snapshot is available yet:** collection attempts on 2026-10-08 failed to connect to Internet Archive. This folder currently contains documentation only. [Attempt receipts](../../../docs/senate_archive_collection_attempts_2026_10_08.json) and [the handoff](../../../docs/process/handoffs/2026-10-08-codex-to-rahan-and-claude-archive-collection.md) record the limit. No further source approval is needed to retry the same URLs.
+Destination for the two dated FiveThirtyEight exports approved by Decision 017 in [the proposal](../../../docs/polling_sources_2022_2024_proposal.md).
+
+**No complete polling snapshot is available yet.** Collection attempts have failed to connect to Internet Archive, so this folder contains documentation only. [Attempt receipts](../../../docs/senate_archive_collection_attempts_2026_10_08.json) and [the collection handoff](../../../docs/process/handoffs/2026-10-08-codex-to-rahan-and-claude-archive-collection.md) record the failures. No further source approval is needed to retry the same URLs.
+
+## Collect
 
 From the repository root, standard library only:
 
@@ -8,7 +12,7 @@ From the repository root, standard library only:
 python3 -B src/ingest/senate_poll_archives.py
 ```
 
-A successful run creates a fresh UTC-stamped folder here; failed retrieval/validation writes no snapshot. Future snapshot files:
+A successful run creates a fresh UTC-stamped folder here; a failed retrieval or validation writes no snapshot. Each snapshot will contain:
 
 | File | Purpose |
 | --- | --- |
@@ -17,16 +21,25 @@ A successful run creates a fresh UTC-stamped folder here; failed retrieval/valid
 | `poll_candidate_rows.csv` | All designated-cycle candidate answers, original columns/strings plus source file, row, capture and question keys. |
 | `poll_questions.csv` | One inventory row per source question, metadata, candidate-answer JSON and mechanical missing/inconsistency flags. No eligibility decision. |
 | `race_inventory.csv` | Source race-ID coverage, dates/seats/stages as reported, question/poll-ID/LV counts. Not verified contest mappings. |
-| `results_2022.csv`, `results_2022_coverage.csv` | Mechanical 2022 inventory/audit from the already-preserved MEDSL original. |
+| `results_2022.csv`, `results_2022_coverage.csv` | Mechanical 2022 inventory/audit from the preserved MEDSL original. |
 | `issues.json` | Poll-question and result flags, with counts; observations are retained. |
 | `manifest.json` | Actual retrieval times, URLs, capture IDs, full-file hashes, publisher/license attribution, MEDSL provenance, counts, transformations and limits. |
 
-After a successful collection, replay its exact source bytes without network:
+## Replay
+
+Once a successful snapshot exists, replay its exact source bytes without network:
 
 ```bash
 python3 -B src/ingest/senate_poll_archives.py --snapshot data/raw/senate_poll_archives/ACTUAL_TIMESTAMP --output-root outputs/archive_replay
 ```
 
-Replace `ACTUAL_TIMESTAMP` with an existing successful snapshot name. Existing outputs are never overwritten. Replay checks source receipts/hashes and reproduces the manifest and derived files byte for byte. Full-cycle counts/state coverage remain unknown until collection succeeds; tests use synthetic archive fixtures, not a real new polling dataset.
+Replace `ACTUAL_TIMESTAMP` with an existing snapshot name. Existing outputs are never overwritten. Replay checks source receipts and hashes and reproduces the manifest and derived files byte for byte.
 
-Polling attribution: FiveThirtyEight / ABC News, preserved by Internet Archive, CC BY 4.0 under the publisher dataset policy unless otherwise specified. Keep source/license links and identify derivatives. No linked poll-report redistribution permission is assumed. MEDSL V8.0 remains separately attributed/CC0. Current source selection does not change Texas 2024's active tracker inputs or implement margins, inclusion rules or forecasting.
+## Limitations
+
+- Full-cycle counts and state coverage are unknown until collection succeeds. Tests use synthetic archive fixtures, not a real polling dataset.
+- Source selection does not change Texas 2024's active tracker inputs and does not implement margins, inclusion rules or forecasting.
+
+## Attribution
+
+Polling: FiveThirtyEight / ABC News, preserved by Internet Archive, CC BY 4.0 under the publisher dataset policy unless otherwise specified. Keep source and license links and identify derivatives. No redistribution permission for linked poll reports is assumed. MEDSL V8.0 is attributed separately (CC0).
