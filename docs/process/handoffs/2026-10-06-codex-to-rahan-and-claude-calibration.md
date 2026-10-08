@@ -22,10 +22,10 @@ Prepare contest rounds, candidate sides, exact poll/result crosswalks and approv
 
 ## Relevant files
 
-- [Prepared README](../../data/processed/senate_calibration/README.md): every output, counts, notebook loading, offline replay and limits.
-- [Preparation review](../calibration_preparation_review.md): official facts, discrepancies, pending cases and checks.
+- [Prepared README](../../../data/processed/senate_calibration/README.md): every output, counts, notebook loading, offline replay and limits.
+- [Preparation review](../../calibration_preparation_review.md): official facts, discrepancies, pending cases and checks.
 - `src/clean/prepare_senate_calibration.py`: offline preparer, immutable outputs, manifest validation.
-- [Reference README](../../src/clean/calibration_references/README.md): `fec_facts.json`, `poll_aliases.json`, `round_facts.json`, `extract_fec.py`.
+- [Reference README](../../../src/clean/calibration_references/README.md): `fec_facts.json`, `poll_aliases.json`, `round_facts.json`, `extract_fec.py`.
 - `tests/test_prepare_senate_calibration.py`: nine new regression tests.
 - Dictionary, STATUS, PROJECT, root/clean/processed/notebook/test/docs READMEs, source documentation and file guide updated to match behavior.
 

@@ -1,6 +1,6 @@
 # Approved 2022/2024 Senate polling archives
 
-Decision 017 approves the two dated FiveThirtyEight exports in [the proposal](../../../docs/polling_sources_2022_2024_proposal.md). **No complete polling snapshot is available yet:** collection attempts on 2026-10-08 failed to connect to Internet Archive. This folder currently contains documentation only. [Attempt receipts](../../../docs/senate_archive_collection_attempts_2026_10_08.json) and [the handoff](../../../docs/handoffs/2026-10-08-codex-to-rahan-and-claude-archive-collection.md) record the limit. No further source approval is needed to retry the same URLs.
+Decision 017 approves the two dated FiveThirtyEight exports in [the proposal](../../../docs/polling_sources_2022_2024_proposal.md). **No complete polling snapshot is available yet:** collection attempts on 2026-10-08 failed to connect to Internet Archive. This folder currently contains documentation only. [Attempt receipts](../../../docs/senate_archive_collection_attempts_2026_10_08.json) and [the handoff](../../../docs/process/handoffs/2026-10-08-codex-to-rahan-and-claude-archive-collection.md) record the limit. No further source approval is needed to retry the same URLs.
 
 From the repository root, standard library only:
 
