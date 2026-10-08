@@ -98,6 +98,8 @@ Latest Texas forecast: P(Talarico wins) = 71.3% (2026-10-08 snapshot; first fore
 
 ## Next action
 
+Rahan confirmed on 2026-10-08 that Python web access for poll downloads has also been failing for him and that he will try again later. Defer further download attempts until Rahan is ready to resume. Decision 017's source/scope approval remains valid; this delay does not complete the polling collection or expanded preparation.
+
 Retry `python3 -B src/ingest/senate_poll_archives.py` when public archive connectivity is restored; no new approval is needed for these pinned sources. Codex then inventories real polling coverage and extends preparation under existing rules. See [the handoff](docs/handoffs/2026-10-08-codex-to-rahan-and-claude-archive-collection.md). Rahan's modeling next steps remain sensitivity checks and automatic horizon selection.
 
 ## Active branch / commit
@@ -121,3 +123,5 @@ Prepared national calibration: `data/processed/senate_calibration/20261006T02411
 ## Blockers
 
 Approved Internet Archive downloads fail from this execution environment (connection/SSL timeout or “No route to host”). Pinned GitHub documentation succeeds; Browser fallback has no available browser connection. No complete new polling snapshot exists. This is a connectivity blocker, not a pending source-approval requirement.
+
+Rahan independently reported Python download trouble on 2026-10-08 and plans to retry later. The cause has not been established; do not treat the access failures as proof the approved datasets are permanently unavailable.

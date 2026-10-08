@@ -55,6 +55,8 @@ Public archive connectivity is the current blocker. Do not fill a new sample usi
 
 ## Requested next action
 
+Later session update (2026-10-08): Rahan also reports trouble accessing the web through Python for poll downloads and will retry later. Defer further downloads until he resumes; retain the existing approval and incomplete-work status.
+
 When archive connectivity is restored, run `python3 -B src/ingest/senate_poll_archives.py`. No further approval is required for the two pinned capture URLs. Inventory real candidate rows, polls/questions, states/rounds, field gaps and overlaps; then extend `prepare_senate_calibration.py` with the approved schemas/cycles, explicit round/date/candidate evidence and pending-case logs, producing a fresh expanded snapshot. Preserve all original snapshots and the current wide export. Source changes or new analytical rules require Rahan's separate decision.
 
 ## What Rahan should implement or explain

@@ -2,6 +2,8 @@
 
 Read [PROJECT.md](../PROJECT.md) and [STATUS.md](../STATUS.md) before starting work. These files record shared context across Rahan, Codex, and Claude; conversation histories are not automatically shared.
 
+Download timing update (2026-10-08): Rahan reports Python web-access trouble and plans to retry later. [STATUS.md](../STATUS.md) and [the collection handoff](handoffs/2026-10-08-codex-to-rahan-and-claude-archive-collection.md) preserve this deferral; approved sources remain approved, and expanded polling collection/preparation is still incomplete.
+
 | Document | How to use it |
 | --- | --- |
 | [2022/2024 polling source proposal](polling_sources_2022_2024_proposal.md), [initial checks](polling_source_checks_2022_2024.json) and [collection attempts](senate_archive_collection_attempts_2026_10_08.json) | Sources/scope approved by Decision 017; collector implemented, but complete polling retrieval is blocked by connection failures. Review schema/license evidence and remaining preparation work. |
