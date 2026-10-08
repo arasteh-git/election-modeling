@@ -23,9 +23,9 @@ Capture URLs and bounded-prefix receipts are in the proposal/check JSON. Prefix 
 
 ## Relevant files
 
-- [Source proposal](../polling_sources_2022_2024_proposal.md): access/license, schema, observed coverage, alternatives, exceptional races, future preparer and wide-table plan, approvals.
-- [Inspection receipts](../polling_source_checks_2022_2024.json): metadata/header evidence, actual check times, response-prefix hash scope and local results inventory.
-- [Data sources](../data_sources.md), [STATUS.md](../../STATUS.md), [root README](../../README.md), [docs README](../README.md), [file guide](../file_guide.md) and [handoff index](README.md): aligned documentation.
+- [Source proposal](../../polling_sources_2022_2024_proposal.md): access/license, schema, observed coverage, alternatives, exceptional races, future preparer and wide-table plan, approvals.
+- [Inspection receipts](../../polling_source_checks_2022_2024.json): metadata/header evidence, actual check times, response-prefix hash scope and local results inventory.
+- [Data sources](../../data_sources.md), [STATUS.md](../../../STATUS.md), [root README](../../../README.md), [docs README](../../README.md), [file guide](../../file_guide.md) and [handoff index](README.md): aligned documentation.
 
 ## What changed
 

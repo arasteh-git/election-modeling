@@ -2,7 +2,7 @@
 
 ## Shared project context
 
-Read PROJECT.md and STATUS.md. Shared responsibilities and learning boundaries are recorded there.
+Read docs/process/PROJECT.md and STATUS.md. Shared responsibilities and learning boundaries are recorded there.
 
 ## Claude-specific workflow
 

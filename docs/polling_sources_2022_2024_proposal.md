@@ -1,8 +1,8 @@
 # Proposed 2022/2024 Senate polling sources
 
-**Approval update:** Rahan approved this proposal on 2026-10-08 (Decision 017). The original proposal below records the pre-approval research. [Collection status](handoffs/2026-10-08-codex-to-rahan-and-claude-archive-collection.md): collector implemented, 2022 results inventoried offline, current-v1 wide tables exported; full archive downloads fail from this environment, so polling counts and expanded preparation remain outstanding.
+**Approval update:** Rahan approved this proposal on 2026-10-08 (Decision 017). The original proposal below records the pre-approval research. [Collection status](process/handoffs/2026-10-08-codex-to-rahan-and-claude-archive-collection.md): collector implemented, 2022 results inventoried offline, current-v1 wide tables exported; full archive downloads fail from this environment, so polling counts and expanded preparation remain outstanding.
 
-Prepared by Codex on 2026-10-08 after Rahan authorized the [Claude handoff](handoffs/2026-10-08-claude-code-to-codex.md). **Proposal only: sources and expanded calibration scope are not yet approved.** No complete new polling dataset was downloaded or saved, and no preparation or model calculations were performed.
+Prepared by Codex on 2026-10-08 after Rahan authorized the [Claude handoff](process/handoffs/2026-10-08-claude-code-to-codex.md). **Proposal only: sources and expanded calibration scope are not yet approved.** No complete new polling dataset was downloaded or saved, and no preparation or model calculations were performed.
 
 ## Recommendation for Rahan
 

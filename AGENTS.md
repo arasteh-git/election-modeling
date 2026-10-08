@@ -1,6 +1,6 @@
 # Codex project instructions
 
-Read PROJECT.md and STATUS.md before starting work. Read the relevant methodology, data dictionary, and decisions before changing the data pipeline. Follow these repository agreements within your applicable higher-priority instructions.
+Read docs/process/PROJECT.md and STATUS.md before starting work. Read the relevant methodology, data dictionary, and decisions before changing the data pipeline. Follow these repository agreements within your applicable higher-priority instructions.
 
 ## Role
 

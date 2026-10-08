@@ -67,4 +67,4 @@ Nine new regression tests cover full source-field preservation, side overrides/f
 
 The 47 pre-existing raw/prepared data files in the initial preservation baseline are unchanged. Rahan edited/committed the notebook during this task; Codex did not edit or execute it. Tests preserve the notebook's current bytes. Factual references record actual URLs/retrieval times/hashes in [reference JSON](../src/clean/calibration_references/README.md); whole downloaded reference documents stay in the ignored local cache. The output manifest preserves source attribution and license/permission receipts.
 
-[The handoff](handoffs/2026-10-06-codex-to-rahan-and-claude-calibration.md) records the concrete files, observed checks and next steps. No new methodology decision is recorded by this preparation.
+[The handoff](process/handoffs/2026-10-06-codex-to-rahan-and-claude-calibration.md) records the concrete files, observed checks and next steps. No new methodology decision is recorded by this preparation.

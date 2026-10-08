@@ -50,11 +50,11 @@ Latest Texas forecast: P(Talarico wins) = 71.3% (2026-10-08 snapshot; first fore
 - Rahan approved MEDSL Senate V8.0/CC0 for 2018/2020/2024 (Decision 014). Collected immutable original CSV, pinned metadata, codebook and source listing with actual retrieval receipts/hashes. Mechanical inventory preserves 508 rows: 152/204/148 for requested years plus four Georgia 2021 runoff rows separately for review; full original CSV preserves 3,945 rows.
 - Added `src/ingest/senate_results.py`, per-year inventories, 107 source-group coverage checks and exact row flags. Every source-group vote sum matches its reported total; 19 unofficial rows, 30 blank names, six noncandidate vote categories and repeated ballot lines remain retained. No result margins, poll/result crosswalks or model calculations performed.
 - Six collector regression tests passed, including exact source-field preservation, year/round/special separation, anomaly retention, byte-identical offline replay, overwrite refusal, tamper rejection and schema/metadata/checksum validation. Source audit and notebook load paths are in `docs/senate_results_review.md` and the results/notebook READMEs.
-- Final preservation check: all 33 existing polling/notebook files match the pre-collection SHA-256 baseline; notebook not edited/rerun. Collection handoff: `docs/handoffs/2026-10-06-codex-to-rahan-and-claude-results.md`.
+- Final preservation check: all 33 existing polling/notebook files match the pre-collection SHA-256 baseline; notebook not edited/rerun. Collection handoff: `docs/process/handoffs/2026-10-06-codex-to-rahan-and-claude-results.md`.
 
 - Chose normal errors for the minimum version; t-distribution to be tested in sensitivity analysis (Decision 015, 2026-10-06).
 
-- Claude Code audited the MEDSL results snapshot (2026-10-06). Party labels conflict with Decision 013 sides (King, Sanders, Wyoming 2020); Mississippi 2018 has runoff returns only; some totals include noncandidate votes. A side mapping and crosswalk were requested from Codex (docs/handoffs/2026-10-06-claude-code-to-codex.md).
+- Claude Code audited the MEDSL results snapshot (2026-10-06). Party labels conflict with Decision 013 sides (King, Sanders, Wyoming 2020); Mississippi 2018 has runoff returns only; some totals include noncandidate votes. A side mapping and crosswalk were requested from Codex (docs/process/handoffs/2026-10-06-claude-code-to-codex.md).
 
 - Rahan authorized that handoff with “go” (2026-10-06). Implemented the offline preparer and explicit factual/alias JSON. Preserves all 508 result rows and 4,667 poll candidate answers, with 5,175 side mappings, 1,950 question crosswalks and 72 archive race mappings. No model calculations or notebook edits.
 - The registry has 108 rounds: 74 in scope (56 eligible, two excluded, 16 pending), plus 34 outside-scope 2024 rounds. Maps Mississippi's 2018 special returns to November 27 runoff; registers the missing four-candidate November 6 first round as pending; maps Georgia January 2021 runoffs to cycle 2020; leaves Louisiana's unverified runoff unmapped.
@@ -75,13 +75,17 @@ Latest Texas forecast: P(Talarico wins) = 71.3% (2026-10-08 snapshot; first fore
 - Kept σ = RMSE with no bias shift (Decision 016).
 - First Texas forecast (2026-10-08): P(Talarico wins) = 68.1%, from the `20261006T023757Z` snapshot average +3.32 (13 LV polls, h = 14, reference 2026-10-05) and σ = 7.03 (28-day horizon). Tier 1 deliverable (Decision 010) reached in its minimum form.
 - Updated Texas forecast (2026-10-08): P(Talarico wins) = 71.3%, from the `20261008T042800Z` snapshot (one new LV poll, YouGov in-house D+6 ending 10-05): average +3.95, 14 LV polls, n_eff 6.71, h = 14, σ = 7.03 (28-day horizon). Claude Code reproduced the average and probability independently. The direct fetch failed from Rahan's network ("No route to host", though the page loads in a browser), so this snapshot was made from a browser-saved page with `--html` and `--retrieved-at`; its SHA-256 describes that saved copy.
-- Requested a 2022/2024 all-state polling source proposal from Codex (docs/handoffs/2026-10-08-claude-code-to-codex.md); calibration scope unchanged until Rahan approves.
+- Requested a 2022/2024 all-state polling source proposal from Codex (docs/process/handoffs/2026-10-08-claude-code-to-codex.md); calibration scope unchanged until Rahan approves.
 - Rahan authorized proposal research with “go do your work!” (2026-10-08). Codex verified public CSV headers and intended cycles in dated FiveThirtyEight archive prefixes, documented required fields and CC BY attribution, and proposed 2022/2024 expansion in `docs/polling_sources_2022_2024_proposal.md`. The unchanged local MEDSL original contains 168 source rows/36 groups for 2022 and 148/35 for 2024, both spanning 33 states; Georgia 2022 general/runoff returns are present. Full-cycle polling counts/coverage remain unmeasured. No complete new polling dataset, preparation, notebook execution or model calculation; sources/scope and MEDSL 2022 use remain pending approval.
 - Rahan subsequently approved the two archives, all-state 2022/2024 scope and MEDSL 2022 use (Decision 017, 2026-10-08). Implemented `src/ingest/senate_poll_archives.py` with source/schema/license checks, immutable snapshots and verified offline replay. Actual archive connections failed; no complete new polling snapshot or expanded calibration inputs exist. Pinned GitHub documentation was reachable. Attempt receipts and the collection handoff record the limit.
 - Inventoried 2022 results offline from the unchanged original: 168 rows, 36 separate source groups, 33 states; all group sums match reported totals. Missing detailed party fields on 13 source rows, two unofficial Missouri rows, ballot lines and vote categories remain retained. Files: `data/processed/senate_results_2022/20261006T035630Z_decision017_v1/`.
 - Added approved mechanical wide exports for existing v1 inputs: `data/processed/senate_calibration/20261006T024116Z_20261006T035630Z_v1_wide/` provides 108 contest/round rows and 729 selected poll-question rows. Unknown votes/incomplete side counts and all contest statuses remain explicit. No margins or notebook changes by Codex. All 29 repository tests passed, including six synthetic-archive/results checks and three wide-export checks; real new polling coverage remains unverified.
 
+- Portfolio cleanup on branch `cleanup/portfolio` (2026-10-08, Claude Code, at Rahan's request; committed locally, not merged; push and PR blocked because github.com was unreachable). Fresh clones previously failed 13 of 29 tests with "Source hash mismatch": Git had converted CRLF to LF in 28 hashed snapshot CSVs. Added `.gitattributes` (`data/raw/**`, `data/processed/**` as `-text`) and restored each file's original bytes, all matching their recorded SHA-256. Moved Rahan's `weighted_avg`, `p_dem_win`, margin helpers and calibration loop from the notebook into `src/model/` and `src/evaluate/` without changing logic; the notebook is now `notebooks/texas_forecast.ipynb` and imports from `src/`. Added `requirements.txt` (pinned for Python 3.14), `python -m src.model.run_texas`, a calibration chart, five regression tests matching the notebook's saved output, a front-page README, and `docs/process/` for PROJECT.md, NEXT_STEPS.md and handoffs. All 34 tests pass on a fresh clone with a clean venv. No methodology, rules, weights, σ or forecast numbers changed. See [the handoff](docs/process/handoffs/2026-10-08-claude-code-to-rahan-portfolio-cleanup.md).
+
 ## Not yet done
+
+- Bias-shift sensitivity (TODO, Rahan): compare P(D) with no shift against P(D) with the average shifted by the calibration mean error. Placeholders are in README.md and docs/methodology.md.
 
 - Future expanded-model direction (Decision 018): use national and generic-ballot polls as lower-weight inputs to state predictions, adjusted for each state's partisan lean, alongside more states, pollster house effects and correlated state effects. Exact weights, lean/translation method, sources and validation remain undecided; no implementation added.
 
@@ -90,7 +94,6 @@ Latest Texas forecast: P(Talarico wins) = 71.3% (2026-10-08 snapshot; first fore
 - Thin races (deferred, 2026-10-08): 13–21 races per horizon have n_eff < 1.5; West Virginia 2020 (one poll, error −23) alone moves σ at 7 days from 6.50 to about 5.65. Rahan tentatively favors removing or blunting them, but will decide after the model runs on more states.
 - Third/fourth calibration cycles: sources/scope and MEDSL 2022 use are approved. Awaiting successful archive retrieval, polling coverage inventory and extension of the preparer's schemas/round/date/side mappings. Independent sides, overlapping special-election questions and first-choice evidence still need review; the existing calibration sample has not expanded yet.
 
-- Local Python environment setup.
 - Review the 16 pending in-scope contests and 348 pending questions. Missing Mississippi first-round returns need Rahan's supplemental-source/exclusion decision; Nevada denominator semantics, named blank-party candidates, unofficial returns, FEC disagreements, aliases and tied preferences remain unresolved. Exact keys/evidence are in the prepared logs and review.
 - Comprehensive official-return/primary-poll verification. Checks so far are partial; source flags and mirror identity are not fully verified. Valid-vote categories and exceptional-round dates are prepared without changing MEDSL counts.
 - Open poll rule: LV numbers from releases where the tracker shows RV.
@@ -98,11 +101,11 @@ Latest Texas forecast: P(Talarico wins) = 71.3% (2026-10-08 snapshot; first fore
 
 ## Next action
 
-Rahan confirmed on 2026-10-08 that Python web access for poll downloads has also been failing for him and that he will try again later. Defer further download attempts until Rahan is ready to resume. Decision 017's source/scope approval remains valid; this delay does not complete the polling collection or expanded preparation.
-
-Retry `python3 -B src/ingest/senate_poll_archives.py` when public archive connectivity is restored; no new approval is needed for these pinned sources. Codex then inventories real polling coverage and extends preparation under existing rules. See [the handoff](docs/handoffs/2026-10-08-codex-to-rahan-and-claude-archive-collection.md). Rahan's modeling next steps remain sensitivity checks and automatic horizon selection.
+Retry `python3 -B src/ingest/senate_poll_archives.py` when public archive connectivity is restored; no new approval is needed for these pinned sources. Codex then inventories real polling coverage and extends preparation under existing rules. See [the handoff](docs/process/handoffs/2026-10-08-codex-to-rahan-and-claude-archive-collection.md). Rahan's modeling next steps remain sensitivity checks and automatic horizon selection.
 
 ## Active branch / commit
+
+`cleanup/portfolio` (portfolio cleanup; local commits only, push/PR pending because github.com was unreachable; not merged). Previous entry follows.
 
 main; parent `bcee35b` before the documentation/roadmap commit requested by Rahan. Concurrent tracker/approval-tooling commits are preserved. The commit records completed workflow documentation and Decision 018; archive retrieval and expanded preparation remain outstanding.
 
@@ -123,5 +126,3 @@ Prepared national calibration: `data/processed/senate_calibration/20261006T02411
 ## Blockers
 
 Approved Internet Archive downloads fail from this execution environment (connection/SSL timeout or “No route to host”). Pinned GitHub documentation succeeds; Browser fallback has no available browser connection. No complete new polling snapshot exists. This is a connectivity blocker, not a pending source-approval requirement.
-
-Rahan independently reported Python download trouble on 2026-10-08 and plans to retry later. The cause has not been established; do not treat the access failures as proof the approved datasets are permanently unavailable.

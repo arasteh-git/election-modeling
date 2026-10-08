@@ -1,0 +1,4 @@
+[tool.pytest.ini_options]
+# Lets tests import the model code as `src.model...` / `src.evaluate...`.
+pythonpath = ["."]
+testpaths = ["tests"]

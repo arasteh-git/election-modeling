@@ -22,9 +22,9 @@ Rahan requested election-result sources and a preparation plan following the Dec
 
 ## Relevant files
 
-- [Preparation plan](../calibration_preparation_plan.md): source comparison, pinned metadata, actual inventory, proposed workflow/outputs, open rules, and validation.
-- [Data sources](../data_sources.md): proposal kept separate from the unapproved result-source section.
-- [Documentation README](../README.md), [root README](../../README.md), [file guide](../file_guide.md), and [status](../../STATUS.md): navigation and current progress.
+- [Preparation plan](../../calibration_preparation_plan.md): source comparison, pinned metadata, actual inventory, proposed workflow/outputs, open rules, and validation.
+- [Data sources](../../data_sources.md): proposal kept separate from the unapproved result-source section.
+- [Documentation README](../../README.md), [root README](../../../README.md), [file guide](../../file_guide.md), and [status](../../../STATUS.md): navigation and current progress.
 - Prior [Claude-to-Codex handoff](2026-10-05-claude-code-to-codex.md): scope and source-approval requirement.
 
 ## What changed

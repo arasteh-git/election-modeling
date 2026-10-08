@@ -116,4 +116,4 @@ Decision 012 uses LV polls, fieldwork end dates, half-life 14, and horizons 7/14
 
 ## Next action
 
-Proceed from the collected [results audit](senate_results_review.md) to verifying dates, round coverage, candidate/ballot-line identities and first-choice returns for national preparation. Implement Decisions 012/013 with exclusions and pending ambiguities logged. Rahan computes averages, errors, RMSE and probabilities. The [original proposal handoff](handoffs/2026-10-05-codex-to-rahan-and-claude-calibration-plan.md) remains historical context; the new collection handoff records the implemented snapshot.
+Proceed from the collected [results audit](senate_results_review.md) to verifying dates, round coverage, candidate/ballot-line identities and first-choice returns for national preparation. Implement Decisions 012/013 with exclusions and pending ambiguities logged. Rahan computes averages, errors, RMSE and probabilities. The [original proposal handoff](process/handoffs/2026-10-05-codex-to-rahan-and-claude-calibration-plan.md) remains historical context; the new collection handoff records the implemented snapshot.

@@ -1,6 +1,6 @@
 # Shared project documentation
 
-Read [PROJECT.md](../PROJECT.md) and [STATUS.md](../STATUS.md) before starting work. These files record shared context across Rahan, Codex, and Claude; conversation histories are not automatically shared.
+Read [PROJECT.md](process/PROJECT.md) and [STATUS.md](../STATUS.md) before starting work. These files record shared context across Rahan, Codex, and Claude; conversation histories are not automatically shared.
 
 Download timing update (2026-10-08): Rahan reports Python web-access trouble and plans to retry later. [STATUS.md](../STATUS.md) and [the collection handoff](handoffs/2026-10-08-codex-to-rahan-and-claude-archive-collection.md) preserve this deferral; approved sources remain approved, and expanded polling collection/preparation is still incomplete.
 
@@ -15,7 +15,9 @@ Download timing update (2026-10-08): Rahan reports Python web-access trouble and
 | [Decisions](decisions.md) | Record consequential choices after Rahan approves them. |
 | [Data dictionary](data_dictionary.md) | Understand implemented fields, units, keys, missing values and flags, including national calibration outputs. |
 | [File guide](file_guide.md) | Navigate the repository and understand individual files. |
+| [Data pipeline](data_pipeline.md) | Collection and preparation commands and repository layout. |
+| [Process documents](process/README.md) | Project agreement, setup checklist and dated handoffs between Rahan and the assistants. |
 | [Texas tracker review](texas_tracker_review.md) | Review source discrepancies and primary-verification limits. |
-| [Handoff template](handoff_template.md) and [handoffs](handoffs/) | Transfer scoped work with branch/commit, source snapshots, observed checks, limits, and next actions. |
+| [Handoff template](handoff_template.md) and [handoffs](process/handoffs/) | Transfer scoped work with branch/commit, source snapshots, observed checks, limits, and next actions. |
 
 Run national preparation offline with `python3 -B src/clean/prepare_senate_calibration.py --output outputs/calibration_replay`, using a fresh output directory. [The prepared README](../data/processed/senate_calibration/README.md) documents outputs/loading/replay and limits. Existing collection/preparation commands are in the root and source-folder READMEs.

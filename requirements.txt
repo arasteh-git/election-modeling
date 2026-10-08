@@ -1,0 +1,8 @@
+# Python 3.14. Collectors/preparers use only the standard library;
+# these packages support the model, calibration, chart and tests.
+pandas==3.0.6
+numpy==2.5.3
+scipy==1.18.1
+matplotlib==3.11.2
+plotnine==0.15.8
+pytest==9.1.1

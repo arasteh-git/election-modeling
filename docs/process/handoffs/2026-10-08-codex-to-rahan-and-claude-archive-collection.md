@@ -20,11 +20,11 @@ Act on Rahan's “approved!” response to the two pinned archives, MEDSL 2022 u
 
 ## Relevant files
 
-- `src/ingest/senate_poll_archives.py`: approved-source collector/replay and offline 2022 results inventory; [ingest README](../../src/ingest/README.md) and [raw-folder README](../../data/raw/senate_poll_archives/README.md) give commands/files/limits.
+- `src/ingest/senate_poll_archives.py`: approved-source collector/replay and offline 2022 results inventory; [ingest README](../../../src/ingest/README.md) and [raw-folder README](../../../data/raw/senate_poll_archives/README.md) give commands/files/limits.
 - `src/ingest/senate_results.py`: optional requested-year set in the audit helper; original collection/replay defaults unchanged.
-- `src/clean/prepare_calibration_wide.py`: audited wide export, documented in [clean README](../../src/clean/README.md) and [prepared README](../../data/processed/senate_calibration/README.md).
-- [Results README](../../data/processed/senate_results_2022/README.md), [attempt receipts](../senate_archive_collection_attempts_2026_10_08.json), [decisions](../decisions.md), [sources](../data_sources.md), [methodology](../methodology.md), [dictionary](../data_dictionary.md), [file guide](../file_guide.md), [STATUS.md](../../STATUS.md).
-- `tests/test_senate_poll_archives.py`, `tests/test_calibration_wide.py`; [tests README](../../tests/README.md).
+- `src/clean/prepare_calibration_wide.py`: audited wide export, documented in [clean README](../../../src/clean/README.md) and [prepared README](../../../data/processed/senate_calibration/README.md).
+- [Results README](../../../data/processed/senate_results_2022/README.md), [attempt receipts](../../senate_archive_collection_attempts_2026_10_08.json), [decisions](../../decisions.md), [sources](../../data_sources.md), [methodology](../../methodology.md), [dictionary](../../data_dictionary.md), [file guide](../../file_guide.md), [STATUS.md](../../../STATUS.md).
+- `tests/test_senate_poll_archives.py`, `tests/test_calibration_wide.py`; [tests README](../../../tests/README.md).
 
 ## What changed
 
