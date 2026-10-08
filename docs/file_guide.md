@@ -65,6 +65,7 @@ PROJECT.md and NEXT_STEPS.md moved to [docs/process/](process/README.md) on 2026
 | docs/methodology.md | Home for approved statistical assumptions and formulas. Blank sections are still undecided; the bias-shift sensitivity subsection is a TODO for Rahan. |
 | docs/texas_tracker_review.md | Human-readable source audit and outstanding issues; broader than the automatic issues.json. |
 | docs/handoff_template.md | Blank structure for transferring a task between Rahan and assistants. |
+| docs/process/handoffs/2026-10-08-claude-code-to-rahan-portfolio-cleanup.md | Portfolio cleanup: fresh-clone hash fix, `src/` refactor, README rewrite and docs reorganization, with checks and open items. |
 | docs/process/handoffs/2026-09-27-claude-chat-to-claude-code.md | Historical onboarding and scaffold-audit handoff. |
 | docs/process/handoffs/2026-09-29-codex-to-rahan-and-claude.md | Historical handoff for the Texas collection, checks, and unfinished verification. |
 | docs/process/handoffs/2026-09-29-claude-code-to-codex.md | Decisions 008–010, Texas poll rules, first average check, and requested source proposal for Codex. |
