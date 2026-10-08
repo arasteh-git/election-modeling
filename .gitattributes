@@ -1,0 +1,4 @@
+# Snapshot files are hashed byte-for-byte in their manifest.json files.
+# Never let Git convert line endings in them (Python's csv module writes CRLF).
+data/raw/** -text
+data/processed/** -text
