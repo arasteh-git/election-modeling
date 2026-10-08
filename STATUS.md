@@ -77,9 +77,10 @@ First calibration run complete: σ by horizon from 52 eligible 2018/2020/Texas 2
 
 ## Not yet done
 
-- Thin-race decision: 13–21 races per horizon have n_eff < 1.5. West Virginia 2020 (one poll, error −23) alone moves σ at 7 days from 6.50 to about 5.65.
-- Record the two-cycle limitation: the cycle-wide lean dominates σ and is estimated from essentially two cycles.
-- Select σ in code from the horizon nearest to Election Day, produce the first official Texas P(win), and run sensitivity (h, t-distribution, thin races).
+- First official Texas P(Democrat wins): Rahan codes it with σ = 7.03 (28-day horizon, nearest to 2026-11-03). Then select the horizon automatically in code.
+- Sensitivity checks (h = 7/14/30, t with ν = 5 and 10, with/without thin races): planned for Rahan's next session.
+- Thin races (deferred, 2026-10-08): 13–21 races per horizon have n_eff < 1.5; West Virginia 2020 (one poll, error −23) alone moves σ at 7 days from 6.50 to about 5.65. Rahan tentatively favors removing or blunting them, but will decide after the model runs on more states.
+- Third calibration cycle: Rahan wants at least three cycles; awaiting Codex's 2022/2024 polling source proposal (docs/handoffs/2026-10-08-claude-code-to-codex.md).
 
 - Local Python environment setup.
 - Review the 16 pending in-scope contests and 348 pending questions. Missing Mississippi first-round returns need Rahan's supplemental-source/exclusion decision; Nevada denominator semantics, named blank-party candidates, unofficial returns, FEC disagreements, aliases and tied preferences remain unresolved. Exact keys/evidence are in the prepared logs and review.
@@ -89,7 +90,7 @@ First calibration run complete: σ by horizon from 52 eligible 2018/2020/Texas 2
 
 ## Next action
 
-Rahan decides the thin-race rule, selects σ from the nearest horizon in code, and computes the first official Texas P(Democrat wins). Then sensitivity checks. Codex proposes a 2022/2024 polling source once Rahan confirms the handoff.
+Rahan computes the first official Texas P(Democrat wins) with σ = 7.03, then runs sensitivity checks next session. Codex proposes a 2022/2024 polling source (Rahan has confirmed the handoff).
 
 ## Active branch / commit
 

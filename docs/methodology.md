@@ -77,3 +77,6 @@ Half-life, Texas first snapshot (reference date 2026-09-29, 11 LV polls):
 Error distribution (Decision 015, planned): compare the normal with a t-distribution, for example ν = 5 and 10, with its SD matched to the calibrated σ (scale = σ · √((ν − 2) / ν)).
 
 ## Known limitations
+
+- σ rests on essentially two cycles (2018, 2020, plus Texas 2024). The cycle-wide polling lean (about −1 in 2018, −6 in 2020) is the largest part of σ, and two draws of it are a weak basis. Rahan aims for at least three cycles; a 2022/2024 polling source has been requested (2026-10-08).
+- Thinly polled races (n_eff < 1.5) are kept in the calibration for now. One-poll races can move σ substantially (West Virginia 2020 alone: 6.50 → about 5.65 at 7 days). Rahan tentatively favors removing or down-weighting them, to be decided after the model runs on more states.
