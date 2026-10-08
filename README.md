@@ -40,6 +40,8 @@ Collect the approved MEDSL Senate results (Decision 014) with `python src/ingest
 
 [National calibration preparation](data/processed/senate_calibration/README.md) is implemented under Decisions 012–014. Run `python3 -B src/clean/prepare_senate_calibration.py --output outputs/calibration_replay` for a fresh offline replay. The saved snapshot provides 108 contest rounds, 5,175 candidate mappings and 1,950 question crosswalks: 729 selected, 873 excluded and 348 pending. All sources remain preserved; dates, identities, denominator categories and approved filters are audited. [The review](docs/calibration_preparation_review.md) lists pending source conflicts, missing returns, parties and question choices. Rahan implements margins and calibration. [The documentation README](docs/README.md) explains the original plan, approved decisions, schemas and handoffs.
 
+[The 2022/2024 polling source proposal](docs/polling_sources_2022_2024_proposal.md) recommends dated FiveThirtyEight archive captures and documents inspected fields, permissions, unmeasured full-cycle counts and required preparation changes. It is pending source/scope approval; no new collection command or expanded prepared snapshot exists yet.
+
 ## Model execution command
 
 ## Evaluation command
@@ -55,4 +57,4 @@ Collect the approved MEDSL Senate results (Decision 014) with `python src/ingest
 - src/model/ and src/evaluate/: Rahan's core modeling and evaluation code.
 - tests/: future data validation and meaningful checks.
 
-The 2026 tracker and historical Texas Senate inventory are available. Rahan's notebook implements the first recency-weighted LV average and effective poll count. The uncertainty model and scheduled automation remain unimplemented.
+The tracker, historical polling, election returns and initial prepared calibration inputs are available. Rahan's notebook implements the recency-weighted LV average, historical error calibration and first Texas win probability. Automatic horizon selection and sensitivity checks remain next steps; see STATUS.md. Scheduled automation remains unimplemented.

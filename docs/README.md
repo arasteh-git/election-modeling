@@ -4,6 +4,7 @@ Read [PROJECT.md](../PROJECT.md) and [STATUS.md](../STATUS.md) before starting w
 
 | Document | How to use it |
 | --- | --- |
+| [2022/2024 polling source proposal](polling_sources_2022_2024_proposal.md) and [check receipts](polling_source_checks_2022_2024.json) | Review accessible archived sources, field/license evidence, coverage limits and extension plan before approving collection or scope changes. No new dataset or execution command yet. |
 | [Calibration preparation plan](calibration_preparation_plan.md) | Original national preparation design, approved-rule updates and links to the implemented workflow. |
 | [Calibration preparation review](calibration_preparation_review.md) | Implemented contest/side/crosswalk outputs, observed counts, factual checks, pending cases and tests. |
 | [Results review](senate_results_review.md) | Read the collected V8.0 coverage, preserved source flags, denominator/round limits and checks observed. |

@@ -1,0 +1,128 @@
+{
+  "flagged_rows": [
+    {
+      "flags": [
+        "missing_party_simplified",
+        "noncandidate_vote_category"
+      ],
+      "inventory_id": "medsl-v8-group-011",
+      "source_row": 3677
+    },
+    {
+      "flags": [
+        "noncandidate_vote_category"
+      ],
+      "inventory_id": "medsl-v8-group-012",
+      "source_row": 3697
+    },
+    {
+      "flags": [
+        "noncandidate_vote_category"
+      ],
+      "inventory_id": "medsl-v8-group-012",
+      "source_row": 3698
+    },
+    {
+      "flags": [
+        "unofficial_return"
+      ],
+      "inventory_id": "medsl-v8-group-020",
+      "source_row": 3723
+    },
+    {
+      "flags": [
+        "unofficial_return"
+      ],
+      "inventory_id": "medsl-v8-group-020",
+      "source_row": 3724
+    },
+    {
+      "flags": [
+        "missing_party_simplified"
+      ],
+      "inventory_id": "medsl-v8-group-024",
+      "source_row": 3728
+    },
+    {
+      "flags": [
+        "repeated_candidate_name_review_ballot_lines"
+      ],
+      "inventory_id": "medsl-v8-group-025",
+      "source_row": 3735
+    },
+    {
+      "flags": [
+        "repeated_candidate_name_review_ballot_lines"
+      ],
+      "inventory_id": "medsl-v8-group-025",
+      "source_row": 3736
+    },
+    {
+      "flags": [
+        "repeated_candidate_name_review_ballot_lines"
+      ],
+      "inventory_id": "medsl-v8-group-025",
+      "source_row": 3738
+    },
+    {
+      "flags": [
+        "repeated_candidate_name_review_ballot_lines"
+      ],
+      "inventory_id": "medsl-v8-group-025",
+      "source_row": 3739
+    }
+  ],
+  "summary": {
+    "full_source_rows": 3945,
+    "full_source_rows_by_year": {
+      "1976": 144,
+      "1978": 126,
+      "1980": 134,
+      "1982": 129,
+      "1984": 118,
+      "1986": 121,
+      "1988": 127,
+      "1990": 103,
+      "1992": 165,
+      "1994": 157,
+      "1996": 155,
+      "1998": 152,
+      "2000": 183,
+      "2002": 145,
+      "2004": 165,
+      "2006": 160,
+      "2008": 145,
+      "2010": 242,
+      "2012": 190,
+      "2014": 187,
+      "2016": 221,
+      "2018": 152,
+      "2020": 204,
+      "2021": 4,
+      "2022": 168,
+      "2024": 148
+    },
+    "group_flag_counts": {
+      "election_date_unavailable": 36,
+      "missing_party_simplified": 2,
+      "noncandidate_vote_category": 2,
+      "repeated_candidate_name_review_ballot_lines": 1,
+      "round_definition_unverified": 36,
+      "unofficial_return": 1
+    },
+    "inventoried_rows": 168,
+    "inventoried_rows_by_source_year": {
+      "2022": 168
+    },
+    "inventory_groups": 36,
+    "inventory_groups_by_source_year": {
+      "2022": 36
+    },
+    "row_flag_counts": {
+      "missing_party_simplified": 2,
+      "noncandidate_vote_category": 3,
+      "repeated_candidate_name_review_ballot_lines": 4,
+      "unofficial_return": 2
+    }
+  }
+}

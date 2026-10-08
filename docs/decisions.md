@@ -417,6 +417,26 @@ docs/methodology.md, STATUS.md
 
 Directed by Rahan in a Claude Code session on 2026-10-07, after Claude review: "let's keep RMSE as our sigma."
 
+## Decision 017: Expand Senate calibration to 2022/2024
+
+### Decision
+
+Approve the two FiveThirtyEight historical Senate CSV captures in [the source proposal](polling_sources_2022_2024_proposal.md): Internet Archive `20230427025758` for cycle 2022 and `20250118200335` for cycle 2024. Authorize immutable collection and coverage inventory, then extend mechanical preparation under existing Decisions 012/013. Expand Decision 012's historical calibration scope to all-state 2018/2020/2022/2024, retaining the current Texas 2024 tracker inputs and source exception; new 538 Texas 2024 observations are overlap inventory, not additional active polls.
+
+Extend Decision 014's MEDSL V8.0 approval to 2022, using the unchanged already-preserved original CSV. Preserve prior snapshots. Provide wide working tables alongside detailed audit outputs. Ambiguous round mappings, independent sides, ballot membership, missing fields and denominator/first-choice evidence stay pending; approval adds no new inclusion, adjustment or model rule.
+
+### Date
+
+2026-10-08
+
+### Evidence / review
+
+Rahan replied “approved!” to Codex's explicit request to approve the two archives, MEDSL 2022 use and all-state 2022/2024 calibration expansion. The proposal and source checks document access, permission evidence, field coverage and unresolved questions. Rahan retains core model implementation and final methodological decisions.
+
+### Affected files
+
+docs/data_sources.md, docs/methodology.md, STATUS.md, collection/preparation code, new immutable raw/processed snapshots and their documentation. No notebook or core-model change authorized by this approval.
+
 ## Future decision template
 
 ### Decision

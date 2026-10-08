@@ -46,6 +46,8 @@ Convert the poll average into P(Democrat wins) using an error model calibrated o
 
 Calibration rules (Decision 012):
 
+Scope expansion (Decision 017, 2026-10-08): all-state 2018/2020/2022/2024 Senate elections. Retain the existing Texas 2024 tracker source/exception; new 538 Texas 2024 questions are overlap inventory. Existing race-format, population, question-preference and uncertainty rules are unchanged; ambiguous new cases stay pending.
+
 - Error = actual margin − poll average (D − R, points), with the average computed under live rules at a fixed horizon before Election Day.
 - σ at horizons of 7, 14, 28, and 42 days; each run uses the closest horizon. σ = RMSE of errors, √(Σ eᵢ² / n).
 - Race formats (Decision 013): Democratic-caucusing independents count as the Democratic side; same-party races are excluded; margin = sum of D-side − sum of R-side in the same round for polls and results; specials and runoffs are included, matched by round.

@@ -2,6 +2,12 @@
 
 This guide describes the current files, not features that have already been implemented. Markdown (.md) is readable documentation; CSV is a spreadsheet-like table; JSON is structured metadata; .py is Python code; .ipynb is a notebook; HTML is a saved webpage.
 
+## Proposed 2022/2024 polling expansion
+
+[polling_sources_2022_2024_proposal.md](polling_sources_2022_2024_proposal.md) is the source/scope approval document: pinned archive URLs, field and permission evidence, coverage limits, unresolved race cases and proposed preparation outputs. [polling_source_checks_2022_2024.json](polling_source_checks_2022_2024.json) contains read-only metadata/header receipts and counts from the unchanged existing results CSV. Prefix hashes do not identify full new datasets, and full-cycle poll counts remain unmeasured. Read these files directly; no new collection command, prepared snapshot or notebook changes exist yet.
+
+[The Codex handoff](handoffs/2026-10-08-codex-to-rahan-and-claude-polling-sources.md) records completed proposal work and the approval required before collection. [handoffs/README.md](handoffs/README.md) indexes dated transfer notes and explains how to use the template.
+
 ## Start with the Texas snapshot
 
 Folder: data/raw/texas_tracker/20260929T222648Z/. The name means September 29, 2026, at 22:26:48 UTC (6:26:48 p.m. New York). This is collection time, not the poll's publication or fieldwork date.

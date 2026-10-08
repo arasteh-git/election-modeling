@@ -113,7 +113,8 @@ def normalized_group(row):
                  else row[f] for f in GROUP_FIELDS)
 
 
-def audit(body):
+def audit(body, requested_years=None):
+    requested_years = REQUESTED_YEARS if requested_years is None else set(requested_years)
     reader = csv.DictReader(io.StringIO(body.decode("utf-8-sig")))
     if reader.fieldnames != SOURCE_FIELDS:
         raise ValueError("MEDSL schema changed or response is not the expected CSV")
@@ -123,8 +124,8 @@ def audit(body):
         if None in raw or any(v is None for v in raw.values()):
             raise ValueError(f"Malformed source row {source_count}")
         full_counts[raw["year"]] += 1
-        supplemental = raw["year"] == "2021" and raw["state_po"] == "GA" and raw["stage"].lower() == "runoff"
-        if raw["year"] not in REQUESTED_YEARS and not supplemental:
+        supplemental = "2020" in requested_years and raw["year"] == "2021" and raw["state_po"] == "GA" and raw["stage"].lower() == "runoff"
+        if raw["year"] not in requested_years and not supplemental:
             continue
         flags = []
         for f in ("state", "state_po", "office", "district", "stage", "special", "mode", "party_simplified"):
@@ -156,7 +157,7 @@ def audit(body):
                "inventory_id": "", **raw, "flags": flags}
         selected.append(row)
         groups[normalized_group(raw)].append(row)
-    if not REQUESTED_YEARS.issubset({r["year"] for r in selected}):
+    if not requested_years.issubset({r["year"] for r in selected}):
         raise ValueError("Missing requested results year")
     inventory, issues = [], []
     for index, (key, rows) in enumerate(sorted(groups.items()), 1):

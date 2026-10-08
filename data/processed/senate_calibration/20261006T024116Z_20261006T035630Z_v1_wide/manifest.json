@@ -1,0 +1,42 @@
+{
+  "authorization": "Decision 017 / Rahan approved 2026-10-08",
+  "limitations": [
+    "Existing v1 sample only; new 2022/2024 polling unavailable at creation",
+    "Result eligibility and pending reasons must still be respected",
+    "Other percentage sums reported other-candidate answers only, not undecided or an inferred complement",
+    "Incomplete side counts are explicit; missing returns stay blank",
+    "No margins, shares from votes, recency weights, averages, errors, uncertainty or probability calculations"
+  ],
+  "outputs": {
+    "polls_wide.csv": {
+      "rows": 729,
+      "sha256": "09f08badf7456ecf738d14da2cd31002cea26a32053e374bc3ec0d177b783513"
+    },
+    "results_wide.csv": {
+      "rows": 108,
+      "sha256": "3c11a2d2c42d3940f864e470eb0cf16045f2732102f96bdfd40a904f62c0cd60"
+    }
+  },
+  "parent_files_sha256": {
+    "candidate_results.csv": "39779c93c595f913b43d167b0ec384894044bc8bf4eb9cce88c478843ace6ad7",
+    "candidate_side_map.csv": "b7005ab10d923769d70e548e6106908e6933cadf05730a8ded6cc6a813ab39ed",
+    "changes.csv": "3398e9a061fb6a56a38c0f15d9b791fe1feef0fc9831a052cb4ce37373dbcd55",
+    "contests.csv": "524315a987cda7cc83d091b85ba66345b2c7ac95006a7900f93cfc3ae13a2269",
+    "crosswalk.csv": "c3a98129997314e242b73e9e95176935d7299e2bfaaa9ec31015176eb09afc66",
+    "excluded.csv": "657525d23a75d18f9e71ab46bf0234634d2e99efb384ce690a683615c486fe41",
+    "manifest.json": "e5467481ef3b79d7514cdb2d86d294eea86354096224b16493fa47fb3677ecd1",
+    "pending.csv": "7e5740e24a6f573c23fe77b48ccf1545d7e9d5a187332b450bdd3561702bb4b6",
+    "poll_candidate_rows.csv": "10205f553b37c7e8bdc062a98b29c4d4031cc286f53227d27e5bcc773147e684",
+    "poll_questions.csv": "ea3d1d870d0bce0ce6c7d773dca289d70fa20801637719d2e158c66d117870c8",
+    "race_crosswalk.csv": "f3e5ee4371673356897f337ce9ef14f5498719c89af48418cd81a0f1988304d0",
+    "race_inventory.csv": "e67918a017796c49169428f3b6c6565e3c68f39bfa3f67e3d3bd0223526099fb"
+  },
+  "parent_snapshot": "data/processed/senate_calibration/20261006T024116Z_20261006T035630Z_v1",
+  "rule_version": "Decision 017 / mechanical wide export v1",
+  "schema_version": 1,
+  "transformations": [
+    "Sum existing valid result votes by approved side within each contest/round; retain unknown votes separately",
+    "Sum reported candidate percentages by approved side within each selected question; retain original question metadata",
+    "Preserve all contest statuses; do not include pending/excluded questions in the poll working table"
+  ]
+}

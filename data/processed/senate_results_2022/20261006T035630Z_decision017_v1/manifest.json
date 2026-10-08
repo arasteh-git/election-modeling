@@ -1,0 +1,100 @@
+{
+  "approval": "Decision 017 / Rahan approved 2026-10-08",
+  "attribution": "MIT Election Data and Science Lab, U.S. Senate statewide returns, V8.0, doi:10.7910/DVN/PEJ5QU",
+  "license": {
+    "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+    "languageCode": "en",
+    "name": "CC0 1.0",
+    "rightsIdentifier": "CC0-1.0",
+    "rightsIdentifierScheme": "SPDX",
+    "schemeUri": "https://spdx.org/licenses/",
+    "uri": "http://creativecommons.org/publicdomain/zero/1.0"
+  },
+  "limitations": [
+    "No verified dates, side mapping, denominator selection, round crosswalk or modeling quantities",
+    "GA GEN and GEN RUNOFF remain separate source groups",
+    "Original retrieval time belongs to preserved MEDSL source, not this offline derivative"
+  ],
+  "outputs": {
+    "coverage.csv": {
+      "bytes": 13085,
+      "sha256": "fad6fa5feb1c5ae87fa21361686247da5a94f9f3bd8616ec5bb5046257f3f2be"
+    },
+    "issues.json": {
+      "bytes": 2798,
+      "sha256": "31a6283266611f39e1e3b442099e9ec64acf069ce040a19551d1101cc935ee02"
+    },
+    "returns_2022.csv": {
+      "bytes": 31447,
+      "sha256": "c4355cad852985ee4aab20a1f9bb6f414f3e85da0aa17e9643a19ad9de7b11a8"
+    }
+  },
+  "rule_version": "Decision 017 / 2022 source inventory v1",
+  "schema_version": 1,
+  "source": {
+    "bytes": 530501,
+    "content_type": "text/comma-separated-values",
+    "resolved_url": "https://dvn-cloud-iqss.s3.amazonaws.com/10.7910/DVN/PEJ5QU/19e17cc9bc2-05615a632744.orig?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%271976-2024-senate-state.csv&response-content-type=text%2Fcomma-separated-values&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261006T035630Z&X-Amz-SignedHeaders=host&X-Amz-Credential=AKIAZT3GWQ6FKBSH5I56%2F20261006%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=3600&X-Amz-Signature=40273fa7e71a0870c6281fa82dec1d7735a6a3d5301522a9360edfec5ffd6f8e",
+    "retrieved_at": "2026-10-06T03:56:30.735602+00:00",
+    "sha256": "6f745db1b4a0026ad837e74428f9ed6f3f77fa51eb6f858b58ebdbc186fdb3bd",
+    "url": "https://dataverse.harvard.edu/api/access/datafile/13887039?format=original"
+  },
+  "source_path": "data/raw/senate_results/20261006T035630Z/senate_returns.csv",
+  "summary": {
+    "full_source_rows": 3945,
+    "full_source_rows_by_year": {
+      "1976": 144,
+      "1978": 126,
+      "1980": 134,
+      "1982": 129,
+      "1984": 118,
+      "1986": 121,
+      "1988": 127,
+      "1990": 103,
+      "1992": 165,
+      "1994": 157,
+      "1996": 155,
+      "1998": 152,
+      "2000": 183,
+      "2002": 145,
+      "2004": 165,
+      "2006": 160,
+      "2008": 145,
+      "2010": 242,
+      "2012": 190,
+      "2014": 187,
+      "2016": 221,
+      "2018": 152,
+      "2020": 204,
+      "2021": 4,
+      "2022": 168,
+      "2024": 148
+    },
+    "group_flag_counts": {
+      "election_date_unavailable": 36,
+      "missing_party_simplified": 2,
+      "noncandidate_vote_category": 2,
+      "repeated_candidate_name_review_ballot_lines": 1,
+      "round_definition_unverified": 36,
+      "unofficial_return": 1
+    },
+    "inventoried_rows": 168,
+    "inventoried_rows_by_source_year": {
+      "2022": 168
+    },
+    "inventory_groups": 36,
+    "inventory_groups_by_source_year": {
+      "2022": 36
+    },
+    "row_flag_counts": {
+      "missing_party_simplified": 2,
+      "noncandidate_vote_category": 3,
+      "repeated_candidate_name_review_ballot_lines": 4,
+      "unofficial_return": 2
+    }
+  },
+  "transformations": [
+    "Select unchanged source strings for year 2022; retain source-row IDs",
+    "Mechanical stage/special/mode group audit; no analytical exclusions"
+  ]
+}

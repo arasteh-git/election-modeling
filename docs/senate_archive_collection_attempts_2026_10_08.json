@@ -1,0 +1,41 @@
+{
+  "scope": "Approved collection availability checks; no complete polling snapshot saved. Successful document/CSV reads are checks only, not a substituted dataset.",
+  "attempts": {
+    "senate_polls_2022_source.csv": {
+      "url": "https://web.archive.org/web/20230427025758id_/https://projects.fivethirtyeight.com/polls-page/data/senate_polls_historical.csv",
+      "attempted_at": "2026-10-08T04:34:46.105446+00:00",
+      "outcome": "failed",
+      "error": "<urlopen error _ssl.c:1063: The handshake operation timed out>",
+      "error_type": "URLError"
+    },
+    "senate_polls_2024_source.csv": {
+      "url": "https://web.archive.org/web/20250118200335id_/https://projects.fivethirtyeight.com/polls-page/data/senate_polls_historical.csv",
+      "attempted_at": "2026-10-08T04:34:46.106446+00:00",
+      "outcome": "failed",
+      "error": "<urlopen error timed out>",
+      "error_type": "URLError"
+    },
+    "publisher_README.md": {
+      "url": "https://raw.githubusercontent.com/fivethirtyeight/data/b366fada304fcf8068ba7789745fe15a61ed6e3d/README.md",
+      "attempted_at": "2026-10-08T04:34:46.106747+00:00",
+      "resolved_url": "https://raw.githubusercontent.com/fivethirtyeight/data/b366fada304fcf8068ba7789745fe15a61ed6e3d/README.md",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "retrieved_at": "2026-10-08T04:34:46.512040+00:00",
+      "bytes": 761,
+      "sha256": "df6cc1332e12ee4bb5c38d1a9247dd7250ef6b937ecd31069d6532ec45bc9d60",
+      "outcome": "retrieved for availability check only; not a complete polling snapshot"
+    },
+    "publisher_polls_README.md": {
+      "url": "https://raw.githubusercontent.com/fivethirtyeight/data/b366fada304fcf8068ba7789745fe15a61ed6e3d/polls/README.md",
+      "attempted_at": "2026-10-08T04:34:46.106970+00:00",
+      "resolved_url": "https://raw.githubusercontent.com/fivethirtyeight/data/b366fada304fcf8068ba7789745fe15a61ed6e3d/polls/README.md",
+      "status": 200,
+      "content_type": "text/plain; charset=utf-8",
+      "retrieved_at": "2026-10-08T04:34:46.520739+00:00",
+      "bytes": 4605,
+      "sha256": "36f23bb6d2d701d672f4cac67089e37f06d995b78eaabab0b197e37e77b8ea3a",
+      "outcome": "retrieved for availability check only; not a complete polling snapshot"
+    }
+  }
+}
