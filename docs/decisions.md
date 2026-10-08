@@ -382,6 +382,41 @@ docs/methodology.md
 
 Directed by Rahan in a Claude Code session on 2026-10-06, after Claude review.
 
+## Decision 016: No bias correction; σ stays RMSE
+
+### Decision
+
+Keep σ = RMSE of calibration errors (Decision 012) and do not shift the poll average by the historical mean error.
+
+### Date
+
+2026-10-07
+
+### Context and alternatives
+
+The first calibration run found a mean error of about −3 to −4 points (polls overstated Democrats): roughly −0.1 to −1.8 in 2018 and −5 to −6.5 in 2020. RMSE² = mean² + SD², so about a third of σ² at 28 days is this lean. Alternatives:
+
+- σ = SD with no shift (assumes no bias; overconfident).
+- Shift the average by the mean error and use σ = SD (assumes the 2018/2020 lean repeats).
+
+On the 2026 Texas average (+3.32), these give about 68% (RMSE), 71% (SD, no shift) and 46% (shift plus SD) for the Democrat.
+
+### Rahan's choice
+
+σ = RMSE, no shift.
+
+### Reasoning and tradeoffs
+
+The direction of the next cycle's polling bias cannot be predicted, so it is treated as another source of randomness, which RMSE includes. Shifting would bet heavily on two cycles of history. The cost is a wider σ if the lean does repeat.
+
+### Affected files
+
+docs/methodology.md, STATUS.md
+
+### Evidence / review
+
+Directed by Rahan in a Claude Code session on 2026-10-07, after Claude review: "let's keep RMSE as our sigma."
+
 ## Future decision template
 
 ### Decision

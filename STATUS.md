@@ -2,7 +2,7 @@
 
 ## Current milestone
 
-National calibration preparation implemented under Decisions 012–014. The saved contest/side/crosswalk snapshot has 729 selected questions, 873 exclusions and 348 pending questions. Rahan can begin margin/calibration work on eligible rounds while reviewing pending source, party and question-choice cases with Claude.
+First calibration run complete: σ by horizon from 52 eligible 2018/2020/Texas 2024 contests (Decisions 012, 016). Next: thin-race rule, first official Texas P(Democrat wins), sensitivity checks.
 
 ## Completed
 
@@ -62,22 +62,38 @@ National calibration preparation implemented under Decisions 012–014. The save
 - Questions selected/excluded/pending: 2018 333/408/138; 2020 373/451/210; Texas 2024 23/14/0. Tied LV preferences and pending siblings stay pending. Selected questions cover 52 eligible rounds before horizon cutoffs.
 - Nine preparation regression tests added; all 20 repository tests passed, including preservation, exact sides/rounds, valid votes, approved exclusions/preference, byte-identical replay, tamper rejection and overwrite refusal. All 47 pre-existing data files in the preservation baseline are unchanged. Rahan edited/committed the notebook during this task; Codex did not edit or execute it. See `docs/calibration_preparation_review.md` and the calibration handoff.
 
+- Rahan wrote the side-sum margins, poll/result merge and calibration loop in notebooks/data-pulls.ipynb (2026-10-07). 52 contests × 4 horizons: 197 errors, 11 dropped (Wyoming 2018/2020 at all horizons; DE/OR/WV 2020 at 42 days). Claude Code reproduced the run independently with identical results. h = 14:
+
+  | Horizon | Races | Mean error | RMSE (σ) |
+  | --- | ---: | ---: | ---: |
+  | 7 | 50 | −2.84 | 6.50 |
+  | 14 | 50 | −3.16 | 6.80 |
+  | 28 | 50 | −3.87 | 7.03 |
+  | 42 | 47 | −3.10 | 6.45 |
+
+  Mean error by cycle: 2018 −0.1 to −1.8; 2020 −4.8 to −6.5. Provisional Texas check: Φ(3.32 / 7.03) ≈ 68% for the Democrat.
+- Kept σ = RMSE with no bias shift (Decision 016).
+- Requested a 2022/2024 all-state polling source proposal from Codex (docs/handoffs/2026-10-08-claude-code-to-codex.md); calibration scope unchanged until Rahan approves.
+
 ## Not yet done
+
+- Thin-race decision: 13–21 races per horizon have n_eff < 1.5. West Virginia 2020 (one poll, error −23) alone moves σ at 7 days from 6.50 to about 5.65.
+- Record the two-cycle limitation: the cycle-wide lean dominates σ and is estimated from essentially two cycles.
+- Select σ in code from the horizon nearest to Election Day, produce the first official Texas P(win), and run sensitivity (h, t-distribution, thin races).
 
 - Local Python environment setup.
 - Review the 16 pending in-scope contests and 348 pending questions. Missing Mississippi first-round returns need Rahan's supplemental-source/exclusion decision; Nevada denominator semantics, named blank-party candidates, unofficial returns, FEC disagreements, aliases and tied preferences remain unresolved. Exact keys/evidence are in the prepared logs and review.
 - Comprehensive official-return/primary-poll verification. Checks so far are partial; source flags and mirror identity are not fully verified. Valid-vote categories and exceptional-round dates are prepared without changing MEDSL counts.
 - Open poll rule: LV numbers from releases where the tracker shows RV.
-- Rahan's side/margin function and horizon/calibration loop, including no-poll logs, counts, errors and RMSE. Normal errors are approved (Decision 015); calibrated sigma and sensitivity remain unimplemented.
 - Complete primary-source verification, analytical data cleaning, modeling, and evaluation.
 
 ## Next action
 
-Read `docs/calibration_preparation_review.md` and the prepared README. Rahan implements exact-round side sums/margins using valid votes, then horizon cutoffs, averages, n_eff, errors, RMSE, cycle means and dropped-race logs under Decision 012. Review pending cases with Claude and approve consequential resolutions before a fresh preparation snapshot.
+Rahan decides the thin-race rule, selects σ from the nearest horizon in code, and computes the first official Texas P(Democrat wins). Then sensitivity checks. Codex proposes a 2022/2024 polling source once Rahan confirms the handoff.
 
 ## Active branch / commit
 
-main at c3dc654 (observed during this task), plus uncommitted national preparer, reference JSON, processed snapshot, tests and documentation. Rahan committed notebook changes while Codex worked; Codex did not edit or execute it. No commit/push performed by Codex.
+main; calibration notebook, Decision 016 and the 2026-10-08 handoff committed together on 2026-10-08.
 
 ## Data snapshot
 
