@@ -2,7 +2,7 @@
 
 ## Current milestone
 
-First calibration run complete: σ by horizon from 52 eligible 2018/2020/Texas 2024 contests (Decisions 012, 016). Next: thin-race rule, first official Texas P(Democrat wins), sensitivity checks.
+Latest Texas forecast: P(Talarico wins) = 71.3% (2026-10-08 snapshot; first forecast 68.1%), Tier 1 minimum (Decision 010), with σ calibrated on 52 eligible 2018/2020/Texas 2024 contests (Decisions 012, 016). Next: sensitivity checks and automatic horizon selection.
 
 ## Completed
 
@@ -73,14 +73,17 @@ First calibration run complete: σ by horizon from 52 eligible 2018/2020/Texas 2
 
   Mean error by cycle: 2018 −0.1 to −1.8; 2020 −4.8 to −6.5. Provisional Texas check: Φ(3.32 / 7.03) ≈ 68% for the Democrat.
 - Kept σ = RMSE with no bias shift (Decision 016).
+- First Texas forecast (2026-10-08): P(Talarico wins) = 68.1%, from the `20261006T023757Z` snapshot average +3.32 (13 LV polls, h = 14, reference 2026-10-05) and σ = 7.03 (28-day horizon). Tier 1 deliverable (Decision 010) reached in its minimum form.
+- Updated Texas forecast (2026-10-08): P(Talarico wins) = 71.3%, from the `20261008T042800Z` snapshot (one new LV poll, YouGov in-house D+6 ending 10-05): average +3.95, 14 LV polls, n_eff 6.71, h = 14, σ = 7.03 (28-day horizon). Claude Code reproduced the average and probability independently. The direct fetch failed from Rahan's network ("No route to host", though the page loads in a browser), so this snapshot was made from a browser-saved page with `--html` and `--retrieved-at`; its SHA-256 describes that saved copy.
 - Requested a 2022/2024 all-state polling source proposal from Codex (docs/handoffs/2026-10-08-claude-code-to-codex.md); calibration scope unchanged until Rahan approves.
+- Rahan authorized proposal research with “go do your work!” (2026-10-08). Codex verified public CSV headers and intended cycles in dated FiveThirtyEight archive prefixes, documented required fields and CC BY attribution, and proposed 2022/2024 expansion in `docs/polling_sources_2022_2024_proposal.md`. The unchanged local MEDSL original contains 168 source rows/36 groups for 2022 and 148/35 for 2024, both spanning 33 states; Georgia 2022 general/runoff returns are present. Full-cycle polling counts/coverage remain unmeasured. No complete new polling dataset, preparation, notebook execution or model calculation; sources/scope and MEDSL 2022 use remain pending approval.
 
 ## Not yet done
 
-- First official Texas P(Democrat wins): Rahan codes it with σ = 7.03 (28-day horizon, nearest to 2026-11-03). Then select the horizon automatically in code.
+- Select the σ horizon automatically from the days remaining (currently set manually to 28).
 - Sensitivity checks (h = 7/14/30, t with ν = 5 and 10, with/without thin races): planned for Rahan's next session.
 - Thin races (deferred, 2026-10-08): 13–21 races per horizon have n_eff < 1.5; West Virginia 2020 (one poll, error −23) alone moves σ at 7 days from 6.50 to about 5.65. Rahan tentatively favors removing or blunting them, but will decide after the model runs on more states.
-- Third calibration cycle: Rahan wants at least three cycles; awaiting Codex's 2022/2024 polling source proposal (docs/handoffs/2026-10-08-claude-code-to-codex.md).
+- Third calibration cycle: Rahan wants at least three cycles; the [2022/2024 source proposal](docs/polling_sources_2022_2024_proposal.md) is ready. Awaiting polling-source/scope approval and MEDSL 2022 authorization before collection/inventory; ambiguous independent sides, overlapping special-election questions and first-choice return verification remain review items.
 
 - Local Python environment setup.
 - Review the 16 pending in-scope contests and 348 pending questions. Missing Mississippi first-round returns need Rahan's supplemental-source/exclusion decision; Nevada denominator semantics, named blank-party candidates, unofficial returns, FEC disagreements, aliases and tied preferences remain unresolved. Exact keys/evidence are in the prepared logs and review.
@@ -90,7 +93,9 @@ First calibration run complete: σ by horizon from 52 eligible 2018/2020/Texas 2
 
 ## Next action
 
-Rahan computes the first official Texas P(Democrat wins) with σ = 7.03, then runs sensitivity checks next session. Codex proposes a 2022/2024 polling source (Rahan has confirmed the handoff).
+Rahan approved the polling sources, scope expansion and MEDSL 2022 use (Decision 017, 2026-10-08). Codex is collecting the pinned archives, auditing coverage and extending mechanical preparation while preserving prior snapshots and the notebook. Ambiguous new cases remain pending.
+
+Rahan reviews the [2022/2024 source proposal](docs/polling_sources_2022_2024_proposal.md) and authorizes polling collection, scope expansion and MEDSL 2022 use if accepted. Codex then inventories coverage before extending preparation. Rahan's modeling next steps remain sensitivity checks (h = 7/14/30, t with ν = 5 and 10, with/without thin races) and automatic horizon selection.
 
 ## Active branch / commit
 
@@ -98,7 +103,7 @@ main; calibration notebook, Decision 016 and the 2026-10-08 handoff committed to
 
 ## Data snapshot
 
-Latest 2026 tracker: `data/raw/texas_tracker/20261006T023757Z/` — 18 tracker rows; source last updated October 3, 2026. Extraction is complete; primary verification is incomplete. Original `20260929T222648Z/` 16-row snapshot remains preserved.
+Latest 2026 tracker: `data/raw/texas_tracker/20261008T042800Z/` — 19 tracker rows; source last updated October 6, 2026; saved from a browser and processed offline. Extraction is complete; primary verification is incomplete. Earlier `20260929T222648Z/` (16 rows) and `20261006T023757Z/` (18 rows) snapshots remain preserved.
 
 Historical: `data/raw/texas_senate_historical/20261006T024116Z/` — 149 question/tracker records (262 older candidate rows plus 37 newer tracker rows). Source dates and populations preserved; one malformed 2024 date remains blank and flagged. Full primary verification and historical analytical inclusion remain pending.
 
