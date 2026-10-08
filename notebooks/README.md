@@ -2,7 +2,7 @@
 
 Rahan's exploration and learning work.
 
-- data-pulls.ipynb: Rahan's Jupyter notebook installs/imports matplotlib, plotnine, pandas, and NumPy, loads the 2026 Texas snapshot, filters LV polls, computes D minus R margins, and calculates a recency-weighted average and effective poll count. Saved output reflects an earlier run, not verification of today's environment.
+- texas_forecast.ipynb (formerly data-pulls.ipynb): Rahan's Texas forecast notebook. It imports the model and calibration functions from `src/model/` and `src/evaluate/`, loads the 2026 Texas snapshot, computes the recency-weighted LV average, runs the historical calibration, and converts the average to P(Democrat wins). Install packages with `pip install -r requirements.txt` (plus Jupyter); the notebook no longer installs them itself. Saved outputs are from a 2026-10-08 run.
 - .gitkeep: empty directory marker.
 
 Use [the file guide](../docs/file_guide.md) and [data dictionary](../docs/data_dictionary.md) when exploring the Texas CSVs. Paths depend on the notebook's working directory; from notebooks/, the snapshot is under ../data/raw/texas_tracker/.
@@ -16,7 +16,7 @@ returns_2024 = pd.read_csv('../data/raw/senate_results/20261006T035630Z/returns_
 texas_returns_2024 = returns_2024[returns_2024['state_po'] == 'TX']
 ```
 
-2018/2020 subsets are alongside it; Georgia's January runoffs remain in a separate 2021 file. [The results README](../data/raw/senate_results/README.md) documents fields, exact-string loading, replay and limits. Decision 013 approves a valid-vote denominator including third-party/write-in votes; [source flags](../docs/senate_results_review.md), ballot lines and round definitions still need verification before computing it. The existing notebook was preserved, not edited or rerun.
+2018/2020 subsets are alongside it; Georgia's January runoffs remain in a separate 2021 file. [The results README](../data/raw/senate_results/README.md) documents fields, exact-string loading, replay and limits. Decision 013 approves a valid-vote denominator including third-party/write-in votes; [source flags](../docs/senate_results_review.md), ballot lines and round definitions still need verification before computing it.
 
 ## Historical inventory
 
@@ -32,4 +32,4 @@ Per-cycle files `texas_2018.csv`, `texas_2020.csv`, and `texas_2024.csv` are bes
 
 Use [the national prepared README](../data/processed/senate_calibration/README.md) for copyable loading examples and [the dictionary](../docs/data_dictionary.md#prepared-national-calibration-inputs-decisions-012014) for join keys. `poll_questions.csv` identifies selected questions, `poll_candidate_rows.csv` retains every answer, and `candidate_results.csv` retains every ballot line with side and valid-vote fields. Join by exact `contest_id`; keep unknowns/pending cases out until reviewed. Georgia 2021 returns map to cycle 2020; Mississippi first-round polls remain pending rather than matched to runoff votes.
 
-The preparer has not added any code to, or run, `data-pulls.ipynb`. Rahan writes the margin function, horizon selection and calibration loop. The current `p_dem_win` already returns 0–1, and the empty check in `weighted_avg` now follows its date filter; the earlier handoff's requests on these two points are stale. Returning a poll count and removing display prints remain Rahan's notebook choices.
+Rahan wrote the margin functions and calibration loop; they now live in `src/model/polling_average.py` and `src/evaluate/calibration.py`.

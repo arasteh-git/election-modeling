@@ -19,7 +19,7 @@ class CalibrationPreparation(unittest.TestCase):
     def setUpClass(cls):
         cls.temp = tempfile.TemporaryDirectory()
         cls.output = Path(cls.temp.name) / "prepared"
-        cls.notebook = calibration.sha(ROOT / "notebooks/data-pulls.ipynb")
+        cls.notebook = calibration.sha(ROOT / "notebooks/texas_forecast.ipynb")
         cls.manifest = calibration.prepare(output=cls.output, created_at="2026-10-06T12:00:00+00:00")
         cls.tables = {name: calibration.read_csv(cls.output / name) for name in cls.manifest["outputs"]}
         cls.results = cls.tables["candidate_results.csv"]
@@ -42,7 +42,7 @@ class CalibrationPreparation(unittest.TestCase):
         self.assertEqual(len(self.tables["candidate_side_map.csv"]), 5175)
         self.assertEqual(len(self.tables["poll_questions.csv"]), 1950)
         self.assertEqual(len(self.tables["race_crosswalk.csv"]), 72)
-        self.assertEqual(calibration.sha(ROOT / "notebooks/data-pulls.ipynb"), self.notebook)
+        self.assertEqual(calibration.sha(ROOT / "notebooks/texas_forecast.ipynb"), self.notebook)
         for path, checksum in self.manifest["inputs_sha256"].items():
             self.assertEqual(calibration.sha(ROOT / path), checksum)
 

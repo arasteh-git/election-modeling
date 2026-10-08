@@ -4,7 +4,7 @@ Future data validation and meaningful checks belong here.
 
 `test_prepare_texas_history.py` checks the exact 12 historical exclusions, preservation of all other original fields, 37 election-date corrections, partisan/internal/unknown classifications, retention of ambiguous candidates, conflicting-date rejection, provenance hashes, unchanged raw files, and overwrite protection.
 
-Run from the repository root, standard library only:
+Run from the repository root (the data-pipeline tests need only the standard library):
 
 ```bash
 python -B -m unittest discover -s tests -p 'test_prepare_texas_history.py' -v
@@ -29,4 +29,6 @@ python3 -B -m unittest discover -s tests -v
 
 `test_calibration_wide.py` adds three checks for unique keys, equality to approved long-table side sums, missing/unknown vote preservation, complete parent-hash checks, byte-identical replay and overwrite/tamper rejection. No core model logic is tested or implemented.
 
-Run the full suite with `python3 -B -m unittest discover -s tests -v`. The complete suite contains 29 tests. See [the prepared dataset](../data/processed/senate_calibration/README.md) and [review](../docs/calibration_preparation_review.md) for the implemented rules and remaining factual limits.
+`test_texas_model.py` adds five checks that the `src/model` and `src/evaluate` code reproduces the notebook's saved results exactly: Texas average +3.952 (14 LV polls), n_eff 6.705, σ(28) 7.030, P(D) 0.713, races/mean error/RMSE by horizon, the 11 dropped contest-horizons and selected mean errors by cycle. It checks that the refactor matches the earlier notebook output, not that the model is right.
+
+Run the full suite from the repository root with `python3 -B -m unittest discover -s tests -v` or `python -m pytest`. The complete suite contains 34 tests. See [the prepared dataset](../data/processed/senate_calibration/README.md) and [review](../docs/calibration_preparation_review.md) for the implemented rules and remaining factual limits.
