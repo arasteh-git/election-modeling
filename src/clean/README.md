@@ -1,5 +1,15 @@
 # Mechanical cleaning
 
+## Wide working tables from prepared v1 inputs
+
+`prepare_calibration_wide.py` exports one result row per contest/round and one poll row per selected question. It sums existing side-classified votes/percentages mechanically, retains unknown vote counts and all result statuses, and computes no margins or model quantities. Parent output hashes are verified; existing outputs are never overwritten.
+
+```bash
+python3 -B src/clean/prepare_calibration_wide.py --output outputs/calibration_wide_replay
+```
+
+Default parent is the original v1 prepared snapshot; `--snapshot PATH` must use its supported schema/rule version. Saved wide files are in `data/processed/senate_calibration/20261006T024116Z_20261006T035630Z_v1_wide/`. See [fields, loading and limits](../../data/processed/senate_calibration/README.md). These are the existing 2018/2020/Texas 2024 inputs; expanded 2022/2024 preparation remains blocked on polling retrieval.
+
 Mechanical formatting and cleaning code for approved rules belongs here.
 
 `prepare_texas_history.py` implements Decision 011 using saved historical Texas Senate inputs. It sets all 2024 election dates to `2024-11-05`, adds source-based partisan tags, and excludes clearly identified 2020 challengers other than M.J. Hegar against Cornyn. Missing/ambiguous candidate names remain available for review. It preserves raw snapshots and outputs retained records, exclusions, a change audit, and provenance hashes.

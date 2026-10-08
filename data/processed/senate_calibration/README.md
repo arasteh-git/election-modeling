@@ -2,6 +2,24 @@
 
 Snapshot: `20261006T024116Z_20261006T035630Z_v1/`, prepared 2026-10-06. Implements Decisions 011–014 and Rahan's approval of the Claude mapping/crosswalk handoff. It combines the saved 2018/2020 polling archive, prepared Texas 2024 tracker, and MEDSL V8.0 results. Original sources and notebook are preserved.
 
+## Wide working tables (existing v1 inputs)
+
+`20261006T024116Z_20261006T035630Z_v1_wide/` contains `results_wide.csv` (108 rows, one per contest/round), `polls_wide.csv` (729 rows, one per selected question) and a parent/output hash manifest. No additional 2022/2024 polling or expanded calibration inputs exist yet; approved archive collection is blocked on connectivity.
+
+Results add `dem_votes`, `rep_votes`, `other_votes`, `unknown_votes` and `side_counts_complete` to the original contest metadata, including `valid_vote_total`, `status` and `reasons`. Counts sum only existing `valid_vote=true` candidate rows. Unknown sides stay in `unknown_votes`; pending valid-vote categories mark counts incomplete. Missing returns remain blank. All pending/excluded contests are retained: filter to `status == 'eligible'` before modeling.
+
+Polls retain original selected-question metadata and add `dem_pct`, `rep_pct`, `other_pct` and `source_record_keys_json`. `other_pct` sums only reported other-candidate answers; it is not undecided and is not inferred as `100 − dem_pct − rep_pct`. Source answers and mapping evidence remain in the original long tables. No margins, result shares, weighting or calibration are calculated.
+
+Replay offline to a fresh output:
+
+```bash
+python3 -B src/clean/prepare_calibration_wide.py --output outputs/calibration_wide_replay
+```
+
+Load from a notebook using `pd.read_csv(f'{wide_base}/results_wide.csv', dtype=str, keep_default_na=False)` and the corresponding `polls_wide.csv`, where `wide_base` is `../data/processed/senate_calibration/20261006T024116Z_20261006T035630Z_v1_wide`. Convert numeric columns explicitly. Existing v1 files remain unchanged.
+
+## Original detailed preparation
+
 From the repository root, Python 3 standard library, offline:
 
 ```bash

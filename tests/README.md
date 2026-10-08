@@ -25,4 +25,8 @@ python3 -B -m unittest discover -s tests -p 'test_prepare_senate_calibration.py'
 python3 -B -m unittest discover -s tests -v
 ```
 
-The complete suite contains 20 tests. See [the prepared dataset](../data/processed/senate_calibration/README.md) and [review](../docs/calibration_preparation_review.md) for the implemented rules and remaining factual limits.
+`test_senate_poll_archives.py` adds six tests using explicitly synthetic archived CSVs and the unchanged real MEDSL original. It checks designated-cycle/source-field preservation, missing/duplicate/invalid-answer flags without dropping rows, schema/HTML/capture/license rejection, failure without a partial snapshot, offline byte-identical replay, tamper/overwrite rejection and exact 2022 results/stage preservation. Synthetic polling fixtures do not establish real archive availability or counts.
+
+`test_calibration_wide.py` adds three checks for unique keys, equality to approved long-table side sums, missing/unknown vote preservation, complete parent-hash checks, byte-identical replay and overwrite/tamper rejection. No core model logic is tested or implemented.
+
+Run the full suite with `python3 -B -m unittest discover -s tests -v`. The complete suite contains 29 tests. See [the prepared dataset](../data/processed/senate_calibration/README.md) and [review](../docs/calibration_preparation_review.md) for the implemented rules and remaining factual limits.

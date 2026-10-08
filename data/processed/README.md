@@ -9,3 +9,7 @@ The [national Senate calibration preparation](senate_calibration/README.md) impl
 The original historical inventory and the 2026 Texas normalized.csv remain under data/raw/ beside their source evidence. Future outputs should reflect approved inclusion and cleaning rules with links to their source snapshots.
 
 .gitkeep is an empty directory marker.
+
+The [2022 MEDSL source inventory](senate_results_2022/README.md) adds 168 unchanged rows and 36 separate source groups under Decision 017, using the already-preserved original. It is not side-mapped calibration data.
+
+[Wide working tables](senate_calibration/README.md#wide-working-tables-existing-v1-inputs) provide the existing v1 sample as 108 contest/round rows and 729 selected-question rows, with audited side sums and explicit unknown counts. They do not include new 2022/2024 polling or compute margins/calibration.

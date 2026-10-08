@@ -40,9 +40,13 @@ Collect the approved MEDSL Senate results (Decision 014) with `python src/ingest
 
 [National calibration preparation](data/processed/senate_calibration/README.md) is implemented under Decisions 012–014. Run `python3 -B src/clean/prepare_senate_calibration.py --output outputs/calibration_replay` for a fresh offline replay. The saved snapshot provides 108 contest rounds, 5,175 candidate mappings and 1,950 question crosswalks: 729 selected, 873 excluded and 348 pending. All sources remain preserved; dates, identities, denominator categories and approved filters are audited. [The review](docs/calibration_preparation_review.md) lists pending source conflicts, missing returns, parties and question choices. Rahan implements margins and calibration. [The documentation README](docs/README.md) explains the original plan, approved decisions, schemas and handoffs.
 
-[The 2022/2024 polling source proposal](docs/polling_sources_2022_2024_proposal.md) recommends dated FiveThirtyEight archive captures and documents inspected fields, permissions, unmeasured full-cycle counts and required preparation changes. It is pending source/scope approval; no new collection command or expanded prepared snapshot exists yet.
+[The 2022/2024 polling sources](docs/polling_sources_2022_2024_proposal.md) and scope expansion are approved under Decision 017. Run `python3 -B src/ingest/senate_poll_archives.py` when the archive is reachable; current connection failures have prevented a complete polling snapshot. [Collector documentation](data/raw/senate_poll_archives/README.md) records files, replay and limits. The [2022 MEDSL inventory](data/processed/senate_results_2022/README.md) is complete offline: 168 rows/36 groups. Expanded calibration preparation remains outstanding.
+
+[Wide working tables](data/processed/senate_calibration/README.md#wide-working-tables-existing-v1-inputs) now provide the existing v1 sample as 108 contest/round rows and 729 selected poll-question rows. Replay with `python3 -B src/clean/prepare_calibration_wide.py --output outputs/calibration_wide_replay`. Unknown votes remain explicit; these files compute no margins or model quantities.
 
 ## Model execution command
+
+Future expanded-model direction (Decision 018): incorporate national and generic-ballot polls into state predictions at lower weight than state polls, adjusted for state partisan lean, alongside pollster house effects and correlated state effects. Exact methods and weights remain undecided; see [methodology](docs/methodology.md#planned-expanded-model-inputs-decision-018).
 
 ## Evaluation command
 

@@ -54,6 +54,8 @@ Decision 010. Tiers build on each other:
 2. Next level: add fundamentals and pollster house effects (including how to bring RV and partisan polls back in); σ as a smooth function of days to election; extend to more races.
 3. Final level: correlation between states; cover the full 2026 Senate landscape and produce P(Democrats win the Senate).
 
+Future expanded-model direction (Decision 018): alongside more states, pollster house effects, correlated state effects and the other planned extensions, incorporate national and generic-ballot polls into individual state predictions. Give these inputs lower weight than state-specific polls and adjust for each state's partisan lean. The exact weights, lean measure, translation method and validation remain undecided; this is a roadmap requirement, not current model behavior.
+
 ## Time commitment
 
 ## Timeline

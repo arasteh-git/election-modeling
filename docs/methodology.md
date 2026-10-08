@@ -57,6 +57,12 @@ Scope expansion (Decision 017, 2026-10-08): all-state 2018/2020/2022/2024 Senate
 
 Decision 013's approved additions exclude races without both sides, count each round separately (acknowledging shared-seat dependence), and use all valid candidate votes including third-party/write-ins for result shares. LIB/`REP,REF` flags are partisan. Exclude questions comparing confirmed non-ballot candidates; missing/uncertain identities remain pending. Select one observation per poll/round, preferring a full-ballot LV question. Use first-choice RCV numbers on both sides of the comparison. MEDSL V8.0 results are approved under Decision 014; the collected inventory still requires factual round/identity/date verification before applying these rules.
 
+## Planned expanded-model inputs (Decision 018)
+
+As the model expands to more states and incorporates pollster house effects, correlated state effects and the other planned extensions, include national polls and generic-ballot polls as additional inputs to each state's prediction. Adjust these inputs for the state's partisan lean and give them lower weight than state-specific polling.
+
+This is future model direction, not an implemented adjustment. The relative weights, lean measure, translation from a national/generic-ballot measurement to a state race, source selection and validation are still undecided. Rahan implements and approves the core logic; the current Texas model and calibration rules remain unchanged.
+
 ## Historical evaluation and leakage prevention
 
 When computing a past race's average at a horizon, use only polls whose fieldwork ended on or before the horizon date (Decision 012). Fieldwork end date stands in for availability, because publication dates are not used (Decision 009); a poll fielded before the horizon but released after it can still leak.

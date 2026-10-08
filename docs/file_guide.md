@@ -4,7 +4,13 @@ This guide describes the current files, not features that have already been impl
 
 ## Proposed 2022/2024 polling expansion
 
-[polling_sources_2022_2024_proposal.md](polling_sources_2022_2024_proposal.md) is the source/scope approval document: pinned archive URLs, field and permission evidence, coverage limits, unresolved race cases and proposed preparation outputs. [polling_source_checks_2022_2024.json](polling_source_checks_2022_2024.json) contains read-only metadata/header receipts and counts from the unchanged existing results CSV. Prefix hashes do not identify full new datasets, and full-cycle poll counts remain unmeasured. Read these files directly; no new collection command, prepared snapshot or notebook changes exist yet.
+[polling_sources_2022_2024_proposal.md](polling_sources_2022_2024_proposal.md) records pinned URLs, field/license evidence, coverage limits and remaining preparation work. Approval is Decision 017. [polling_source_checks_2022_2024.json](polling_source_checks_2022_2024.json) contains initial metadata/header inspections; prefix hashes are not full new-dataset hashes. [senate_archive_collection_attempts_2026_10_08.json](senate_archive_collection_attempts_2026_10_08.json) records failed archive downloads and successful publisher-document checks. Full polling counts remain unmeasured.
+
+`src/ingest/senate_poll_archives.py` is the approved collector, with offline replay and `--results-only` inventory mode. [Its README](../src/ingest/README.md) gives commands; [the raw-folder README](../data/raw/senate_poll_archives/README.md) describes future snapshot files. No real polling snapshot exists in that folder yet. [The current collection handoff](handoffs/2026-10-08-codex-to-rahan-and-claude-archive-collection.md) records the blocker and next action.
+
+[2022 results inventory](../data/processed/senate_results_2022/README.md): `returns_2022.csv`, `coverage.csv`, `issues.json` and `manifest.json` preserve 168 original rows, 36 source groups and provenance. No side/date/denominator choices or model quantities.
+
+[Wide current-v1 tables](../data/processed/senate_calibration/README.md#wide-working-tables-existing-v1-inputs): `results_wide.csv` (108 contest/round rows), `polls_wide.csv` (729 selected questions) and a parent/output hash manifest. `src/clean/prepare_calibration_wide.py` provides verified immutable export/replay; [the clean README](../src/clean/README.md) gives commands. These do not include new 2022/2024 polling. Unknown vote counts and result statuses are explicit; no margins are calculated.
 
 [The Codex handoff](handoffs/2026-10-08-codex-to-rahan-and-claude-polling-sources.md) records completed proposal work and the approval required before collection. [handoffs/README.md](handoffs/README.md) indexes dated transfer notes and explains how to use the template.
 

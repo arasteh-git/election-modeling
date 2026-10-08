@@ -1,5 +1,22 @@
 # Data dictionary
 
+## Decision 017: new inventories and wide working tables
+
+The [2022 MEDSL inventory](../data/processed/senate_results_2022/README.md) uses the original results-inventory schema below, selecting all 168 year-2022 rows from the same preserved V8.0 bytes. `year`, `stage` and `special` remain source values; Georgia `GEN RUNOFF` is not relabeled or merged with `GEN`. No sides/dates/denominator choices are supplied by this inventory.
+
+The [wide current-v1 export](../data/processed/senate_calibration/README.md#wide-working-tables-existing-v1-inputs) uses existing prepared classifications:
+
+| Added field | Meaning |
+| --- | --- |
+| `dem_votes`, `rep_votes`, `other_votes`, `unknown_votes` | Sum existing `valid_vote=true` row votes by side in one contest/round. Unknown affiliation is separate. Missing returns remain blank. No result share or margin. |
+| `side_counts_complete` | Lowercase boolean; false for absent returns, unresolved valid-vote classification or unknown valid-vote sides. Does not replace contest eligibility/status. |
+| `dem_pct`, `rep_pct`, `other_pct` | Sum existing candidate shares by approved side in a selected question, in 0–100 percentage points. Other is reported other-candidate answers only; no inferred undecided/complement. |
+| `source_record_keys_json` | Original prepared candidate-row keys contributing to/auditing the wide row. |
+
+`results_wide.csv` preserves all 108 contest records, including `status`, `reasons` and `valid_vote_total`. `polls_wide.csv` preserves metadata for the 729 selected questions only. The original long tables remain authoritative evidence for individual candidate/ballot-line identity and selection logs. No additional 2022/2024 polling is included yet.
+
+The [approved archive collector](../data/raw/senate_poll_archives/README.md) has no complete real polling snapshot yet. Its future inventory adds `archive_source` (original file), `source_snapshot` (archive capture timestamp), `source_row` (one-based logical CSV data row) and `inventory_question_key` (capture-namespaced race/poll/question identifiers), while retaining original columns/strings. Question metadata and all candidate answers remain available; flags identify missing/inconsistent values without adjudicating inclusion. Missing columns across the two source schemas are empty in the union inventory and recoverable via source-file headers. Capture/database times do not establish release time.
+
 ## Observation grain
 
 One row from the Texas Politics Project tracker. A tracker row is not yet an adjudicated independent survey or approved modeling observation.

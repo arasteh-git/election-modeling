@@ -437,6 +437,26 @@ Rahan replied “approved!” to Codex's explicit request to approve the two arc
 
 docs/data_sources.md, docs/methodology.md, STATUS.md, collection/preparation code, new immutable raw/processed snapshots and their documentation. No notebook or core-model change authorized by this approval.
 
+## Decision 018: Future national-poll inputs to state forecasts
+
+### Decision
+
+Record Rahan's direction for the future expanded model: include national polls and generic-ballot polls as lower-weight inputs to individual state predictions, correcting for each state's partisan lean. Develop this alongside the expansion to more states, pollster house effects, correlated state effects and previously planned model extensions.
+
+This approves the intended capability only. Exact relative weights, the definition/estimation of state partisan lean, translating national/generic-ballot measurements into state race predictions, poll-source choices and validation remain unresolved. No current inclusion rule, data source, numerical parameter or notebook implementation is changed.
+
+### Date
+
+2026-10-08
+
+### Evidence / review
+
+Rahan explicitly requested documenting this future modeling direction in this session. Rahan continues to implement core modeling logic and decide numerical/methodological details with Claude's review.
+
+### Affected files
+
+PROJECT.md, docs/methodology.md, STATUS.md, README.md and the current handoff.
+
 ## Future decision template
 
 ### Decision
