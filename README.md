@@ -81,7 +81,7 @@ Near-term: sensitivity checks (half-life, t-distributed errors, thin races), aut
 
 ## Who did what
 
-I (Rahan Arasteh) wrote the weighting, uncertainty and calibration logic. AI assistants did data collection, cleaning, infrastructure and review, as set out in [docs/process/PROJECT.md](docs/process/PROJECT.md).
+I (Rahan Arasteh) wrote the weighting, uncertainty and calibration logic, as well as the majority of the coding. AI assistants did data collection, cleaning, infrastructure and review, while also modularizing my code, as set out in [docs/process/PROJECT.md](docs/process/PROJECT.md).
 
 ---
 
